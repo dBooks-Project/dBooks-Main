@@ -7,7 +7,7 @@ var isEmpty = require('lodash.isempty');
 router.get('/livre/:id', function(req, res, next) {
 
     var connection = mysql.createConnection({
-        host: "70.30.248.159",
+        host: "192.168.2.65",
         user: "readonly",
         password: "uQgbI7IKaP1gn91n",
         database: "dBooks"
