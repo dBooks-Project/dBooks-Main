@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Concert+One");
+textarea, input, button {
+  outline: none;
+}
+textarea:focus, input:focus, button:focus {
+  outline: none;
+}
+
+nav .nav-content {
+  position: relative;
+  z-index: 10;
+  background-color: #F2F2F2;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  -webkit-box-shadow: 0px -1px 3px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px -1px 3px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+nav .nav-content .brand {
+  padding-left: 20px;
+  font-size: 40px;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Concert One", sans-serif;
+  color: #E7353D;
+}
+nav .nav-content .brand:hover, nav .nav-content .brand:visited {
+  text-decoration: none;
+  color: #E7353D;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav .nav-content i {
+  font-size: 30px;
+  color: #999999;
+  padding: 10px;
+  line-height: 30px;
+}
+nav .nav-content i:hover {
+  text-decoration: none;
+  color: #666666;
+  cursor: pointer;
+}
+nav .nav-links {
+  width: 100%;
+  z-index: 1;
+  background-color: #F2F2F2;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 40px;
+  border-bottom: 1px solid #DFDFDF;
+}
+nav .nav-links a {
+  padding: 17px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #999999;
+  transition: 0.3s;
+}
+nav .nav-links a:hover {
+  color: #666666;
+  transition: 0.3s;
+}
+@media (max-width: 575px) {
+  nav .nav-links {
+    flex-direction: column;
+  }
+  nav .nav-links a:not(:first-of-type) {
+    border-top: 1px solid #DFDFDF;
+  }
+}
+
+.page {
+  background-image: url("/images/landing-bg.jpg");
+  background-size: cover;
+  width: 100%;
+}
+.page form {
+  padding: 50px 0;
+}
+.page form input[type=text] {
+  margin-right: 5px;
+  padding: 5px;
+  border: 1px solid #F2F2F2;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: rgba(128, 128, 128, 0.5);
+  color: #FFFFFF;
+}
+.page form input[type=text]:focus {
+  color: #FFFFFF;
+}
+.page form button[type=submit] {
+  padding: 5px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.5);
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.page form button[type=submit]:hover {
+  background-color: transparent;
+  border: 1px solid #008754;
+  color: #008754;
+}
+.page .intro {
+  background-color: rgba(128, 128, 128, 0.5);
+  text-align: justify;
+}
+.page .intro .intro-text h1 {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+.page .intro .intro-text p {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  color: white;
+}
+
+.container-dashboard .dash-container main {
+  padding-top: 20px;
+}
+.container-dashboard .dash-container main .dash-text {
+  border-bottom: 1px solid #EEEEEE;
+}
+.container-dashboard .dash-container main .dash-text h1 {
+  font-size: 28px;
+  font-family: "Quicksand", sans-serif;
+  color: #999999;
+  float: left;
+}
+.container-dashboard .dash-container main .dash-text i {
+  float: right;
+  font-size: 28px;
+  color: #999999;
+}
+.container-dashboard .dash-container main .dash-text i:hover {
+  color: #666666;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-dashboard .dash-container main .dash-controls {
+  z-index: 1;
+  background-color: #EEEEEE;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 767px) {
+  .container-dashboard .dash-container main .dash-controls {
+    flex-direction: column;
+  }
+}
+.container-dashboard .dash-container main .dash-controls a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #999999;
+  transition: 0.3s;
+}
+.container-dashboard .dash-container main .dash-controls a:hover {
+  color: #666666;
+  transition: 0.3s;
+}
+.container-dashboard .dash-container main .dash-controls .action-form {
+  width: 100%;
+}
+.container-dashboard .dash-container main .dash-controls .action-form form {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  padding: 20px;
+}
+.container-dashboard .dash-container main .dash-controls .action-form form button {
+  color: #999999;
+  border: none;
+  font-size: 16px;
+  float: right;
+  margin-left: 10px;
+  background-color: transparent;
+}
+.container-dashboard .dash-container main .dash-controls .action-form form button:hover {
+  color: #666666;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container-dashboard .dash-container main .dash-controls .action-form form input {
+  color: #999999;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  float: left;
+}
+.container-dashboard .livres {
+  padding-top: 20px;
+}
+.container-dashboard .livre {
+  padding: 0;
+}
+.container-dashboard .livre img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.container-dashboard .livre .livre-info {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+  border: 3px solid white;
+  padding: 10px;
+  overflow-y: auto;
+}
+.container-dashboard .livre .livre-info a {
+  color: transparent;
+  background-color: transparent;
+}
+.container-dashboard .livre .livre-info:hover, .container-dashboard .livre .livre-info:visited {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 3px solid white;
+  transition: 0.15s;
+}
+.container-dashboard .livre .livre-info:hover h4, .container-dashboard .livre .livre-info:hover p, .container-dashboard .livre .livre-info:hover a, .container-dashboard .livre .livre-info:visited h4, .container-dashboard .livre .livre-info:visited p, .container-dashboard .livre .livre-info:visited a {
+  font-family: "Raleway", sans-serif;
+  word-wrap: break-word;
+}
+.container-dashboard .livre .livre-info:hover h4, .container-dashboard .livre .livre-info:visited h4 {
+  color: white;
+  font-size: 22px;
+}
+.container-dashboard .livre .livre-info:hover p, .container-dashboard .livre .livre-info:visited p {
+  color: lightgrey;
+  font-size: 18px;
+}
+.container-dashboard .livre .livre-info:hover a, .container-dashboard .livre .livre-info:visited a {
+  background-color: #E7353D;
+  padding: 0 5px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+}
+.container-dashboard .livre .livre-info:hover a:hover, .container-dashboard .livre .livre-info:visited a:hover {
+  background-color: #B7151D;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*# sourceMappingURL=style.css.map */
