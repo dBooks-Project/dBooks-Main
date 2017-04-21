@@ -34,3 +34,4 @@ public/vendor
 .sass-cache/
 .jshintrc
 .jshintignore
+.sass-lint.yml
