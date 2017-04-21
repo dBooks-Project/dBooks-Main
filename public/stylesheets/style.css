@@ -63,9 +63,9 @@ nav .nav-links {
   border-bottom: 1px solid #dfdfdf;
 }
 nav .nav-links a {
-  padding: 17px;
+  padding: 16px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   color: #999;
   transition: .3s;
 }
@@ -139,7 +139,7 @@ nav .nav-links a:hover {
 }
 .index-container .intro .intro-text p {
   font-size: 16px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Playfair Display", serif;
   text-align: justify;
   color: #000;
 }

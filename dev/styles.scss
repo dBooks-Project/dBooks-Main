@@ -24,6 +24,7 @@ $half-transparent: rgba(128, 128, 128, .5);
 $quicksand: 'Quicksand', sans-serif;
 $raleway: 'Raleway', sans-serif;
 $concert-one: 'Concert One', sans-serif;
+$playfair: 'Playfair Display', serif;
 
 span {
     .fa {
@@ -100,9 +101,9 @@ nav {
         border-bottom: 1px solid $border-color;
 
         a {
-            padding: 17px;
+            padding: 16px;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 18px;
             color: $nav-color;
             transition: .3s;
 
@@ -191,7 +192,7 @@ nav {
 
             p {
                 font-size: 16px;
-                font-family: $raleway;
+                font-family: $playfair;
                 text-align: justify;
                 color: $black;
             }

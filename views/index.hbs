@@ -1,19 +1,35 @@
 <div class="index-container">
     <div class="row no-gutters justify-content-center top-section">
-        <div class="col-10 col-md-8 col-lg-6 col-xl-4 search-container">
+        <div class="col-10 col-md-8 col-lg-6 search-container">
             
             <form method="POST" class="clearfix">
-                <input type="text" id="searchForm" value="{{placeholder.TitreLivre}}">
+                <input type="text" id="searchForm" placeholder="Suggestion: {{placeholder.Titre}}">
                 <button type="submit">Chercher</button>
             </form>
+
+            {{#with quote}}
+                <p class="quote">{{Texte}}</p>
+                <p>-{{Auteur}}</p>
+            {{/with}}
             
         </div>
     </div>
 
     <div class="intro row no-gutters justify-content-center">
-        <div class="col-10 col-md-8 col-lg-6 col-xl-4 intro-text text-center">
+        <div class="col-10 col-md-8 col-lg-6 intro-text text-center">
             <h1>
-                Who are we?
+                Le but
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id dictum dui. Curabitur aliquet mi a erat tincidunt ullamcorper. Maecenas id tortor sapien. Aenean enim risus, imperdiet congue magna eget, finibus consectetur orci. Etiam tincidunt mauris purus, quis vestibulum elit cursus et. Mauris ut orci ac lorem convallis pharetra. Curabitur luctus, felis eu varius tristique, magna erat elementum velit, quis hendrerit risus ex ac leo. Sed id felis enim. Nunc eget lectus ex. Cras nec pellentesque sem. Praesent elementum elementum pharetra. Vivamus sed lacus elit. Morbi iaculis congue auctor. Ut laoreet nisl sit amet mi posuere, eu dignissim risus feugiat. Vestibulum eleifend pulvinar tortor, vitae lobortis urna luctus aliquam.
+            </p>
+        </div>
+    </div>
+    <div class="intro row no-gutters justify-content-center">
+        <div class="col-10 col-md-8 col-lg-6 intro-text text-center">
+            <hr>
+            <h1>
+                Comment l'atteindre
             </h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id dictum dui. Curabitur aliquet mi a erat tincidunt ullamcorper. Maecenas id tortor sapien. Aenean enim risus, imperdiet congue magna eget, finibus consectetur orci. Etiam tincidunt mauris purus, quis vestibulum elit cursus et. Mauris ut orci ac lorem convallis pharetra. Curabitur luctus, felis eu varius tristique, magna erat elementum velit, quis hendrerit risus ex ac leo. Sed id felis enim. Nunc eget lectus ex. Cras nec pellentesque sem. Praesent elementum elementum pharetra. Vivamus sed lacus elit. Morbi iaculis congue auctor. Ut laoreet nisl sit amet mi posuere, eu dignissim risus feugiat. Vestibulum eleifend pulvinar tortor, vitae lobortis urna luctus aliquam.
