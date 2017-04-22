@@ -11,6 +11,7 @@ var mysql = require('mysql');
 var index = require('./routes/index');
 var dashboard = require("./routes/dashboard");
 var livre = require("./routes/livre");
+var connection = require("./routes/connection");
 
 var app = express();
 
@@ -34,7 +35,7 @@ app.use(express.static(__dirname + '/public'));
 app.use('/', index);
 app.use('/', dashboard);
 app.use('/', livre);
-
+app.use('/', connection);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

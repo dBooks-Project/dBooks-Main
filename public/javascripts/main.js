@@ -83,7 +83,7 @@ setInterval(function () {
     if (totalHeight <= currentScroll + visibleHeight) {
         $(".footer").slideDown(150);
     } else {
-        $(".footer").slideUp(200);
+        $(".footer").slideUp(150);
     }
 }, 100);
 //# sourceMappingURL=main.js.map

@@ -247,10 +247,6 @@ nav {
                 flex-direction: row;
                 justify-content: space-around;
 
-                @media (max-width: 767px) {
-                    flex-direction: column;
-                }
-
                 a {
                     padding: 8px 8px 8px 32px;
                     text-decoration: none;

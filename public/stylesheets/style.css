@@ -182,11 +182,6 @@ nav .nav-links a:hover {
   flex-direction: row;
   justify-content: space-around;
 }
-@media (max-width: 767px) {
-  .container-dashboard .dash-container main .dash-controls {
-    flex-direction: column;
-  }
-}
 .container-dashboard .dash-container main .dash-controls a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
