@@ -5,6 +5,7 @@ $(".dash-controls").hide();
 $("#addForm").hide();
 $("#deleteForm").hide();
 $("#editForm").hide();
+$(".footer").hide();
 
 var menuToggeled = false;
 var sidenavToggle = false;
@@ -67,16 +68,22 @@ $('.livre-info').perfectScrollbar({
     "scrollYMarginOffse": "10"
 });
 
-var lastScrollTop = 0;
-$(window).scroll(function (event) {
-    var st = $(this).scrollTop();
-    if (st > lastScrollTop) {
-        // downscroll code
-        $(".footer").fadeIn();
+setInterval(function () {
+    var totalHeight, currentScroll, visibleHeight;
+
+    if (document.documentElement.scrollTop) {
+        currentScroll = document.documentElement.scrollTop;
     } else {
-        // upscroll code
-        $(".footer").fadeOut();
+        currentScroll = document.body.scrollTop;
     }
-    lastScrollTop = st;
-});
+
+    totalHeight = document.body.offsetHeight;
+    visibleHeight = document.documentElement.clientHeight;
+
+    if (totalHeight <= currentScroll + visibleHeight) {
+        $(".footer").slideDown(150);
+    } else {
+        $(".footer").slideUp(200);
+    }
+}, 100);
 //# sourceMappingURL=main.js.map

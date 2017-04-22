@@ -148,6 +148,9 @@ nav .nav-links a:hover {
   text-align: justify;
   color: #000;
 }
+.index-container .intro .intro-text .last {
+  padding-bottom: 60px;
+}
 
 .container-dashboard .dash-container main {
   padding-top: 20px;
@@ -292,12 +295,14 @@ nav .nav-links a:hover {
 }
 
 .footer {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
+  margin-top: 40px;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
   position: fixed;
+  display: block;
   font-family: "Raleway", sans-serif;
   color: #999;
   text-decoration: none;
