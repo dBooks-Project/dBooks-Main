@@ -18,7 +18,7 @@ $author-text-color: #d3d3d3;
 $book-info-hover: rgba(0, 0, 0, .7);
 $form-border-focus: rgba(0, 160, 255, .5);
 $transparent: rgba(0, 0, 0, 0);
-$half-transparent: rgba(128, 128, 128, .5);
+$nav-shadow: rgba(0, 0, 0, .25);
 
 //fonts
 $quicksand: 'Quicksand', sans-serif;
@@ -34,6 +34,15 @@ span {
     }
 }
 
+.accent-bar {
+
+    height: 5px;
+    background-color: $accent-color;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
 textarea,
 input,
 button {
@@ -47,7 +56,7 @@ button {
 nav {
 
     .nav-content {
-        box-shadow: 0 -1px 3px 1px $half-transparent;
+        box-shadow: 0 1px 5px 0 $nav-shadow;
         position: relative;
         z-index: 10;
         background-color: $nav-bg-color;
@@ -387,6 +396,7 @@ nav {
     font-family: $raleway;
     color: $nav-color;
     text-decoration: none;
+    word-wrap: none;
 
     .fa-heart {
 
