@@ -16,7 +16,7 @@ $author-text-color: #d3d3d3;
 
 //rgba colors
 $book-info-hover: rgba(0, 0, 0, .7);
-$form-border-focus: rgb(0, 157, 255);
+$form-border-focus: rgba(0, 160, 255, .5);
 $transparent: rgba(0, 0, 0, 0);
 $half-transparent: rgba(128, 128, 128, .5);
 
@@ -149,7 +149,7 @@ nav {
                 font-size: 16px;
                 font-family: $raleway;
                 border: 1px solid $border-color;
-                color: $black;
+                color: $nav-color;
 
                 &:focus {
                     box-shadow: 0 0 7px 0 $form-border-focus;
@@ -180,17 +180,23 @@ nav {
         background-color: $white;
         text-align: justify;
 
+        .line {
+            border-top: 1px solid $border-color;
+        }
+
         .intro-text {
 
             h1 {
-                margin: 20px;
-                font-size: 36px;
+                padding-top: 30px;
+                padding-bottom: 20px;
+                font-size: 28px;
                 text-align: center;
                 color: $black;
                 font-family: $raleway;
             }
 
             p {
+                padding-bottom: 30px;
                 font-size: 16px;
                 font-family: $playfair;
                 text-align: justify;
@@ -370,6 +376,18 @@ nav {
 }
 
 .footer {
-    padding: 20px;
-    display: block;
+    font-size: 14px;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: fixed;
+    font-family: $raleway;
+    color: $nav-color;
+    text-decoration: none;
+
+    .fa-heart {
+
+        color: $accent-color;
+    }
 }

@@ -105,10 +105,10 @@ nav .nav-links a:hover {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   border: 1px solid #dfdfdf;
-  color: #000;
+  color: #999;
 }
 .index-container .top-section form input:focus {
-  box-shadow: 0 0 7px 0 #009dff;
+  box-shadow: 0 0 7px 0 rgba(0, 160, 255, 0.5);
 }
 .index-container .top-section form button {
   padding: 7px;
@@ -130,14 +130,19 @@ nav .nav-links a:hover {
   background-color: #fff;
   text-align: justify;
 }
+.index-container .intro .line {
+  border-top: 1px solid #dfdfdf;
+}
 .index-container .intro .intro-text h1 {
-  margin: 20px;
-  font-size: 36px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 28px;
   text-align: center;
   color: #000;
   font-family: "Raleway", sans-serif;
 }
 .index-container .intro .intro-text p {
+  padding-bottom: 30px;
   font-size: 16px;
   font-family: "Playfair Display", serif;
   text-align: justify;
@@ -287,8 +292,18 @@ nav .nav-links a:hover {
 }
 
 .footer {
-  padding: 20px;
-  display: block;
+  font-size: 14px;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: fixed;
+  font-family: "Raleway", sans-serif;
+  color: #999;
+  text-decoration: none;
+}
+.footer .fa-heart {
+  color: #e7353e;
 }
 
 /*# sourceMappingURL=style.css.map */

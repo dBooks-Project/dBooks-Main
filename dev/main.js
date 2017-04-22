@@ -74,3 +74,16 @@ $('.livre-info').perfectScrollbar({
     "supressScrollX": false,
     "scrollYMarginOffse": "10"
 });
+
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop){
+       // downscroll code
+       $(".footer").fadeIn();
+    } else {
+      // upscroll code
+      $(".footer").fadeOut();
+   }
+   lastScrollTop = st;
+});
