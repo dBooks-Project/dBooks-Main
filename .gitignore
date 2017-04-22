@@ -26,7 +26,6 @@ node_modules
 # Debug log from npm
 npm-debug.log
 
-public/vendor
 .vscode
 .jshintrc
 .eslint
