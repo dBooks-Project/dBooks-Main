@@ -433,15 +433,14 @@ padding-bottom: 80px;
             padding-bottom: 20px;
 
             .statistiques-text{
-                    border-bottom: 1px solid #EEEEEE;
+                border-bottom: 1px solid #EEEEEE;
 
-                    h1{
-                        font-size: 28px;
-                        font-family: $quicksand;
-                        color: $nav-color;
-                        float: left;
-                
-                    }
+                h1{
+                    font-size: 28px;
+                    font-family: $roboto;
+                    color: $nav-color;
+                    float: left;
+                }
             }
         }
     }
