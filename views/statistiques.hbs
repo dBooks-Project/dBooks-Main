@@ -5,12 +5,14 @@
                 <h1>Statistiques</h1>
             </div>
         </main>
-        <div class="col-6">
+        <div class="col-3">
             <p>Nombre de livres: {{results.nombre.NombreDeLivres}}</p>
             <p>Nombre de livres en français: {{results.langueFrancaise.LangueFrancaise}}</p>
             <p>Nombre de livres en anglais: {{results.langueAnglaise.LangueAnglaise}}</p>
             <p>Nombre de livres en espagnol: {{results.langueEspagnole.LangueEspagnole}}</p>
-            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+        <div class="col-3">
+            <canvas id="chart" width="100" height="100"></canvas>
         </div>
     </div>
 </div>
@@ -18,13 +20,13 @@
 <script>
 var data = {
     labels: [
-        "Red",
-        "Blue",
-        "Yellow"
+        "Français",
+        "Anglais",
+        "Espagnol"
     ],
     datasets: [
         {
-            data: [300, 50, 100],
+            data: [{{results.langueFrancaise.LangueFrancaise}}, {{results.langueAnglaise.LangueAnglaise}}, {{results.langueEspagnole.LangueEspagnole}}],
             backgroundColor: [
                 "#FF6384",
                 "#36A2EB",

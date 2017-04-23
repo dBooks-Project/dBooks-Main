@@ -99,9 +99,9 @@ setInterval(function(){
 
 var options = {};
 
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-    type: 'doughnut',
+var ctx = document.getElementById("chart");
+var chart = new Chart(ctx, {
+    type: 'pie',
     data: data,
     options: options
 });
