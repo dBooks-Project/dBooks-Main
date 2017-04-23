@@ -212,19 +212,20 @@ nav {
             }
 
             .last {
-                padding-bottom: 60px;
+                padding-bottom: 80px;
             }
         }
     }
 }
 
 .container-dashboard {
-padding-bottom: 40px;
+padding-bottom: 80px;
 
     .dash-container {
 
         main {
             padding-top: 20px;
+            background-color: $white;
 
             .dash-text {
                 border-bottom: 1px solid $border-color;
@@ -385,11 +386,54 @@ padding-bottom: 40px;
     }
 }
 
+.register{
+    padding-top: 20px;
+
+    .row{
+        
+        form{
+
+            color: $nav-color;
+            font-size: 16px;
+
+            input {
+
+                margin-bottom: 20px;
+            }
+
+            label{
+                font-family: $raleway;
+            }
+
+            .check-flex{
+                
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+            }
+
+            .remember-flex{
+
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-direction: row;
+                padding-bottom: 80px;
+            }
+
+            button{
+            }
+        }
+    }
+}
+
 .footer {
     font-size: 16px;
     text-align: center;
     margin-top: 40px;
     bottom: 0;
+    width: 100%;
     left: 50%;
     transform: translate(-50%, 0);
     position: fixed;
@@ -397,7 +441,6 @@ padding-bottom: 40px;
     font-family: $raleway;
     color: $nav-color;
     text-decoration: none;
-    word-wrap: none;
 
     .fa-heart {
 

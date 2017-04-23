@@ -156,14 +156,15 @@ nav .nav-links a:hover {
   color: #000;
 }
 .index-container .intro .intro-text .last {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .container-dashboard {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 .container-dashboard .dash-container main {
   padding-top: 20px;
+  background-color: #fff;
 }
 .container-dashboard .dash-container main .dash-text {
   border-bottom: 1px solid #dfdfdf;
@@ -299,11 +300,39 @@ nav .nav-links a:hover {
   transition: .15s;
 }
 
+.register {
+  padding-top: 20px;
+}
+.register .row form {
+  color: #999;
+  font-size: 16px;
+}
+.register .row form input {
+  margin-bottom: 20px;
+}
+.register .row form label {
+  font-family: "Raleway", sans-serif;
+}
+.register .row form .check-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.register .row form .remember-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 80px;
+}
+
 .footer {
   font-size: 16px;
   text-align: center;
   margin-top: 40px;
   bottom: 0;
+  width: 100%;
   left: 50%;
   transform: translate(-50%, 0);
   position: fixed;
@@ -311,7 +340,6 @@ nav .nav-links a:hover {
   font-family: "Raleway", sans-serif;
   color: #999;
   text-decoration: none;
-  word-wrap: none;
 }
 .footer .fa-heart {
   color: #e7353e;
