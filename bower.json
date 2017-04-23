@@ -25,5 +25,6 @@
     "playfair-webfont": "^1.0.3",
     "Merriweather-Fontface": "merriweather-fontface#*",
     "roboto-fontface": "^0.7.0"
+    "chart.js": "^2.5.0"
   }
 }

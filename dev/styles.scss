@@ -384,6 +384,7 @@ padding-bottom: 80px;
     }
 }
 
+
 .register{
     padding-top: 20px;
 
@@ -419,8 +420,28 @@ padding-bottom: 80px;
                 flex-direction: row;
                 padding-bottom: 80px;
             }
+        }
+    }
+}
 
-            button{
+.statistiques {
+
+    .statistiques-container{
+
+        main{
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .statistiques-text{
+                    border-bottom: 1px solid #EEEEEE;
+
+                    h1{
+                        font-size: 28px;
+                        font-family: $quicksand;
+                        color: $nav-color;
+                        float: left;
+                
+                    }
             }
         }
     }
