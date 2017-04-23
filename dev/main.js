@@ -96,3 +96,12 @@ setInterval(function(){
     $(".footer").slideUp(150);
   }
 }, 100);
+
+var options = {};
+
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: data,
+    options: options
+});

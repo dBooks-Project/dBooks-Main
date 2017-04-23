@@ -1,0 +1,40 @@
+<div class="container-fluid statistiques">
+    <div class="row statistiques-container">
+        <main class="col-12">
+            <div class="statistiques-text clearfix">
+                <h1>Statistiques</h1>
+            </div>
+        </main>
+        <div class="col-6">
+            <p>Nombre de livres: {{results.nombre.NombreDeLivres}}</p>
+            <p>Nombre de livres en français: {{results.langueFrancaise.LangueFrancaise}}</p>
+            <p>Nombre de livres en anglais: {{results.langueAnglaise.LangueAnglaise}}</p>
+            <p>Nombre de livres en espagnol: {{results.langueEspagnole.LangueEspagnole}}</p>
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+</div>
+
+<script>
+var data = {
+    labels: [
+        "Red",
+        "Blue",
+        "Yellow"
+    ],
+    datasets: [
+        {
+            data: [300, 50, 100],
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
+        }]
+};
+</script>

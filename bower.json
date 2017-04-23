@@ -20,6 +20,7 @@
     "bootstrap": "v4.0.0-alpha.6",
     "material-icons": "^0.1.0",
     "perfect-scrollbar": "^0.6.16",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "chart.js": "^2.5.0"
   }
 }
