@@ -193,10 +193,11 @@ nav {
             h1 {
                 padding-top: 30px;
                 padding-bottom: 20px;
-                font-size: 30px;
+                font-size: 36px;
                 text-align: center;
                 color: $black;
-                font-family: $merriweather;
+                font-family: $playfair;
+                font-weight: 400;
             }
 
             p {
@@ -205,6 +206,7 @@ nav {
                 font-family: $playfair;
                 text-align: justify;
                 color: $black;
+                font-weight: 400;
             }
 
             .last {

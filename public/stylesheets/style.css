@@ -142,10 +142,11 @@ nav .nav-links a:hover {
 .index-container .intro .intro-text h1 {
   padding-top: 30px;
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 36px;
   text-align: center;
   color: #000;
-  font-family: "Merriweather", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
 }
 .index-container .intro .intro-text p {
   padding-bottom: 30px;
@@ -153,6 +154,7 @@ nav .nav-links a:hover {
   font-family: "Playfair Display", serif;
   text-align: justify;
   color: #000;
+  font-weight: 400;
 }
 .index-container .intro .intro-text .last {
   padding-bottom: 80px;
