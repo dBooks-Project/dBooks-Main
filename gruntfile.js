@@ -54,7 +54,7 @@ module.exports = function(grunt){
                 files: ['./dev/*.scss'],
                 tasks: ['sass'],
                 options: {
-                    livereload: 3000,
+                    livereload: 9000,
                 },
             },
             styles: {
@@ -69,7 +69,7 @@ module.exports = function(grunt){
                 files: ['./dev/main.js'],
                 tasks: ['babel'],
                 options: {
-                    livereload: 3000,
+                    livereload: 9000,
                 },
             },
             configFiles: {

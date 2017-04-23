@@ -15,7 +15,7 @@ var connection = require("./routes/connection");
 
 var app = express();
 
-app.use(compression());
+app.use(compression({level: 1}));
 
 var hbs = exphbs.create({ /* config here */ });
 

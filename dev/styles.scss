@@ -64,7 +64,6 @@ nav {
         height: 50px;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-items: center;
 
         .brand {
             padding-left: 20px;
@@ -220,6 +219,8 @@ nav {
 }
 
 .container-dashboard {
+padding-bottom: 40px;
+
     .dash-container {
 
         main {
