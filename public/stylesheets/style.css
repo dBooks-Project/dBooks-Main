@@ -31,7 +31,6 @@ nav .nav-content {
   height: 50px;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
 }
 nav .nav-content .brand {
   padding-left: 20px;
@@ -160,6 +159,9 @@ nav .nav-links a:hover {
   padding-bottom: 60px;
 }
 
+.container-dashboard {
+  padding-bottom: 40px;
+}
 .container-dashboard .dash-container main {
   padding-top: 20px;
 }
