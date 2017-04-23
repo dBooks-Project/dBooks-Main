@@ -20,6 +20,10 @@
     "bootstrap": "v4.0.0-alpha.6",
     "material-icons": "^0.1.0",
     "perfect-scrollbar": "^0.6.16",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "raleway": "^1.0.1",
+    "playfair-webfont": "^1.0.3",
+    "Merriweather-Fontface": "merriweather-fontface#*",
+    "roboto-fontface": "^0.7.0"
   }
 }

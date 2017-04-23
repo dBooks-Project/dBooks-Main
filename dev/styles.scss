@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Concert+One');
-@mixin flex() {
-    display: flex;
-}
-
 //hex colors
 $nav-color-hover: #666;
 $nav-color: #999;
@@ -21,10 +16,11 @@ $transparent: rgba(0, 0, 0, 0);
 $nav-shadow: rgba(0, 0, 0, .25);
 
 //fonts
-$quicksand: 'Quicksand', sans-serif;
-$raleway: 'Raleway', sans-serif;
-$concert-one: 'Concert One', sans-serif;
-$playfair: 'Playfair Display', serif;
+$roboto: "Roboto", sans-serif;
+$raleway: "Raleway", sans-serif;
+$merriweather: "Merriweather", sans-serif;
+$playfair: "Playfair Display", serif;
+$ConcertOne: 'Concert One', cursive;
 
 span {
     .fa {
@@ -70,7 +66,7 @@ nav {
             font-size: 40px;
             height: 50px;
             line-height: 50px;
-            font-family: $concert-one;
+            font-family: $ConcertOne;
             color: $accent-color;
 
             &:hover,
@@ -197,15 +193,15 @@ nav {
             h1 {
                 padding-top: 30px;
                 padding-bottom: 20px;
-                font-size: 28px;
+                font-size: 30px;
                 text-align: center;
                 color: $black;
-                font-family: $raleway;
+                font-family: $merriweather;
             }
 
             p {
                 padding-bottom: 30px;
-                font-size: 16px;
+                font-size: 20px;
                 font-family: $playfair;
                 text-align: justify;
                 color: $black;
@@ -232,7 +228,7 @@ padding-bottom: 80px;
 
                 h1 {
                     font-size: 28px;
-                    font-family: $quicksand;
+                    font-family: $roboto;
                     color: $nav-color;
                     float: left;
                 }
