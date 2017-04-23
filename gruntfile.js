@@ -52,25 +52,25 @@ module.exports = function(grunt){
         watch: {
             sass: {
                 files: ['./dev/*.scss'],
-                tasks: ['sass'],
-                options: {
-                    livereload: 3000,
-                },
+                tasks: ['sass']
             },
             styles: {
                 files: ['./public/stylesheets/style.css'],
-                tasks: ['cssmin']
+                tasks: ['cssmin'],
+                options: {
+                    livereload: 9000,
+                },
             },
             uglify: {
                 files: ['./public/javascripts/main.js'],
-                tasks: ['uglify']
+                tasks: ['uglify'],
+                options: {
+                    livereload: 9000,
+                },
             },
             babel: {
                 files: ['./dev/main.js'],
-                tasks: ['babel'],
-                options: {
-                    livereload: 3000,
-                },
+                tasks: ['babel']
             },
             configFiles: {
                 files: "gruntfile.js",

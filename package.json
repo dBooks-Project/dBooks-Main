@@ -1,10 +1,16 @@
 {
   "name": "dbooks",
-  "version": "0.0.0",
+  "version": "1.12.3",
   "private": true,
   "license": "dPCA-1.0",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/dBooks-server",
+    "dev": "pm2 start ./bin/dBooks-server --watch --no-daemon",
+    "grunt": "grunt watch",
+    "fork": "pm2 start ./bin/dBooks-server",
+    "cluster": "pm2 start ./bin/dBooks-server -i max",
+    "stop": "pm2 delete all",
+    "kill": "pm2 kill"
   },
   "dependencies": {
     "body-parser": "~1.16.0",

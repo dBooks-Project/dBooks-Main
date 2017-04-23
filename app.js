@@ -6,15 +6,16 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 var compression = require('compression');
+var mysql = require('mysql');
 
 var index = require('./routes/index');
 var dashboard = require("./routes/dashboard");
 var livre = require("./routes/livre");
-var statistiques = require("./routes/statistiques");
+var connection = require("./routes/connection");
 
 var app = express();
 
-app.use(compression());
+app.use(compression({level: 1}));
 
 var hbs = exphbs.create({ /* config here */ });
 
@@ -34,8 +35,7 @@ app.use(express.static(__dirname + '/public'));
 app.use('/', index);
 app.use('/', dashboard);
 app.use('/', livre);
-app.use('/', statistiques);
-
+app.use('/', connection);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
