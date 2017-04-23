@@ -5,7 +5,7 @@
   "license": "dPCA-1.0",
   "scripts": {
     "start": "nodemon ./bin/dBooks-server",
-    "dev": "pm2 start ./bin/dBooks-server --watch --no-daemon",
+    "dev": "pm2 start ./bin/dBooks-server --watch",
     "grunt": "grunt watch",
     "fork": "pm2 start ./bin/dBooks-server",
     "cluster": "pm2 start ./bin/dBooks-server -i max",
@@ -15,6 +15,7 @@
   "dependencies": {
     "body-parser": "~1.16.0",
     "bower": "^1.8.0",
+    "chart.js": "^2.5.0",
     "compression": "^1.6.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
