@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 var compression = require('compression');
 var mysql = require('mysql');
+var minify = require('express-minify');
 
 var index = require('./routes/index');
 var dashboard = require("./routes/dashboard");
@@ -16,7 +17,7 @@ var statistiques = require("./routes/statistiques");
 
 var app = express();
 
-app.use(compression({level: 1}));
+app.use(compression());
 
 var hbs = exphbs.create({ /* config here */ });
 

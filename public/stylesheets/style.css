@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Raleway";
-  src: url("http://localhost/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+  src: url("/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("http://localhost/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Concert One";
-  src: url("http://localhost/fonts/Concert_One/ConcertOne-Regular.ttf") format("truetype");
+  src: url("/fonts/Concert_One/ConcertOne-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }

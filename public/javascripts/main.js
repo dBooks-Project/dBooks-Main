@@ -57,13 +57,4 @@ setInterval(function () {
         $(".footer").slideUp(150);
     }
 }, 100);
-
-var options = {};
-
-var ctx = document.getElementById("chart");
-var chart = new Chart(ctx, {
-    type: 'pie',
-    data: data,
-    options: options
-});
 //# sourceMappingURL=main.js.map
