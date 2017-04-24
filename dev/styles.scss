@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Raleway";
+  src: url('http://localhost/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url('http://localhost/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Concert One";
+  src: url('http://localhost/fonts/Concert_One/ConcertOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 //hex colors
 $nav-color-hover: #666;
 $nav-color: #999;
@@ -16,11 +37,11 @@ $transparent: rgba(0, 0, 0, 0);
 $nav-shadow: rgba(0, 0, 0, .25);
 
 //fonts
-$roboto: "Roboto", sans-serif;
-$raleway: "Raleway", sans-serif;
-$merriweather: "Merriweather", sans-serif;
-$playfair: "Playfair Display", serif;
-$ConcertOne: 'Concert One', cursive;
+$roboto: "Roboto";
+$raleway: "Raleway";
+$merriweather: "Merriweather";
+$playfair: "Playfair Display";
+$ConcertOne: 'Concert One';
 
 span {
     .fa {
@@ -60,29 +81,31 @@ nav {
         height: 50px;
         justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
 
         .brand {
             padding-left: 20px;
             font-size: 40px;
-            height: 50px;
-            line-height: 50px;
             font-family: $ConcertOne;
             color: $accent-color;
 
-            &:hover,
-            &:visited {
+            &:hover {
                 text-decoration: none;
-                color: $accent-color;
+                color: $accent-color-hover;
                 cursor: pointer;
                 transition: .3s;
+            }
+
+            &:visited {
+                color: $accent-color;
+                text-decoration: none;
             }
         }
 
         i {
-            font-size: 30px;
+            font-size: 24px;
             color: $nav-color;
-            padding: 10px;
-            line-height: 30px;
+            padding-right: 20px;
 
             &:hover {
                 text-decoration: none;
@@ -133,7 +156,7 @@ nav {
     width: 100%;
 
     .top-section {
-        background-image: url('/images/landing-bg.jpg');
+        background-image: url('http://localhost/images/landing-bg.jpg');
         background-size: cover;
 
         form {
@@ -193,7 +216,7 @@ nav {
             h1 {
                 padding-top: 30px;
                 padding-bottom: 20px;
-                font-size: 36px;
+                font-size: 28px;
                 text-align: center;
                 color: $black;
                 font-family: $playfair;
@@ -202,7 +225,7 @@ nav {
 
             p {
                 padding-bottom: 30px;
-                font-size: 20px;
+                font-size: 16px;
                 font-family: $playfair;
                 text-align: justify;
                 color: $black;
@@ -229,7 +252,7 @@ padding-bottom: 80px;
                 border-bottom: 1px solid $border-color;
 
                 h1 {
-                    font-size: 28px;
+                    font-size: 24px;
                     font-family: $roboto;
                     color: $nav-color;
                     float: left;
@@ -237,7 +260,7 @@ padding-bottom: 80px;
 
                 i {
                     float: right;
-                    font-size: 28px;
+                    font-size: 20px;
                     color: $nav-color;
 
                     &:hover {
@@ -249,6 +272,7 @@ padding-bottom: 80px;
             }
 
             .dash-controls {
+                font-size: 16px;
                 z-index: 1;
                 background-color: $border-color;
                 overflow: hidden;
@@ -259,7 +283,6 @@ padding-bottom: 80px;
                 a {
                     padding: 8px 8px 8px 32px;
                     text-decoration: none;
-                    font-size: 20px;
                     color: $nav-color;
                     transition: .3s;
 

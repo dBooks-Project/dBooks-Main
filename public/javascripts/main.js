@@ -1,11 +1,12 @@
 "use strict";
 
-$(".nav-links").hide();
-$(".dash-controls").hide();
-$("#addForm").hide();
-$("#deleteForm").hide();
-$("#editForm").hide();
-$(".footer").hide();
+document.onreadystatechange = function (e) {
+    if (document.readyState === 'complete') {
+        $("#addForm").hide();
+        $("#deleteForm").hide();
+        $("#editForm").hide();
+    }
+};
 
 var menuToggeled = false;
 var sidenavToggle = false;
@@ -23,43 +24,13 @@ function menuToggle() {
     }
 }
 
-function SidenavToggle() {
+function ActionsToggle() {
     if (!sidenavToggle) {
         sidenavToggle = true;
         $(".dash-controls").slideDown(500);
     } else {
         sidenavToggle = false;
         $(".dash-controls").slideUp(500);
-    }
-}
-
-function Add() {
-    if (!addToggle) {
-        addToggle = true;
-        $("#addForm").slideDown(500);
-    } else {
-        addToggle = false;
-        $("#addForm").slideUp(500);
-    }
-}
-
-function Delete() {
-    if (!deleteToggle) {
-        deleteToggle = true;
-        $("#deleteForm").slideDown(500);
-    } else {
-        deleteToggle = false;
-        $("#deleteForm").slideUp(500);
-    }
-}
-
-function Edit() {
-    if (!editToggle) {
-        editToggle = true;
-        $("#editForm").slideDown(500);
-    } else {
-        editToggle = false;
-        $("#editForm").slideUp(500);
     }
 }
 
