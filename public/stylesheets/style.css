@@ -60,7 +60,6 @@ nav .nav-content ul {
   position: relative;
   margin: 0;
   font-size: 16px;
-  font-family: "Raleway";
   list-style: none;
 }
 nav .nav-content ul li {
@@ -181,13 +180,13 @@ nav .nav-content ul li a:hover {
   font-size: 28px;
   text-align: center;
   color: #000;
-  font-family: "Playfair Display";
+  font-family: "Roboto";
   font-weight: 400;
 }
 .index-container .intro .intro-text p {
   padding-bottom: 30px;
   font-size: 16px;
-  font-family: "Playfair Display";
+  font-family: "Roboto";
   text-align: justify;
   color: #000;
   font-weight: 400;
