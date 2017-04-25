@@ -7,6 +7,15 @@
 		<!-- Bloquer le resize du DOM -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- Préchargement des images en priorité elevée -->
+		<link rel="preload" href="/images/landing-bg.jpg" as="image">
+
+		<!-- Préchargement des fonts en priorité elevée -->
+		<link rel="preload" href="/fonts/Raleway/Raleway-Regular.ttf" as="font">
+		<link rel="preload" href="/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf" as="font">
+		<link rel="preload" href="/fonts/Concert_One/ConcertOne-Regular.ttf" as="font">
+		<link rel="preload" href="/vendor/roboto-fontface/css/roboto/roboto-fontface.css" as='style' onload="this.rel='stylesheet'">
+
 		<!-- Chargement des frameworks si il n'y a pas de javascript -->
 		<noscript>
 			<link rel="stylesheet" href="/vendor/tether/dist/css/tether.min.css">
@@ -22,17 +31,8 @@
 		<link rel="preload" href="/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" as='style' onload="this.rel='stylesheet'">
 		<link rel="preload" href="/vendor/font-awesome/css/font-awesome.min.css" as='style' onload="this.rel='stylesheet'">
 
-		<!-- Préchargement des images en priorité elevée -->
-		<link rel="preload" href="/images/landing-bg.jpg" as="image">
-
-		<!-- Préchargement des fonts en priorité elevée -->
-		<link rel="preload" href="/fonts/Raleway/Raleway-Regular.ttf" as="font">
-		<link rel="preload" href="/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf" as="font">
-		<link rel="preload" href="/fonts/Concert_One/ConcertOne-Regular.ttf" as="font">
-		<link rel="preload" href="/vendor/roboto-fontface/css/roboto/roboto-fontface.css" as='style' onload="this.rel='stylesheet'">
-
 		<!-- Chargement de la stylesheet -->
-		<link rel='stylesheet' href="/stylesheets/style.min.css"/>
+		<link rel='stylesheet' href="/stylesheets/style.css"/>
 
 		<!-- Chargement du javascript frameworks -->
 		<script src="/vendor/jquery/dist/jquery.min.js"></script>
@@ -49,17 +49,27 @@
 		<nav>
 			<div class="col-12 accent-bar"></div>
 			<div class="nav-content">
-				<a href="/" class="brand font-smoothing">
-					dBooks
-				</a>
-				<a href="javascript:void(0)" onclick="menuToggle()">
-					<i class="fa fa-caret-down"></i>
-				</a>
-			</div>
-			<div class="col-12 nav-links" style="display: none;">
-				<a href="/dashboard">dashboard</a>
-				<a href="/statistiques">statistiques</a>
-				<a href="/connection">se connecter</a>
+				<a class="brand" href="/">dBooks</a>
+				<a href="javascript:void(0)" id="nav-drop-down" class="fa fa-caret-down" onclick="MenuToggle()"></a>
+				<div id="dropdown">
+						<ul>
+							<li>
+								<a href="/dashboard">
+									Bibliothèque
+								</a>
+							</li>
+							<li>
+								<a href="/statistiques">
+									Statistiques
+								</a>
+							</li>
+							<li>
+								<a href="/connection">
+									Connection
+								</a>
+							</li>
+						</ul>
+					</div>
 			</div>
 		</nav>
 		<!-- Fin barre de navigation -->
@@ -77,6 +87,8 @@
 		<!-- Chargement du javascript principal -->
 		<script src="/javascripts/main.min.js"></script>
 
+		<!-- Livereload (DEV ONLY!) -->
+		<!--<script src="//localhost:35729/livereload.js"></script>-->
 
 	</body>
 </html>

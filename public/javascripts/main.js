@@ -1,26 +1,23 @@
 "use strict";
 
-document.onreadystatechange = function (e) {
-    if (document.readyState === 'complete') {
-        $("#addForm").hide();
-        $("#deleteForm").hide();
-        $("#editForm").hide();
-    }
-};
-
 var menuToggeled = false;
 var sidenavToggle = false;
-var addToggle = false;
-var deleteToggle = false;
-var editToggle = false;
 
-function menuToggle() {
-    if (!menuToggeled) {
-        menuToggeled = true;
-        $(".nav-links").slideDown(500);
+setInterval(function () {
+    if (window.innerWidth < 992 && menuToggeled !== true) {
+        $("#dropdown").hide();
     } else {
+        $("#dropdown").show();
+    }
+}, 100);
+
+function MenuToggle() {
+    if (!menuToggeled) {
+        $("#dropdown").show();
+        menuToggeled = true;
+    } else {
+        $("#dropdown").hide();
         menuToggeled = false;
-        $(".nav-links").slideUp(500);
     }
 }
 
@@ -35,8 +32,8 @@ function ActionsToggle() {
 }
 
 $('.livre-info').perfectScrollbar({
-    "supressScrollX": false,
-    "scrollYMarginOffse": "10"
+    "supressScrollX": true,
+    "scrollYMarginOffset": "10"
 });
 
 setInterval(function () {
