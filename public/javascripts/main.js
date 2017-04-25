@@ -1,29 +1,27 @@
 "use strict";
 
-$(".nav-links").hide();
-$(".dash-controls").hide();
-$("#addForm").hide();
-$("#deleteForm").hide();
-$("#editForm").hide();
-$(".footer").hide();
-
 var menuToggeled = false;
 var sidenavToggle = false;
-var addToggle = false;
-var deleteToggle = false;
-var editToggle = false;
 
-function menuToggle() {
-    if (!menuToggeled) {
-        menuToggeled = true;
-        $(".nav-links").slideDown(500);
+setInterval(function () {
+    if (window.innerWidth < 992 && menuToggeled !== true) {
+        $("#dropdown").hide();
     } else {
+        $("#dropdown").show();
+    }
+}, 100);
+
+function MenuToggle() {
+    if (!menuToggeled) {
+        $("#dropdown").show();
+        menuToggeled = true;
+    } else {
+        $("#dropdown").hide();
         menuToggeled = false;
-        $(".nav-links").slideUp(500);
     }
 }
 
-function SidenavToggle() {
+function ActionsToggle() {
     if (!sidenavToggle) {
         sidenavToggle = true;
         $(".dash-controls").slideDown(500);
@@ -33,39 +31,9 @@ function SidenavToggle() {
     }
 }
 
-function Add() {
-    if (!addToggle) {
-        addToggle = true;
-        $("#addForm").slideDown(500);
-    } else {
-        addToggle = false;
-        $("#addForm").slideUp(500);
-    }
-}
-
-function Delete() {
-    if (!deleteToggle) {
-        deleteToggle = true;
-        $("#deleteForm").slideDown(500);
-    } else {
-        deleteToggle = false;
-        $("#deleteForm").slideUp(500);
-    }
-}
-
-function Edit() {
-    if (!editToggle) {
-        editToggle = true;
-        $("#editForm").slideDown(500);
-    } else {
-        editToggle = false;
-        $("#editForm").slideUp(500);
-    }
-}
-
 $('.livre-info').perfectScrollbar({
-    "supressScrollX": false,
-    "scrollYMarginOffse": "10"
+    "supressScrollX": true,
+    "scrollYMarginOffset": "10"
 });
 
 setInterval(function () {
@@ -86,13 +54,4 @@ setInterval(function () {
         $(".footer").slideUp(150);
     }
 }, 100);
-
-var options = {};
-
-var ctx = document.getElementById("chart");
-var chart = new Chart(ctx, {
-    type: 'pie',
-    data: data,
-    options: options
-});
 //# sourceMappingURL=main.js.map

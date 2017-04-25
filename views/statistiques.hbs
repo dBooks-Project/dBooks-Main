@@ -39,4 +39,16 @@ var data = {
             ]
         }]
 };
+
+$('document').ready(() => {
+    var options = {};
+
+    var ctx = document.getElementById("chart");
+
+    var chart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: options
+    });
+});
 </script>
