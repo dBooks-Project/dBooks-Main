@@ -73,8 +73,9 @@ nav {
 
     .nav-content{
         border-bottom: 1px solid $border-color;
-        z-index: 10000;
+        z-index: 1;
         background-color: $nav-bg-color;
+        height: 50px;
 
         .brand {
             font-size: 50px;
@@ -85,8 +86,6 @@ nav {
             text-decoration: none;
 
             &:hover{
-
-                
                 color: $accent-color-hover;
             }
         }
@@ -100,7 +99,6 @@ nav {
 
             li {
                 display: inline;
-                
 
                 a {
                     font-size: 16px;
@@ -153,6 +151,7 @@ nav {
 
             .brand {
                 margin-left: 10px;
+                float: left;
             }
 
             #nav-drop-down {
@@ -193,7 +192,7 @@ nav {
     width: 100%;
 
     .top-section {
-        background-image: url('http://localhost/images/landing-bg.jpg');
+        background-image: url('/images/landing-bg.jpg');
         background-size: cover;
 
         form {
