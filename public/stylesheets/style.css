@@ -133,7 +133,7 @@ nav .nav-content ul li a:hover {
   width: 100%;
 }
 .index-container .top-section {
-  background-image: url("http://localhost/images/landing-bg.jpg");
+  background-image: url("../images/landing-bg.jpg");
   background-size: cover;
 }
 .index-container .top-section form {
