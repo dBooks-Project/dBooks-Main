@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 var compression = require('compression');
 var mysql = require('mysql');
+var minifyHTML = require("express-minify-html");
 
 var index = require('./routes/index');
 var dashboard = require("./routes/dashboard");
@@ -16,7 +17,20 @@ var statistiques = require("./routes/statistiques");
 
 var app = express();
 
-app.use(compression({level: 1}));
+app.use(compression());
+
+app.use(minifyHTML({
+    override:      true,
+    exception_url: false,
+    htmlMinifier: {
+        removeComments:            true,
+        collapseWhitespace:        true,
+        collapseBooleanAttributes: true,
+        removeAttributeQuotes:     true,
+        removeEmptyAttributes:     true,
+        minifyJS:                  true
+    }
+}));
 
 var hbs = exphbs.create({ /* config here */ });
 

@@ -1,9 +1,30 @@
+@font-face {
+  font-family: "Raleway";
+  src: url('/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url('/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Concert One";
+  src: url('/fonts/Concert_One/ConcertOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 //hex colors
 $nav-color-hover: #666;
 $nav-color: #999;
 $nav-bg-color: #f2f2f2;
 $accent-color: #e7353e;
-$accent-color-hover: #b7151d;
+$accent-color-hover: #c3090b;
 $border-color: #dfdfdf;
 $white: #fff;
 $black: #000;
@@ -16,11 +37,10 @@ $transparent: rgba(0, 0, 0, 0);
 $nav-shadow: rgba(0, 0, 0, .25);
 
 //fonts
-$roboto: "Roboto", sans-serif;
-$raleway: "Raleway", sans-serif;
-$merriweather: "Merriweather", sans-serif;
-$playfair: "Playfair Display", serif;
-$ConcertOne: 'Concert One', cursive;
+$roboto: "Roboto";
+$raleway: "Raleway";
+$playfair: "Playfair Display";
+$ConcertOne: 'Concert One';
 
 span {
     .fa {
@@ -31,12 +51,12 @@ span {
 }
 
 .accent-bar {
-
     height: 5px;
     background-color: $accent-color;
     display: block;
     position: relative;
     width: 100%;
+    margin: 0;
 }
 
 textarea,
@@ -51,79 +71,119 @@ button {
 
 nav {
 
-    .nav-content {
-        box-shadow: 0 1px 5px 0 $nav-shadow;
-        position: relative;
-        z-index: 10;
+    .nav-content{
+        border-bottom: 1px solid $border-color;
+        z-index: 10000;
         background-color: $nav-bg-color;
-        display: flex;
-        height: 50px;
-        justify-content: space-between;
-        flex-wrap: wrap;
 
         .brand {
-            padding-left: 20px;
-            font-size: 40px;
-            height: 50px;
+            font-size: 50px;
             line-height: 50px;
             font-family: $ConcertOne;
             color: $accent-color;
+            transition: .3s;
+            text-decoration: none;
 
-            &:hover,
-            &:visited {
-                text-decoration: none;
-                color: $accent-color;
-                cursor: pointer;
-                transition: .3s;
+            &:hover{
+
+                
+                color: $accent-color-hover;
             }
         }
 
-        i {
-            font-size: 30px;
-            color: $nav-color;
-            padding: 10px;
-            line-height: 30px;
+        ul{
+            position: relative;
+            margin: 0;
+            font-size: 16px;
+            font-family: $raleway;
+            list-style: none;
 
-            &:hover {
-                text-decoration: none;
-                color: $nav-color-hover;
-                cursor: pointer;
+            li {
+                display: inline;
+                
+
+                a {
+                    font-size: 16px;
+                    color: $nav-color;
+                    font-family: $raleway;
+                    text-decoration: none;
+                    transition: .3s;
+
+                    &:hover{
+                        color: $nav-color-hover;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
 
-    .nav-links {
-        width: 100%;
-        z-index: 1;
-        background-color: $nav-bg-color;
-        overflow: hidden;
-        display: flex;
-        text-align: center;
-        flex-direction: row;
-        justify-content: flex-start;
-        padding: 0 40px;
-        border-bottom: 1px solid $border-color;
+    @media (min-width: 992px) {
 
-        a {
-            padding: 16px;
-            text-decoration: none;
-            font-size: 18px;
-            color: $nav-color;
-            transition: .3s;
+        .nav-content {
+            flex-wrap: nowrap;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
 
-            &:hover {
-                color: $nav-color-hover;
-                transition: .3s;
+            .brand {
+                padding-left: 20px;
+            }
+            
+            #nav-drop-down {
+                display: none;
+            }
+
+            ul {
+                margin-right: 20px;
+
+                li{
+
+                    &:not(:first-child):not(:last-child) {
+                        padding: 0 20px;
+                    }
+                }          
             }
         }
+    }
 
-        @media (max-width: 575px) {
-            flex-direction: column;
+    @media (max-width: 991px) {
 
-            a {
-                &:not(:first-of-type) {
-                    border-top: 1px solid $border-color;
+        .nav-content {
+
+            .brand {
+                margin-left: 10px;
+            }
+
+            #nav-drop-down {
+                font-size: 20px;
+                padding-top: 15px;
+                color: $nav-color;
+                transition: .3s;
+                margin-right: 10px;
+                float: right;
+                text-decoration: none;
+
+                &:hover{
+                    color: $nav-color-hover;
                 }
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                padding: 0;
+
+                li {
+                    padding: 20px;
+                    width: 100%;
+
+                    &:nth-child(odd) {
+                        background-color: $white;
+                    }
+                }      
             }
         }
     }
@@ -133,11 +193,10 @@ nav {
     width: 100%;
 
     .top-section {
-        background-image: url('/images/landing-bg.jpg');
+        background-image: url('../images/landing-bg.jpg');
         background-size: cover;
 
         form {
-            
             width: 100%;
             padding: 75px 0;
             display: flex;
@@ -145,12 +204,10 @@ nav {
             flex-flow: row;
 
             input {
-                padding: 7px;
                 width: 100%;
                 float: left;
-                margin-right: 5px;
                 border-radius: 5px;
-                font-size: 16px;
+                font-size: 20px;
                 font-family: $raleway;
                 border: 1px solid $border-color;
                 color: $nav-color;
@@ -161,13 +218,10 @@ nav {
             }
 
             button {
-                padding: 7px;
                 float: right;
-                margin-left: 10px;
                 background-color: $accent-color;
-                border-radius: 50px;
-                font-size: 16px;
-                font-family: $raleway;
+                border-radius: 5px;
+                font-size: 20px;
                 border: none;
                 color: $white;
 
@@ -193,7 +247,7 @@ nav {
             h1 {
                 padding-top: 30px;
                 padding-bottom: 20px;
-                font-size: 36px;
+                font-size: 28px;
                 text-align: center;
                 color: $black;
                 font-family: $playfair;
@@ -202,7 +256,7 @@ nav {
 
             p {
                 padding-bottom: 30px;
-                font-size: 20px;
+                font-size: 16px;
                 font-family: $playfair;
                 text-align: justify;
                 color: $black;
@@ -229,7 +283,7 @@ padding-bottom: 80px;
                 border-bottom: 1px solid $border-color;
 
                 h1 {
-                    font-size: 28px;
+                    font-size: 24px;
                     font-family: $roboto;
                     color: $nav-color;
                     float: left;
@@ -237,7 +291,7 @@ padding-bottom: 80px;
 
                 i {
                     float: right;
-                    font-size: 28px;
+                    font-size: 20px;
                     color: $nav-color;
 
                     &:hover {
@@ -249,6 +303,7 @@ padding-bottom: 80px;
             }
 
             .dash-controls {
+                font-size: 16px;
                 z-index: 1;
                 background-color: $border-color;
                 overflow: hidden;
@@ -259,7 +314,6 @@ padding-bottom: 80px;
                 a {
                     padding: 8px 8px 8px 32px;
                     text-decoration: none;
-                    font-size: 20px;
                     color: $nav-color;
                     transition: .3s;
 
@@ -436,7 +490,7 @@ padding-bottom: 80px;
                 border-bottom: 1px solid #EEEEEE;
 
                 h1{
-                    font-size: 28px;
+                    font-size: 20px;
                     font-family: $roboto;
                     color: $nav-color;
                     float: left;

@@ -1,5 +1,15 @@
 {{#with row}}
-    <p>{{Titre}} - {{AnneeParution}}</p>
+<div class="container-fluid container-dashboard">
+    <div class="row dash-container">
+        <main class="col-12">
+            <div class="dash-text clearfix">
+                <h1>{{Titre}}</h1>
+            </div>
+        </main>
+    </div>
+</div>
+
+
 {{else}}
     <p>This item does not exist in the database!</p>
 {{/with}}
