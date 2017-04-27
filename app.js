@@ -10,7 +10,7 @@ var mysql = require('mysql');
 var minifyHTML = require("express-minify-html");
 
 var index = require('./routes/index');
-var dashboard = require("./routes/dashboard");
+var bibliotheque = require("./routes/bibliotheque");
 var livre = require("./routes/livre");
 var connection = require("./routes/connection");
 var statistiques = require("./routes/statistiques");
@@ -48,7 +48,7 @@ app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', index);
-app.use('/', dashboard);
+app.use('/', bibliotheque);
 app.use('/', livre);
 app.use('/', connection);
 app.use('/', statistiques);
