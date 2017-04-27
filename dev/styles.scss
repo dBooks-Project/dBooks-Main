@@ -162,6 +162,7 @@ nav {
 
             .brand {
                 margin-left: 20px;
+                float: left;
             }
 
             #nav-drop-down {
@@ -172,10 +173,6 @@ nav {
                 margin-right: 20px;
                 float: right;
                 text-decoration: none;
-
-                &:hover{
-                    color: $nav-color-hover;
-                }
             }
 
             ul {
