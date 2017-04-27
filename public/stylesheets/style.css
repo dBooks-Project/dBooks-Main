@@ -16,13 +16,19 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lora";
+  src: url("/fonts/Lora/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 span .fa .fa-heart {
-  color: #e7353e;
+  color: #E74C3C;
 }
 
 .accent-bar {
   height: 5px;
-  background-color: #e7353e;
+  background-color: #E74C3C;
   display: block;
   position: relative;
   width: 100%;
@@ -49,18 +55,17 @@ nav .nav-content .brand {
   font-size: 50px;
   line-height: 50px;
   font-family: "Concert One";
-  color: #e7353e;
-  transition: .3s;
+  color: #E74C3C;
+  transition: .5s;
   text-decoration: none;
 }
 nav .nav-content .brand:hover {
-  color: #c3090b;
+  color: #C0392B;
 }
 nav .nav-content ul {
   position: relative;
   margin: 0;
   font-size: 16px;
-  font-family: "Raleway";
   list-style: none;
 }
 nav .nav-content ul li {
@@ -68,13 +73,13 @@ nav .nav-content ul li {
 }
 nav .nav-content ul li a {
   font-size: 16px;
-  color: #999;
+  color: #46484A;
   font-family: "Raleway";
   text-decoration: none;
   transition: .3s;
 }
 nav .nav-content ul li a:hover {
-  color: #666;
+  color: #BABABB;
   cursor: pointer;
 }
 @media (min-width: 992px) {
@@ -104,14 +109,14 @@ nav .nav-content ul li a:hover {
   nav .nav-content #nav-drop-down {
     font-size: 20px;
     padding-top: 15px;
-    color: #999;
+    color: #46484A;
     transition: .3s;
     margin-right: 10px;
     float: right;
     text-decoration: none;
   }
   nav .nav-content #nav-drop-down:hover {
-    color: #666;
+    color: #BABABB;
   }
   nav .nav-content ul {
     display: flex;
@@ -136,6 +141,11 @@ nav .nav-content ul li a:hover {
   background-image: url("../images/landing-bg.jpg");
   background-size: cover;
 }
+@media (max-width: 991px) {
+  .index-container .top-section {
+    background-size: 300%;
+  }
+}
 .index-container .top-section form {
   width: 100%;
   padding: 75px 0;
@@ -150,21 +160,21 @@ nav .nav-content ul li a:hover {
   font-size: 20px;
   font-family: "Raleway";
   border: 1px solid #dfdfdf;
-  color: #999;
+  color: #46484A;
 }
 .index-container .top-section form input:focus {
   box-shadow: 0 0 7px 0 rgba(0, 160, 255, 0.5);
 }
 .index-container .top-section form button {
   float: right;
-  background-color: #e7353e;
+  background-color: #E74C3C;
   border-radius: 5px;
   font-size: 20px;
   border: none;
   color: #fff;
 }
 .index-container .top-section form button:hover {
-  background-color: #c3090b;
+  background-color: #C0392B;
   cursor: pointer;
   transition: .15s;
 }
@@ -181,13 +191,13 @@ nav .nav-content ul li a:hover {
   font-size: 28px;
   text-align: center;
   color: #000;
-  font-family: "Playfair Display";
+  font-family: "Lora";
   font-weight: 400;
 }
 .index-container .intro .intro-text p {
   padding-bottom: 30px;
   font-size: 16px;
-  font-family: "Playfair Display";
+  font-family: "Lora";
   text-align: justify;
   color: #000;
   font-weight: 400;
@@ -209,16 +219,16 @@ nav .nav-content ul li a:hover {
 .container-dashboard .dash-container main .dash-text h1 {
   font-size: 24px;
   font-family: "Roboto";
-  color: #999;
+  color: #46484A;
   float: left;
 }
 .container-dashboard .dash-container main .dash-text i {
   float: right;
   font-size: 20px;
-  color: #999;
+  color: #46484A;
 }
 .container-dashboard .dash-container main .dash-text i:hover {
-  color: #666;
+  color: #BABABB;
   cursor: pointer;
   transition: .3s;
 }
@@ -234,11 +244,11 @@ nav .nav-content ul li a:hover {
 .container-dashboard .dash-container main .dash-controls a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  color: #999;
+  color: #46484A;
   transition: .3s;
 }
 .container-dashboard .dash-container main .dash-controls a:hover {
-  color: #666;
+  color: #BABABB;
   transition: .3s;
 }
 .container-dashboard .dash-container main .dash-controls .action-form {
@@ -251,7 +261,7 @@ nav .nav-content ul li a:hover {
   padding: 20px;
 }
 .container-dashboard .dash-container main .dash-controls .action-form form button {
-  color: #999;
+  color: #46484A;
   border: none;
   font-size: 16px;
   float: right;
@@ -259,12 +269,12 @@ nav .nav-content ul li a:hover {
   background-color: transparent;
 }
 .container-dashboard .dash-container main .dash-controls .action-form form button:hover {
-  color: #666;
+  color: #BABABB;
   cursor: pointer;
   transition: .3s;
 }
 .container-dashboard .dash-container main .dash-controls .action-form form input {
-  color: #999;
+  color: #46484A;
   width: 100%;
   max-width: 1000px;
   border-radius: 5px;
@@ -323,7 +333,7 @@ nav .nav-content ul li a:hover {
   font-size: 18px;
 }
 .container-dashboard .livre .livre-info:hover a, .container-dashboard .livre .livre-info:visited a {
-  background-color: #e7353e;
+  background-color: #E74C3C;
   padding: 5px;
   border-radius: 10px;
   font-size: 14px;
@@ -332,7 +342,7 @@ nav .nav-content ul li a:hover {
   color: #fff;
 }
 .container-dashboard .livre .livre-info:hover a:hover, .container-dashboard .livre .livre-info:visited a:hover {
-  background-color: #c3090b;
+  background-color: #C0392B;
   cursor: pointer;
   transition: .15s;
 }
@@ -341,7 +351,7 @@ nav .nav-content ul li a:hover {
   padding-top: 20px;
 }
 .register .row form {
-  color: #999;
+  color: #46484A;
   font-size: 16px;
 }
 .register .row form input {
@@ -374,7 +384,7 @@ nav .nav-content ul li a:hover {
 .statistiques .statistiques-container main .statistiques-text h1 {
   font-size: 20px;
   font-family: "Roboto";
-  color: #999;
+  color: #46484A;
   float: left;
 }
 
@@ -389,11 +399,11 @@ nav .nav-content ul li a:hover {
   position: fixed;
   display: block;
   font-family: "Raleway";
-  color: #999;
+  color: #46484A;
   text-decoration: none;
 }
 .footer .fa-heart {
-  color: #e7353e;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
