@@ -5,13 +5,9 @@
 		<title>dBooks</title>
 
 		<!-- Bloquer le resize du DOM -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Préchargement des fonts en priorité elevée -->
-		<link rel="preload" href="/fonts/Raleway/Raleway-Regular.ttf" as="font">
-		<link rel="preload" href="/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf" as="font">
-		<link rel="preload" href="/fonts/Concert_One/ConcertOne-Regular.ttf" as="font">
-		<link rel="preload" href="/vendor/roboto-fontface/css/roboto/roboto-fontface.css" as='style' onload="this.rel='stylesheet'">
+		<link rel="stylesheet" href="/vendor/roboto-fontface/css/roboto/roboto-fontface.css">
 
 		<!-- Chargement des frameworks si il n'y a pas de javascript -->
 		<link rel="stylesheet" href="/vendor/tether/dist/css/tether.min.css">
@@ -39,11 +35,11 @@
 			<div class="col-12 accent-bar"></div>
 			<div class="nav-content">
 				<a class="brand" href="/">dBooks</a>
-				<a href="javascript:void(0)" id="nav-drop-down" class="fa fa-caret-down" onclick="MenuToggle()"></a>
+				<a href="javascript:void(0)" id="nav-drop-down" class="fa fa-bars" onclick="MenuToggle()"></a>
 				<div id="dropdown">
 						<ul>
 							<li>
-								<a href="/dashboard">
+								<a href="/bibliotheque">
 									Bibliothèque
 								</a>
 							</li>
@@ -69,7 +65,7 @@
 
 		<!-- Footer -->
 		<footer class="footer" style="display: none;">
-			<p>Avec <span class="fa fa-heart"></span> par <a href="https://twitter.com/ENTRYBOT_js" target="_blank">Entrybot</a> et <a href="https://twitter.com/quietly_burning" target="_blank">Quietlyburning</a></p>
+			<p><span class="dBooks">dBooks&copy</span> fait avec <span class="fa fa-heart"></span> par <span class="handle"><a href="https://twitter.com/ENTRYBOT_js" target="_blank">Entrybot</a></span> et <span class="handle"><a href="https://twitter.com/quietly_burning" target="_blank">Quietlyburning</a></span></p>
 		</footer>
 		<!-- Fin footer -->
 

@@ -7,7 +7,7 @@ setInterval(function(){
     } else {
         $("#dropdown").show();
     }
-}, 100);
+}, 50);
 
 function MenuToggle(){
     if(!menuToggeled){

@@ -34,7 +34,7 @@ $nav-bg-color: #f2f2f2;
 $accent-color: #E74C3C;
 //$accent-color: #014E82;
 //$accent-color-hover: #c3090b;
-$accent-color-hover: #C0392B;
+$accent-color-hover: #96291e;
 //$accent-color-hover: #02304F;
 $border-color: #dfdfdf;
 $white: #fff;
@@ -43,7 +43,7 @@ $author-text-color: #d3d3d3;
 
 //rgba colors
 $book-info-hover: rgba(0, 0, 0, .7);
-$form-border-focus: rgba(0, 160, 255, .5);
+$form-border-focus: rgba(0, 160, 255, .8);
 $transparent: rgba(0, 0, 0, 0);
 $nav-shadow: rgba(0, 0, 0, .25);
 
@@ -161,15 +161,15 @@ nav {
         .nav-content {
 
             .brand {
-                margin-left: 10px;
+                margin-left: 20px;
             }
 
             #nav-drop-down {
-                font-size: 20px;
-                padding-top: 15px;
+                font-size: 24px;
+                padding-top: 13px;
                 color: $nav-color;
                 transition: .3s;
-                margin-right: 10px;
+                margin-right: 20px;
                 float: right;
                 text-decoration: none;
 
@@ -504,7 +504,7 @@ padding-bottom: 80px;
 
                 h1{
                     font-size: 20px;
-                    font-family: $roboto;
+                    font-family: $playfair;
                     color: $nav-color;
                     float: left;
                 }
@@ -513,7 +513,71 @@ padding-bottom: 80px;
     }
 }
 
+.container-livre {
+padding: 0;
+
+    .livre-container {
+
+        .livre-main{
+            padding: 20px;
+                
+            .livre-titre {
+                border-bottom: 1px solid $border-color;
+
+                h1 {
+                    font-size: 24px;
+                    font-family: $playfair;
+                    color: $nav-color;
+                    float: left;
+                }
+
+                p{
+                    font-size: 16px;
+                    font-family: $playfair;
+                    color: $nav-color;
+                }
+            }
+
+            .livre-text{
+                padding-top: 20px;
+            }
+        }
+
+        .livre-side{
+            border-left: 1px solid $border-color;
+
+            @media (min-width: 992px) {
+                height: 100vh;
+                position: relative;
+            }
+
+            .livre-meta{
+                padding: 20px;
+                border-bottom: 1px solid $border-color;
+
+                h1 {
+                    font-size: 24px;
+                    font-family: $roboto;
+                    color: $nav-color;
+                }
+
+                p{
+                    font-size: 16px;
+                    font-family: $playfair;
+                    color: $nav-color;
+                }
+            }
+
+            .livre-auteur{
+
+                padding: 20px;
+            }
+        }
+    }
+}
+
 .footer {
+    padding: 20px;
     font-size: 16px;
     text-align: center;
     margin-top: 40px;
@@ -523,11 +587,29 @@ padding-bottom: 80px;
     transform: translate(-50%, 0);
     position: fixed;
     display: block;
-    font-family: $raleway;
-    color: $nav-color;
+    font-family: $playfair;
     text-decoration: none;
+    color: $nav-color;
 
     .fa-heart {
-        color: red;
+        color: #E74C3C;
+    }
+
+    .dBooks{
+        color: $accent-color;
+        font-family: $ConcertOne;
+        font-size: 24px;
+    }
+
+    .handle{
+        a{
+            font-family: $raleway;
+            color: $accent-color;
+            text-decoration: none;
+
+            &:hover{
+                color: $accent-color-hover;
+            }
+        }
     }
 }
