@@ -31,32 +31,46 @@
 
 
 		<!-- Barre de navigation -->
-		<nav>
-			<div class="col-12 accent-bar"></div>
-			<div class="nav-content">
-				<a class="brand" href="/">dBooks</a>
-				<a href="javascript:void(0)" id="nav-drop-down" class="fa fa-bars" onclick="MenuToggle()"></a>
-				<div id="dropdown">
-						<ul>
+		<div class="contaier-fluid navbar-container">
+			<div class="row no-gutters row-container">
+				<div class="col-12 navbar-main">
+					<a href="/" class="brand">dBooks</a>
+					<a href="javascript:void(0)" onclick="MenuToggle()" class="fa fa-bars toggle" id="toggle" aria-hidden="true"></a>
+					<div id="normal-links" class="normal-links">
+						<ul class="list-unstyled">
 							<li>
-								<a href="/bibliotheque">
-									Bibliothèque
-								</a>
+								<a href="/bibliotheque">Bibliothèque</a>
 							</li>
 							<li>
-								<a href="/statistiques">
-									Statistiques
-								</a>
+								<a href="/statistiques">Statistiques</a>
 							</li>
 							<li>
-								<a href="/connection">
-									Connection
-								</a>
+								<a href="/statistiques">Collection</a>
+							</li>
+							<li>
+								<a href="/connection">Connection</a>
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="col-12 dropdown-links" id="dropdown-links">
+					<ul class="list-unstyled">
+						<li>
+							<a href="/bibliotheque">Bibliothèque</a>
+						</li>
+						<li>
+							<a href="/statistiques">Statistiques</a>
+						</li>
+						<li>
+							<a href="/statistiques">Collection</a>
+						</li>
+						<li>
+							<a href="/connection">Connection</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</nav>
+		</div>
 		<!-- Fin barre de navigation -->
 
 
@@ -64,9 +78,15 @@
 
 
 		<!-- Footer -->
-		<footer class="footer" style="display: none;">
-			<p><span class="dBooks">dBooks&copy</span> fait avec <span class="fa fa-heart"></span> par <span class="handle"><a href="https://twitter.com/ENTRYBOT_js" target="_blank">Entrybot</a></span> et <span class="handle"><a href="https://twitter.com/quietly_burning" target="_blank">Quietlyburning</a></span></p>
-		</footer>
+		<div class="contaier-fluid">
+			<div class="row no-gutters justify-content-center">
+				<div class="col-10 col-md-8 col-lg-6">
+					<footer class="footer">
+						<p><span class="dBooks"> dBooks&copy</span> fait avec  <span class="fa fa-heart"></span>  par  <span class="handle"><a href="https://twitter.com/ENTRYBOT_js" target="_blank"> Entrybot </a></span>  et  <span class="handle"><a href="https://twitter.com/quietly_burning" target="_blank"> Quietlyburning</a></span></p>
+					</footer>
+				</div>
+			</div>
+		</div>
 		<!-- Fin footer -->
 
 		<!-- Chargement du javascript principal -->
