@@ -1,12 +1,13 @@
 {
   "name": "dbooks",
   "description": "",
-  "main": "app.js",
+  "main": "./bin/dBooks-server",
   "authors": [
-    "JulienFerluc <ferluc.julien@carrefour.cegepvicto.ca>"
+    "EntrybotJS <ferluc.julien@carrefour.cegepvicto.ca>",
+    "Quietlyburning <dlafm@outlook.com>"
   ],
   "license": "dPCA-1.0",
-  "homepage": "https://github.com/JulienFerluc/dBooks",
+  "homepage": "https://github.com/dBooks-Project/dBooks-Main",
   "private": true,
   "ignore": [
     "**/.*",
