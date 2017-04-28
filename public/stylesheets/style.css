@@ -378,6 +378,20 @@ nav .nav-content ul li a:hover {
   float: left;
 }
 
+.collections .collections-container main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.collections .collections-container main .collections-text {
+  border-bottom: 1px solid #EEEEEE;
+}
+.collections .collections-container main .collections-text h1 {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: #999;
+  float: left;
+}
+
 .footer {
   font-size: 16px;
   text-align: center;

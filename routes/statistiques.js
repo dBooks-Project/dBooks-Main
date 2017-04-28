@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
-var connection = require("../middleware/connect");
+var connection = require('../middleware/connect');
 
 var query1 = "SELECT COUNT(*) AS NombreDeLivres FROM Livres;";
 var query2 = "SELECT COUNT(LangueID) AS LangueFrancaise FROM Livres WHERE LangueID = 1;";
