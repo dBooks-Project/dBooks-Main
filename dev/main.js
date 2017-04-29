@@ -1,5 +1,8 @@
 var menuToggeled = false;
 var sidenavToggle = false;
+var connectToggle = false;
+
+$('#register').hide();
 
 if (window.innerWidth > 992) {
     $("#toggle").hide();
@@ -47,3 +50,15 @@ $('.livre-info').perfectScrollbar({
     "supressScrollX": true,
     "scrollYMarginOffset": "10"
 });
+
+function LoginToggle(){
+    if(!connectToggle){
+        $("#register").show();
+        $("#login").hide();
+        connectToggle = true;
+    } else{
+        $("#register").hide();
+        $("#login").show();
+        connectToggle = false;
+    }
+}
