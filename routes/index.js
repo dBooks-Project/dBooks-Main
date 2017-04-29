@@ -18,7 +18,11 @@ router.get('/', function(req, res, next) {
         }
 
         res.render('index',{
-            placeholder: row[random(0,row.length)]
+            placeholder: row[random(0,row.length)],
+            quote: {
+                auteur: "Frank Zappa",
+                texte: "So many books, so little time."
+            }
         });
     });
 });

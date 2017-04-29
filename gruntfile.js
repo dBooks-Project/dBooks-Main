@@ -75,8 +75,7 @@ module.exports = function(grunt){
             configFiles: {
                 files: "gruntfile.js",
                     options: {
-                        reload: true
-                    }
+                        reload: true                    }
                 }
             }
     });

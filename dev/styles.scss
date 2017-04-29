@@ -45,7 +45,7 @@ $author-text-color: #d3d3d3;
 $book-info-hover: rgba(0, 0, 0, .7);
 $form-border-focus: rgba(0, 160, 255, .8);
 $transparent: rgba(0, 0, 0, 0);
-$nav-shadow: rgba(0, 0, 0, .25);
+$quote-bg: rgba(0, 0, 0, .5);
 
 //fonts
 $roboto: 'Roboto';
@@ -207,7 +207,7 @@ button {
 
         form {
             width: 100%;
-            padding: 75px 0;
+            margin: 50px 0;
             display: flex;
             align-items: center;
             flex-flow: row;
@@ -239,6 +239,25 @@ button {
                     cursor: pointer;
                     transition: .15s;
                 }
+            }
+        }
+
+        .blockquote{
+            background-color: $quote-bg;
+            margin-bottom: 50px;
+
+            p{
+                color: white;
+                font-family: "Segoe UI";
+                font-weight: 300;
+                font-size: 28px;
+                word-wrap: break-word;
+                text-align: justify;
+            }
+
+            footer{
+                color: $author-text-color;
+                font-size: 22px;
             }
         }
     }
@@ -452,36 +471,43 @@ padding-bottom: 80px;
     padding-top: 20px;
 
     .row{
+
+        .creation{
+
+            .register-text{
+                font-size: 64px;
+            }
         
-        form{
+            form{
 
-            color: $nav-color;
-            font-size: 16px;
+                color: $nav-color;
+                font-size: 16px;
 
-            input {
+                input {
 
-                margin-bottom: 20px;
-            }
+                    margin-bottom: 20px;
+                }
 
-            label{
-                font-family: $raleway;
-            }
+                label{
+                    font-family: $raleway;
+                }
 
-            .check-flex{
-                
-                display: flex;
-                justify-content: center;
-                flex-direction: row;
-            }
+                .check-flex{
+                    
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                }
 
-            .remember-flex{
+                .remember-flex{
 
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: center;
-                flex-direction: row;
-                padding-bottom: 80px;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    flex-direction: row;
+                    padding-bottom: 80px;
+                }
             }
         }
     }
@@ -567,6 +593,33 @@ padding: 0;
             .livre-auteur{
 
                 padding: 20px;
+            }
+        }
+    }
+}
+
+
+.ajouter-form {
+
+    .ajouter-container {
+
+        .ajouter-row {
+
+            .ajouter-options {
+
+            }
+
+            .ajouter-main {
+                border-left: 1px solid $border-color;
+                border-right: 1px solid $border-color;
+                
+                .display-4{
+                    font-size: 20px;
+                }
+            }
+
+            .ajouter-autre {
+                
             }
         }
     }
