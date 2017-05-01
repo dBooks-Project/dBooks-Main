@@ -1,29 +1,29 @@
 @font-face {
-  font-family: "Raleway";
-  src: url('/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Raleway";
+    src: url('/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Playfair Display";
-  src: url('/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Playfair Display";
+    src: url('/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Concert One";
-  src: url('/fonts/Concert_One/ConcertOne-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Concert One";
+    src: url('/fonts/Concert_One/ConcertOne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Lora";
-  src: url('/fonts/Lora/Lora-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Lora";
+    src: url('/fonts/Lora/Lora-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 //hex colors
@@ -40,20 +40,29 @@ $border-color: #dfdfdf;
 $white: #fff;
 $black: #000;
 $author-text-color: #d3d3d3;
-
 //rgba colors
-$book-info-hover: rgba(0, 0, 0, .7);
-$form-border-focus: rgba(0, 160, 255, .8);
-$transparent: rgba(0, 0, 0, 0);
-$quote-bg: rgba(0, 0, 0, .5);
-
+$book-info-hover: rgba(0,
+0,
+0,
+.7);
+$form-border-focus: rgba(0,
+160,
+255,
+.8);
+$transparent: rgba(0,
+0,
+0,
+0);
+$quote-bg: rgba(0,
+0,
+0,
+.5);
 //fonts
 $roboto: 'Roboto';
 $raleway: 'Raleway';
 $playfair: 'Playfair Display';
 $ConcertOne: 'Concert One';
 $lora: 'Lora';
-
 span {
     .fa {
         .fa-heart {
@@ -75,18 +84,14 @@ textarea,
 input,
 button {
     outline: none;
-
     &:focus {
         outline: none;
     }
 }
 
 .navbar-container {
-
     .row-container {
-
         .navbar-main {
-
             border-top: 3px solid $accent-color;
             background-color: $nav-bg-color;
             border-bottom: 1px solid $border-color;
@@ -94,13 +99,12 @@ button {
             justify-content: space-between;
 
             .brand {
-
                 color: $accent-color;
                 font-family: $ConcertOne;
                 padding: 0 0 0 20px;
                 font-size: 42px;
+                line-height: initial;
                 margin: 0;
-                line-height: 50px;
                 transition: .3s;
                 text-decoration: none;
 
@@ -108,9 +112,7 @@ button {
                     color: $accent-color-hover;
                 }
             }
-
             .toggle {
-
                 color: $nav-color;
                 padding: 0 20px 0 0;
                 font-size: 24px;
@@ -118,35 +120,29 @@ button {
                 line-height: 50px;
                 transition: .3s;
                 text-decoration: none;
-
                 &:hover {
                     color: $nav-color;
                 }
-
-                 &:visited {
+                &:visited {
                     color: $nav-color;
                 }
             }
-
-            .normal-links{
+            .normal-links {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-
                 ul {
                     margin: 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     text-align: center;
-
                     li {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         text-align: center;
-
                         a {
                             text-align: center;
                             color: $nav-color;
@@ -157,7 +153,6 @@ button {
                             line-height: 50px;
                             transition: .3s;
                             text-decoration: none;
-
                             &:hover {
                                 color: $nav-color-hover;
                             }
@@ -166,19 +161,15 @@ button {
                 }
             }
         }
-
         .dropdown-links {
-
             ul {
                 margin: 0;
                 border-bottom: 1px solid $border-color;
-
                 li {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     text-align: center;
-
                     a {
                         color: $nav-color;
                         font-family: $raleway;
@@ -196,22 +187,18 @@ button {
 
 .index-container {
     width: 100%;
-
     .top-section {
         background-image: url('../images/landing-bg.jpg');
         background-size: cover;
-
-         @media (max-width: 991px) {
+        @media (max-width: 991px) {
             background-size: 300%;
-         }
-
+        }
         form {
             width: 100%;
             margin: 50px 0;
             display: flex;
             align-items: center;
             flex-flow: row;
-
             input {
                 width: 100%;
                 float: left;
@@ -220,12 +207,10 @@ button {
                 font-family: $raleway;
                 border: 1px solid $border-color;
                 color: $nav-color;
-
                 &:focus {
                     box-shadow: 0 0 7px 0 $form-border-focus;
                 }
             }
-
             button {
                 float: right;
                 background-color: $accent-color;
@@ -233,7 +218,6 @@ button {
                 font-size: 20px;
                 border: none;
                 color: $white;
-
                 &:hover {
                     background-color: $accent-color-hover;
                     cursor: pointer;
@@ -241,12 +225,10 @@ button {
                 }
             }
         }
-
-        .blockquote{
+        .blockquote {
             background-color: $quote-bg;
             margin-bottom: 50px;
-
-            p{
+            p {
                 color: white;
                 font-family: "Segoe UI";
                 font-weight: 300;
@@ -254,24 +236,19 @@ button {
                 word-wrap: break-word;
                 text-align: justify;
             }
-
-            footer{
+            footer {
                 color: $author-text-color;
                 font-size: 22px;
             }
         }
     }
-
     .intro {
         background-color: $white;
         text-align: justify;
-
         .line {
             border-top: 1px solid $border-color;
         }
-
         .intro-text {
-
             h1 {
                 padding-top: 30px;
                 padding-bottom: 20px;
@@ -281,7 +258,6 @@ button {
                 font-family: $lora;
                 font-weight: 400;
             }
-
             p {
                 padding-bottom: 30px;
                 font-size: 16px;
@@ -290,7 +266,6 @@ button {
                 color: $black;
                 font-weight: 400;
             }
-
             .last {
                 padding-bottom: 80px;
             }
@@ -299,29 +274,23 @@ button {
 }
 
 .container-dashboard {
-padding-bottom: 80px;
-
+    padding-bottom: 80px;
     .dash-container {
-
         main {
             padding-top: 20px;
             background-color: $white;
-
             .dash-text {
                 border-bottom: 1px solid $border-color;
-
                 h1 {
                     font-size: 24px;
                     font-family: $raleway;
                     color: $nav-color;
                     float: left;
                 }
-
                 i {
                     float: right;
                     font-size: 20px;
                     color: $nav-color;
-
                     &:hover {
                         color: $nav-color-hover;
                         cursor: pointer;
@@ -329,7 +298,6 @@ padding-bottom: 80px;
                     }
                 }
             }
-
             .dash-controls {
                 font-size: 16px;
                 z-index: 1;
@@ -338,28 +306,23 @@ padding-bottom: 80px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-
                 a {
                     padding: 8px 8px 8px 32px;
                     text-decoration: none;
                     color: $nav-color;
                     transition: .3s;
-
                     &:hover {
                         color: $nav-color-hover;
                         transition: .3s;
                     }
                 }
-
                 .action-form {
                     width: 100%;
-
                     form {
                         display: flex;
                         align-items: center;
                         flex-flow: row;
                         padding: 20px;
-
                         button {
                             color: $nav-color;
                             border: none;
@@ -367,14 +330,12 @@ padding-bottom: 80px;
                             float: right;
                             margin-left: 10px;
                             background-color: transparent;
-
                             &:hover {
                                 color: $nav-color-hover;
                                 cursor: pointer;
                                 transition: .3s;
                             }
                         }
-
                         input {
                             color: $nav-color;
                             width: 100%;
@@ -389,21 +350,16 @@ padding-bottom: 80px;
             }
         }
     }
-
     .livres {
         padding-top: 20px;
     }
-
     .livre {
         padding: 0;
-
         img {
             background-size: cover;
             height: 100%;
             width: 100%;
-            
         }
-
         .livre-info {
             position: absolute;
             display: flex;
@@ -417,35 +373,29 @@ padding-bottom: 80px;
             border: 3px solid $white;
             padding: 10px;
             overflow-y: auto;
-
             a {
                 color: transparent;
                 background-color: transparent;
             }
-
             &:hover,
             &:visited {
                 background-color: $book-info-hover;
                 border: 3px solid $white;
                 transition: .15s;
-
                 h4,
                 p,
                 a {
                     font-family: $raleway;
                     word-wrap: break-word;
                 }
-
                 h4 {
                     color: $white;
                     font-size: 22px;
                 }
-
                 p {
                     color: $author-text-color;
                     font-size: 18px;
                 }
-
                 a {
                     background-color: $accent-color;
                     padding: 5px;
@@ -454,7 +404,6 @@ padding-bottom: 80px;
                     font-family: $raleway;
                     border: none;
                     color: $white;
-
                     &:hover {
                         background-color: $accent-color-hover;
                         cursor: pointer;
@@ -466,41 +415,28 @@ padding-bottom: 80px;
     }
 }
 
-
-.register{
+.register {
     padding-top: 20px;
-
-    .row{
-
-        .creation{
-
-            .register-text{
+    .row {
+        .creation {
+            .register-text {
                 font-size: 64px;
             }
-        
-            form{
-
+            form {
                 color: $nav-color;
                 font-size: 16px;
-
                 input {
-
                     margin-bottom: 20px;
                 }
-
-                label{
+                label {
                     font-family: $raleway;
                 }
-
-                .check-flex{
-                    
+                .check-flex {
                     display: flex;
                     justify-content: center;
                     flex-direction: row;
                 }
-
-                .remember-flex{
-
+                .remember-flex {
                     display: flex;
                     align-items: center;
                     flex-wrap: wrap;
@@ -514,17 +450,13 @@ padding-bottom: 80px;
 }
 
 .statistiques {
-
-    .statistiques-container{
-
-        main{
+    .statistiques-container {
+        main {
             padding-top: 20px;
             padding-bottom: 20px;
-
-            .statistiques-text{
+            .statistiques-text {
                 border-bottom: 1px solid #EEEEEE;
-
-                h1{
+                h1 {
                     font-size: 20px;
                     font-family: $playfair;
                     color: $nav-color;
@@ -536,91 +468,67 @@ padding-bottom: 80px;
 }
 
 .container-livre {
-padding: 0;
-
+    padding: 0;
     .livre-container {
-
-        .livre-main{
+        .livre-main {
             padding: 20px;
-                
             .livre-titre {
                 border-bottom: 1px solid $border-color;
-
                 h1 {
                     font-size: 24px;
                     font-family: $playfair;
                     color: $nav-color;
                     float: left;
                 }
-
-                p{
+                p {
                     font-size: 16px;
                     font-family: $playfair;
                     color: $nav-color;
                 }
             }
-
-            .livre-text{
+            .livre-text {
                 padding-top: 20px;
             }
         }
-
-        .livre-side{
+        .livre-side {
             border-left: 1px solid $border-color;
-
             @media (min-width: 992px) {
                 height: 100vh;
                 position: relative;
             }
-
-            .livre-meta{
+            .livre-meta {
                 padding: 20px;
                 border-bottom: 1px solid $border-color;
-
                 h1 {
                     font-size: 24px;
                     font-family: $raleway;
                     color: $nav-color;
                 }
-
-                p{
+                p {
                     font-size: 16px;
                     font-family: $playfair;
                     color: $nav-color;
                 }
             }
-
-            .livre-auteur{
-
+            .livre-auteur {
                 padding: 20px;
             }
         }
     }
 }
 
-
 .ajouter-form {
-
     .ajouter-container {
-
         .ajouter-row {
-
-            .ajouter-options {
-
-            }
-
+            .ajouter-options {}
             .ajouter-main {
                 border-left: 1px solid $border-color;
                 border-right: 1px solid $border-color;
-                
-                .display-4{
+                .display-4 {
                     font-size: 20px;
                 }
             }
-
-            .ajouter-autre {
-                
-            }
+            .ajouter-autre {}
         }
     }
 }
@@ -635,27 +543,23 @@ padding: 0;
     text-decoration: none;
     color: $nav-color;
     border-top: 1px solid $border-color;
-
     .fa-heart {
         color: #E74C3C;
         margin: 5px;
     }
-
-    .dBooks{
+    .dBooks {
         color: $accent-color;
         font-family: $ConcertOne;
         font-size: 24px;
         margin: 5px;
     }
-
-    .handle{
-        a{
+    .handle {
+        a {
             font-family: $raleway;
             color: $accent-color;
             text-decoration: none;
             margin: 5px;
-
-            &:hover{
+            &:hover {
                 color: $accent-color-hover;
             }
         }
