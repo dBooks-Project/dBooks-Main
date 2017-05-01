@@ -6,7 +6,7 @@ module.exports = function(grunt){
         sass: {
             dist: {
                 options: {
-                    compass: true,
+                    compass: false,
                     style: 'expanded'
                 },
                 files: {
@@ -75,8 +75,7 @@ module.exports = function(grunt){
             configFiles: {
                 files: "gruntfile.js",
                     options: {
-                        reload: true
-                    }
+                        reload: true                    }
                 }
             }
     });

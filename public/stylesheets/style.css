@@ -58,8 +58,8 @@ button:focus {
   font-family: "Concert One";
   padding: 0 0 0 20px;
   font-size: 42px;
+  line-height: initial;
   margin: 0;
-  line-height: 50px;
   transition: .3s;
   text-decoration: none;
 }
@@ -148,7 +148,7 @@ button:focus {
 }
 .index-container .top-section form {
   width: 100%;
-  padding: 75px 0;
+  margin: 50px 0;
   display: flex;
   align-items: center;
   flex-flow: row;
@@ -177,6 +177,22 @@ button:focus {
   background-color: #96291e;
   cursor: pointer;
   transition: .15s;
+}
+.index-container .top-section .blockquote {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+.index-container .top-section .blockquote p {
+  color: white;
+  font-family: "Segoe UI";
+  font-weight: 300;
+  font-size: 28px;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.index-container .top-section .blockquote footer {
+  color: #d3d3d3;
+  font-size: 22px;
 }
 .index-container .intro {
   background-color: #fff;
@@ -350,22 +366,25 @@ button:focus {
 .register {
   padding-top: 20px;
 }
-.register .row form {
+.register .row .creation .register-text {
+  font-size: 64px;
+}
+.register .row .creation form {
   color: #46484A;
   font-size: 16px;
 }
-.register .row form input {
+.register .row .creation form input {
   margin-bottom: 20px;
 }
-.register .row form label {
+.register .row .creation form label {
   font-family: "Raleway";
 }
-.register .row form .check-flex {
+.register .row .creation form .check-flex {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.register .row form .remember-flex {
+.register .row .creation form .remember-flex {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -436,6 +455,14 @@ button:focus {
 }
 .container-livre .livre-container .livre-side .livre-auteur {
   padding: 20px;
+}
+
+.ajouter-form .ajouter-container .ajouter-row .ajouter-main {
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+}
+.ajouter-form .ajouter-container .ajouter-row .ajouter-main .display-4 {
+  font-size: 20px;
 }
 
 .footer {
