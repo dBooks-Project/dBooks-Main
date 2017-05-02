@@ -216,7 +216,7 @@ button {
                 float: left;
                 border-radius: 5px;
                 font-size: 20px;
-                font-family: $raleway;
+                font-family: $playfair;
                 border: 1px solid $border-color;
                 color: $nav-color;
                 &:focus {
@@ -291,8 +291,8 @@ button {
             .dash-text {
                 border-bottom: 1px solid $border-color;
                 h1 {
-                    font-size: 24px;
-                    font-family: $raleway;
+                    font-size: 20px;
+                    font-family: $playfair;
                     color: $nav-color;
                     float: left;
                 }
@@ -394,7 +394,7 @@ button {
                 h4,
                 p,
                 a {
-                    font-family: $raleway;
+                    font-family: $lora;
                     word-wrap: break-word;
                 }
                 h4 {
@@ -410,7 +410,7 @@ button {
                     padding: 5px;
                     border-radius: 10px;
                     font-size: 14px;
-                    font-family: $raleway;
+                    font-family: $lora;
                     border: none;
                     color: $white;
                     &:hover {
@@ -438,7 +438,7 @@ button {
                     margin-bottom: 20px;
                 }
                 label {
-                    font-family: $raleway;
+                    font-family: $playfair;
                 }
                 .check-flex {
                     display: flex;
@@ -473,6 +473,40 @@ button {
                 }
             }
         }
+    }
+}
+
+.emprunts {
+    .emprunts-container {
+        main {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .emprunts-text {
+                border-bottom: 1px solid #EEEEEE;
+                h1 {
+                    font-size: 20px;
+                    font-family: $playfair;
+                    color: $nav-color;
+                    float: left;
+                }
+                
+            }
+            .text {
+                h3 {
+                    font-size: 18px;
+                    font-family: $playfair;
+                    color: $nav-color;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 18px;
+                    font-family: $lora;
+                }
+            }
+            .contour {
+                background-color:#EDEDED;
+            }
     }
 }
 
@@ -569,7 +603,7 @@ button {
                 border-bottom: 1px solid #EEEEEE;
                 h1 {
                     font-size: 20px;
-                    font-family: $roboto;
+                    font-family: $playfair;
                     color: $nav-color;
                     float: left;
                 }
