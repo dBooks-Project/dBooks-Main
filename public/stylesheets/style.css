@@ -231,9 +231,6 @@ button:focus {
   font-weight: 200;
 }
 
-.container-dashboard {
-  padding-bottom: 80px;
-}
 .container-dashboard .dash-container main {
   padding-top: 20px;
   background-color: #fff;
@@ -399,7 +396,6 @@ button:focus {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  padding-bottom: 80px;
 }
 
 .statistiques .statistiques-container main {
@@ -534,15 +530,18 @@ button:focus {
 }
 
 .footer {
-  padding: 0 20px;
   font-size: 16px;
   text-align: center;
+  position: fixed;
+  margin-top: 40px;
+  bottom: 0;
   width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
   display: block;
   font-family: "Playfair Display";
-  text-decoration: none;
   color: #46484A;
-  border-top: 1px solid #dfdfdf;
+  text-decoration: none;
 }
 .footer .fa-heart {
   color: #E74C3C;
