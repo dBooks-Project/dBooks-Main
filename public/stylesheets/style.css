@@ -5,6 +5,18 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway/Raleway-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
   font-family: "Playfair Display";
   src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -207,19 +219,16 @@ button:focus {
   font-size: 28px;
   text-align: center;
   color: #000;
-  font-family: "Lora";
+  font-family: "Playfair Display";
   font-weight: 400;
 }
 .index-container .intro .intro-text p {
   padding-bottom: 30px;
   font-size: 16px;
-  font-family: "Lora";
+  font-family: "Raleway";
   text-align: justify;
   color: #000;
-  font-weight: 400;
-}
-.index-container .intro .intro-text .last {
-  padding-bottom: 80px;
+  font-weight: 200;
 }
 
 .container-dashboard {
@@ -469,13 +478,18 @@ button:focus {
 }
 @media (min-width: 992px) {
   .container-livre .livre-container .livre-side {
-    height: 100vh;
     position: relative;
   }
 }
 .container-livre .livre-container .livre-side .livre-meta {
   padding: 20px;
   border-bottom: 1px solid #dfdfdf;
+}
+.container-livre .livre-container .livre-side .livre-meta .livre-image {
+  align-content: center;
+}
+.container-livre .livre-container .livre-side .livre-meta .livre-image img {
+  max-width: 200px;
 }
 .container-livre .livre-container .livre-side .livre-meta h1 {
   font-size: 24px;
@@ -489,6 +503,12 @@ button:focus {
 }
 .container-livre .livre-container .livre-side .livre-auteur {
   padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.container-livre .livre-container .livre-side .livre-auteur .votr-up,
+.container-livre .livre-container .livre-side .livre-auteur .vote-down {
+  text-decoration: none;
 }
 
 .ajouter-form .ajouter-container .ajouter-row .ajouter-main {
