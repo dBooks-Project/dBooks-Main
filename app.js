@@ -16,6 +16,7 @@ var livre = require("./routes/livre");
 var connection = require("./routes/connection");
 var statistiques = require("./routes/statistiques");
 var collections = require("./routes/collections");
+var livres = require("./routes/livres");
 
 var app = express();
 
@@ -57,6 +58,7 @@ app.use('/', livre);
 app.use('/', connection);
 app.use('/', statistiques);
 app.use('/', collections);
+app.use('/', livres);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
