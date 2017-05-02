@@ -1,0 +1,23 @@
+<div class="container-fluid collections">
+    <div class="row collections-container">
+        <main class="col-12">
+            <div class="collections-text clearfix">
+                <h1>Collections</h1>
+            </div>
+        </main>
+        <div class="col-3">
+            {{#with collection as |collection|}}
+                    {{#each collection}}
+                        <div class="col-6">
+                            <div>
+                                <p>{{nomVille}}</p>
+                                <p>{{nomCollection}}</p>
+                            </div>
+                        </div>
+                    {{/each}}
+                {{else}}
+                    <p>Il n'y a aucune collection.</p>
+                {{/with}}
+        </div>
+    </div>
+</div>

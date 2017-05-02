@@ -540,6 +540,27 @@ button {
     }
 }
 
+.collections {
+
+    .collections-container{
+
+        main{
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .collections-text{
+                border-bottom: 1px solid #EEEEEE;
+
+                h1{
+                    font-size: 20px;
+                    font-family: $roboto;
+                    color: $nav-color;
+                    float: left;
+                }
+            }
+        }
+    }
+}
 .footer {
     padding: 0 20px;
     font-size: 16px;

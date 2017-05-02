@@ -472,6 +472,20 @@ button:focus {
   font-size: 20px;
 }
 
+.collections .collections-container main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.collections .collections-container main .collections-text {
+  border-bottom: 1px solid #EEEEEE;
+}
+.collections .collections-container main .collections-text h1 {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: #999;
+  float: left;
+}
+
 .footer {
   padding: 0 20px;
   font-size: 16px;
