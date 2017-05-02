@@ -1,64 +1,106 @@
-<div class="container-fluid register">
+<div class="container-fluid register" id="register">
     <div class="row justify-content-center">
-        <div class="col-10 com-sm-8 col-md-6 col-lg-4">
-            <form>
-                <div class="form-group row">
-                    <label for="username" class="col-12 col-form-label">Nom d'utilisateur <span class="fa fa-globe"></span></label>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <input class="form-control" type="text" placeholder="" id="username">
+        <div class="col-10 com-sm-10 col-md-8 col-lg-6 col-xl-4">
+            <div class="creation">
+                <h1 class="register-text display-1">Se créer un compte</h1>
+                <a href="javascript:void(0)" onclick="LoginToggle()">J'ai déjà un compte</a>
+                <hr>
+                <form>
+                    <div class="form-group row">
+                        <label for="username" class="col-12 col-form-label">Nom d'utilisateur <span class="fa fa-globe"></span></label>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="prenom" class="col-12 col-form-label">Prénom <span class="fa fa-id-card"></span></label>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <input class="form-control" type="text" placeholder="" id="prenom">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="" id="username">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="nomfamille" class="col-12 col-form-label">Nom <span class="fa fa-id-card-o"></span></label>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <input class="form-control" type="text" placeholder="" id="nomfamille">
+                    <div class="form-group row">
+                        <label for="prenom" class="col-12 col-form-label">Prénom <span class="fa fa-id-card"></span></label>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="password" class="col-12 col-form-label">Mot de passe <span class="fa fa-lock"></span></label>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <input class="form-control" type="password" placeholder="" id="password">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="" id="prenom">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="verificationpassword" class="col-12 col-form-label">Vérification mot de passe <span class="fa fa-refresh"></span></label>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <input class="form-control" type="password" placeholder="" id="verificationpassword">
+                    <div class="form-group row">
+                        <label for="nomfamille" class="col-12 col-form-label">Nom <span class="fa fa-id-card-o"></span></label>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="anneenaissance" class="col-12 col-form-label">Date de naissance <span class="fa fa-birthday-cake"></span></label>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <input class="form-control" type="date" id="anneenaissance">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="" id="nomfamille">
+                        </div>
                     </div>
-                </div>
-                <div class="row text-center remember-flex">
-                    <label class="custom-control custom-checkbox check-flex">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator m-2"></span>
-                        <span class="m-2">Remember my preference</span>
-                    </label>
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
+                    <div class="form-group row">
+                        <label for="password" class="col-12 col-form-label">Mot de passe <span class="fa fa-lock"></span></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="password" placeholder="" id="password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="verificationpassword" class="col-12 col-form-label">Vérification mot de passe <span class="fa fa-refresh"></span></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="password" placeholder="" id="verificationpassword">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="anneenaissance" class="col-12 col-form-label">Date de naissance <span class="fa fa-birthday-cake"></span></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="date" id="anneenaissance">
+                        </div>
+                    </div>
+                    <div class="row text-center remember-flex">
+                        <label class="custom-control custom-checkbox check-flex">
+                            <input type="checkbox" class="custom-control-input">
+                            <span class="custom-control-indicator m-2"></span>
+                            <span class="m-2">Se souvenir de moi</span>
+                        </label>
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid register" id="login">
+    <div class="row justify-content-center">
+        <div class="col-10 com-sm-10 col-md-8 col-lg-6 col-xl-4">
+            <div class="creation">
+                <h1 class="register-text display-1">Se connecter</h1>
+                <a href="javascript:void(0)" onclick="LoginToggle()">Je n'ai pas de compte</a>
+                <hr>
+                <form>
+                    <div class="form-group row">
+                        <label for="username" class="col-12 col-form-label">Nom d'utilisateur <span class="fa fa-globe"></span></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="text" placeholder="" id="username">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="col-12 col-form-label">Mot de passe <span class="fa fa-lock"></span></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="password" placeholder="" id="username">
+                        </div>
+                    </div>
+                    <div class="row text-center remember-flex">
+                        <label class="custom-control custom-checkbox check-flex">
+                            <input type="checkbox" class="custom-control-input">
+                            <span class="custom-control-indicator m-2"></span>
+                            <span class="m-2">Se souvenir de moi</span>
+                        </label>
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

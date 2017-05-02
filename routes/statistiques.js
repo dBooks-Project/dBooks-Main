@@ -4,7 +4,7 @@ var mysql = require('mysql');
 var connection = require('../middleware/connect');
 
 var query1 = "SELECT COUNT(*) AS NombreDeLivres FROM Livres;";
-var query2 = "SELECT COUNT(LangueID) AS LangueFrancaise FROM Livres WHERE LangueID = 1;";
+var query2 = "SELECT COUNT(LangueID) AS LangueFrancaise FROM Livres WHERE LangueID=1;";
 var query3 = "SELECT COUNT(LangueID) AS LangueAnglaise FROM Livres WHERE LangueID=2;";
 var query4 = "SELECT COUNT(LangueID) AS LangueEspagnole FROM Livres WHERE LangueID=3;";
 

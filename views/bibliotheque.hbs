@@ -3,11 +3,11 @@
         <main class="col-12">
             <div class="dash-text clearfix">
                 <h1>Bibliothèque</h1>
-                <i class="fa fa-list" onclick="ActionsToggle()"></i>
+                <i class="fa fa-cog" onclick="ActionsToggle()"></i>
             </div>
             <div id="dash-controls" class="dash-controls text-center" style="display: none;">
                 <div class="action-form">
-                    <a href="#" class="fa fa-plus"></a>
+                    <a href="/ajouter" class="fa fa-plus"></a>
                 </div>
                 <div class="action-form">
                     <a href="#" class="fa fa-trash-o" ></a>
@@ -21,15 +21,15 @@
                     {{#each livre}}
                         <div class="col-6 col-sm-3 col-lg-2 col-xl-1 livre">
                             <div class="livre-info">
-                                <h4>{{titre}}</h4>
-                                <p>{{auteur}}</p>
+                                <h4>{{Titre}}</h4>
+                                <p>{{Auteur}}</p>
                                 <a >plus</a>
                             </div>
                             <img src="/images/{{id}}.jpg" class="img-fluid" alt="No Cover">
                         </div>
                     {{/each}}
                 {{else}}
-                    <p>Votre bilbiothètque est vide.</p>
+                    <p>Votre bibliothèque est vide.</p>
                 {{/with}}
             </section>
             

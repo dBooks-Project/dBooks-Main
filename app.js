@@ -10,7 +10,8 @@ var mysql = require('mysql');
 var minifyHTML = require("express-minify-html");
 
 var index = require('./routes/index');
-var dashboard = require("./routes/dashboard");
+var bibliotheque = require("./routes/bibliotheque");
+var ajouter = require('./routes/ajouter');
 var livre = require("./routes/livre");
 var connection = require("./routes/connection");
 var statistiques = require("./routes/statistiques");
@@ -33,10 +34,11 @@ app.use(minifyHTML({
     }
 }));
 
-var hbs = exphbs.create({ /* config here */ });
+var hbs = exphbs.create({});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+app.set('partials', path.join(__dirname, 'partials'));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'hbs');
 
@@ -49,7 +51,8 @@ app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', index);
-app.use('/', dashboard);
+app.use('/', bibliotheque);
+app.use('/',ajouter);
 app.use('/', livre);
 app.use('/', connection);
 app.use('/', statistiques);
