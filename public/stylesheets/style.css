@@ -407,6 +407,13 @@ button:focus {
   float: left;
 }
 
+.chart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
 .container-livre {
   padding: 0;
 }
