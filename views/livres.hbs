@@ -1,22 +1,28 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Titre</th>
-      <th>Année de parution</th>
-      <th>Langue</th>
-      <th>Genre Littéraire</th>
-    </tr>
-  </thead>
-  <tbody>
-        {{#each info}}
-        <tr>
-        <th scope="row">{{ID}}</th>
-            <td>{{Titre}}</td>
-            <td>{{AnneeParution}}</td>
-            <td>{{NomLangue}}</td>
-            <td>{{NomGenre}}</td>
-        </tr>
-        {{/each}}
-  </tbody>
-</table>
+<div class="container-fluid">
+    <div class="row no-gutters">
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>Titre</th>
+                    <th>Année de parution</th>
+                    <th>Langue</th>
+                    <th>Genre Littéraire</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        {{#each info}}
+                        <tr>
+                        <th scope="row">{{ID}}</th>
+                            <td>{{Titre}}</td>
+                            <td>{{AnneeParution}}</td>
+                            <td>{{NomLangue}}</td>
+                            <td>{{NomGenre}}</td>
+                        </tr>
+                        {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -16,7 +16,9 @@ var livre = require("./routes/livre");
 var connection = require("./routes/connection");
 var statistiques = require("./routes/statistiques");
 var collections = require("./routes/collections");
+//temporaire
 var livres = require("./routes/livres");
+var membres = require("./routes/membres");
 
 var app = express();
 
