@@ -439,9 +439,6 @@ button:focus {
   font-size: 18px;
   font-family: "Lora";
 }
-.emprunts .emprunts-container .contour {
-  background-color: #EDEDED;
-}
 
 .chart {
   display: block;
