@@ -64,4 +64,28 @@ function LoginToggle() {
         connectToggle = false;
     }
 }
+
+if (window.onload || window.onscroll) {
+    (function () {
+        var totalHeight, currentScroll, visibleHeight;
+
+        if (document.documentElement.scrollTop) {
+            currentScroll = document.documentElement.scrollTop;
+        } else {
+            currentScroll = document.body.scrollTop;
+        }
+
+        totalHeight = document.body.offsetHeight;
+        visibleHeight = document.documentElement.clientHeight;
+
+        if (totalHeight <= currentScroll + visibleHeight) {
+            $(".footer").slideDown(150);
+            $("body").css({
+                "padding-bottom": $(".footer").totalHeight
+            });
+        } else {
+            $(".footer").slideUp(150);
+        }
+    });
+}
 //# sourceMappingURL=main.js.map

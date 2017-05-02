@@ -6,6 +6,20 @@
 }
 
 @font-face {
+    font-family: "Raleway";
+    src: url('/fonts/Raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('/fonts/Raleway/Raleway-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Playfair Display";
     src: url('/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
     font-weight: 400;
@@ -97,7 +111,6 @@ button {
             border-bottom: 1px solid $border-color;
             display: flex;
             justify-content: space-between;
-
             .brand {
                 color: $accent-color;
                 font-family: $ConcertOne;
@@ -107,7 +120,6 @@ button {
                 margin: 0;
                 transition: .3s;
                 text-decoration: none;
-
                 &:hover {
                     color: $accent-color-hover;
                 }
@@ -255,19 +267,16 @@ button {
                 font-size: 28px;
                 text-align: center;
                 color: $black;
-                font-family: $lora;
+                font-family: $playfair;
                 font-weight: 400;
             }
             p {
                 padding-bottom: 30px;
                 font-size: 16px;
-                font-family: $lora;
+                font-family: $raleway;
                 text-align: justify;
                 color: $black;
-                font-weight: 400;
-            }
-            .last {
-                padding-bottom: 80px;
+                font-weight: 200;
             }
         }
     }
@@ -500,12 +509,17 @@ button {
         .livre-side {
             border-left: 1px solid $border-color;
             @media (min-width: 992px) {
-                height: 100vh;
                 position: relative;
             }
             .livre-meta {
                 padding: 20px;
                 border-bottom: 1px solid $border-color;
+                .livre-image{
+                    align-content: center;
+                    img{
+                        max-width: 200px;
+                    }
+                }
                 h1 {
                     font-size: 24px;
                     font-family: $raleway;
@@ -519,6 +533,12 @@ button {
             }
             .livre-auteur {
                 padding: 20px;
+                display: flex;
+                align-items: center;
+                .votr-up,
+                .vote-down{
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -541,17 +561,13 @@ button {
 }
 
 .collections {
-
-    .collections-container{
-
-        main{
+    .collections-container {
+        main {
             padding-top: 20px;
             padding-bottom: 20px;
-
-            .collections-text{
+            .collections-text {
                 border-bottom: 1px solid #EEEEEE;
-
-                h1{
+                h1 {
                     font-size: 20px;
                     font-family: $roboto;
                     color: $nav-color;
@@ -561,6 +577,7 @@ button {
         }
     }
 }
+
 .footer {
     padding: 0 20px;
     font-size: 16px;
