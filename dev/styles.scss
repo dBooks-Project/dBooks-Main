@@ -283,7 +283,6 @@ button {
 }
 
 .container-dashboard {
-    padding-bottom: 80px;
     .dash-container {
         main {
             padding-top: 20px;
@@ -451,7 +450,6 @@ button {
                     flex-wrap: wrap;
                     justify-content: center;
                     flex-direction: row;
-                    padding-bottom: 80px;
                 }
             }
         }
@@ -610,15 +608,18 @@ button {
 }
 
 .footer {
-    padding: 0 20px;
     font-size: 16px;
     text-align: center;
+    position: fixed;
+    margin-top: 40px;
+    bottom: 0;
     width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
     display: block;
     font-family: $playfair;
-    text-decoration: none;
     color: $nav-color;
-    border-top: 1px solid $border-color;
+    text-decoration: none;
     .fa-heart {
         color: #E74C3C;
         margin: 5px;
