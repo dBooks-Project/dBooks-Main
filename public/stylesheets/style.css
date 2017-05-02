@@ -170,7 +170,7 @@ button:focus {
   float: left;
   border-radius: 5px;
   font-size: 20px;
-  font-family: "Raleway";
+  font-family: "Playfair Display";
   border: 1px solid #dfdfdf;
   color: #46484A;
 }
@@ -242,8 +242,8 @@ button:focus {
   border-bottom: 1px solid #dfdfdf;
 }
 .container-dashboard .dash-container main .dash-text h1 {
-  font-size: 24px;
-  font-family: "Raleway";
+  font-size: 20px;
+  font-family: "Playfair Display";
   color: #46484A;
   float: left;
 }
@@ -346,7 +346,7 @@ button:focus {
 .container-dashboard .livre .livre-info:hover a, .container-dashboard .livre .livre-info:visited h4,
 .container-dashboard .livre .livre-info:visited p,
 .container-dashboard .livre .livre-info:visited a {
-  font-family: "Raleway";
+  font-family: "Lora";
   word-wrap: break-word;
 }
 .container-dashboard .livre .livre-info:hover h4, .container-dashboard .livre .livre-info:visited h4 {
@@ -362,7 +362,7 @@ button:focus {
   padding: 5px;
   border-radius: 10px;
   font-size: 14px;
-  font-family: "Raleway";
+  font-family: "Lora";
   border: none;
   color: #fff;
 }
@@ -386,7 +386,7 @@ button:focus {
   margin-bottom: 20px;
 }
 .register .row .creation form label {
-  font-family: "Raleway";
+  font-family: "Playfair Display";
 }
 .register .row .creation form .check-flex {
   display: flex;
@@ -414,6 +414,33 @@ button:focus {
   font-family: "Playfair Display";
   color: #46484A;
   float: left;
+}
+
+.emprunts .emprunts-container main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.emprunts .emprunts-container .emprunts-text {
+  border-bottom: 1px solid #EEEEEE;
+}
+.emprunts .emprunts-container .emprunts-text h1 {
+  font-size: 20px;
+  font-family: "Playfair Display";
+  color: #46484A;
+  float: left;
+}
+.emprunts .emprunts-container .text h3 {
+  font-size: 18px;
+  font-family: "Playfair Display";
+  color: #46484A;
+  font-weight: bold;
+}
+.emprunts .emprunts-container .text p {
+  font-size: 18px;
+  font-family: "Lora";
+}
+.emprunts .emprunts-container .contour {
+  background-color: #EDEDED;
 }
 
 .chart {
@@ -501,7 +528,7 @@ button:focus {
 }
 .collections .collections-container main .collections-text h1 {
   font-size: 20px;
-  font-family: "Roboto";
+  font-family: "Playfair Display";
   color: #46484A;
   float: left;
 }
