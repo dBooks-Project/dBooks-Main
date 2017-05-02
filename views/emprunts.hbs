@@ -15,29 +15,50 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-1 col-md-2 col-sm-6 col-xs-12 text">
-                <h3>Livre: </h3>
-                <p>{{results.livre.Titre}}</p>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-xs-12 text">
-                <h3>Date d'emprunt: </h3>
-                <p>{{results.dateEmprunt.DateEmprunt}}</p>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-xs-12 text">
-                <h3>Date de retour prévue: </h3>
-                <p>{{results.dateRetourPrevue.DateRetourPrevue}}</p>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-xs-12 text">
-                <h3>Date de retour: </h3>
-                 <p>{{results.dateRetour.DateRetour}}</p>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-xs-12 text">
-                <h3>Durée: </h3>
-                <p>{{results.duree.Duree}} jours</p>
+            <div class="table-responsive">
+                <table class="table table-bordered text">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h3>Livre: </h3>
+                            </th>
+                            <th>
+                                <h3>Date d'emprunt: </h3>
+                            </th>
+                            <th>
+                                <h3>Date de retour prévue: </h3>
+                            </th>
+                            <th>
+                                <h3>Date de retour: </h3>
+                            </th>
+                            <th>
+                                <h3>Durée: </h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>{{results.livre.Titre}}</p>
+                            </td>
+                            <td>
+                                <p>{{results.dateEmprunt.DateEmprunt}}</p>
+                            </td>
+                            <td>
+                                <p>{{results.dateRetourPrevue.DateRetourPrevue}}</p>
+                            </td>
+                            <td>
+                                <p>{{results.dateRetour.DateRetour}}</p>
+                            </td>
+                            <td>
+                                <p>{{results.duree.Duree}} jours</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-
 </div>
 </div>
 </div>
