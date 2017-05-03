@@ -12,13 +12,16 @@ var query6 = "SELECT COUNT(LangueID) AS LangueBresilienne FROM Livres WHERE Lang
 var query7 = "SELECT COUNT(LangueID) AS LangueItalienne FROM Livres WHERE LangueID=6;";
 
 /* GET home page. */
-router.get('/statistiques', function(req, res, next) {
-    connection.query(query1 + query2 + query3 + query4 + query5 + query6 + query7,(err, results, fields) => {
-        if(err) {
+router.get('/statistiques', function (req, res, next) {
+    connection.query(query1 + query2 + query3 + query4 + query5 + query6 + query7, (err, results, fields) => {
+        if (err) {
             console.log(err);
-            
+
             res.status(err.status || 500);
-            res.render('error', { message: err.message, error: err });
+            res.render('error', {
+                message: err.message,
+                error: err
+            });
         }
         res.render('statistiques', {
             results: {
@@ -34,5 +37,5 @@ router.get('/statistiques', function(req, res, next) {
     });
 });
 
-    
+
 module.exports = router;

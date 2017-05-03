@@ -1,75 +1,59 @@
-
 <!DOCTYPE html>
 <html>
-  	<head>
-		<title>dBooks</title>
 
-		<!-- Bloquer le resize du DOM -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+	<title>dBooks</title>
 
-		<link rel="stylesheet" href="/vendor/roboto-fontface/css/roboto/roboto-fontface.css">
+	<!-- Bloquer le resize du DOM -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Chargement des frameworks si il n'y a pas de javascript -->
-		<link rel="stylesheet" href="/vendor/tether/dist/css/tether.min.css">
-		<link rel="stylesheet" href="/vendor/tether/dist/css/tether-theme-arrows.min.css">
-		<link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css">
-		<link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/vendor/roboto-fontface/css/roboto/roboto-fontface.css">
 
-		<!-- Preload des fonts -->
-		<link rel="preload" href="/fonts/Concert_One/ConcertOne-Regular.ttf" as="font">
-		<link rel="preload" href="/fonts/Raleway/Raleway-Regular.ttf" as="font">
-		<link rel="preload" href="/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf" as="font">
-		<link rel="preload" href="/fonts/Lora/Lora-Regular.ttf" as="font">
-		<link rel="preload" href="/vendor/font-awesome/fonts/fontawesome-webfont.woff2" as="font">
+	<!-- Chargement des frameworks si il n'y a pas de javascript -->
+	<link rel="stylesheet" href="/vendor/tether/dist/css/tether.min.css">
+	<link rel="stylesheet" href="/vendor/tether/dist/css/tether-theme-arrows.min.css">
+	<link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css">
+	<link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
 
-		<!-- Chargement de la stylesheet -->
-		<link rel='stylesheet' href="/stylesheets/style.css"/>
+	<!-- Preload des fonts -->
+	<link rel="preload" href="/fonts/Concert_One/ConcertOne-Regular.ttf" as="font">
+	<link rel="preload" href="/fonts/Raleway/Raleway-Regular.ttf" as="font">
+	<link rel="preload" href="/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf" as="font">
+	<link rel="preload" href="/fonts/Lora/Lora-Regular.ttf" as="font">
+	<link rel="preload" href="/vendor/font-awesome/fonts/fontawesome-webfont.woff2" as="font">
 
-		<!-- Chargement du javascript frameworks -->
-		<script src="/vendor/jquery/dist/jquery.min.js"></script>
-		<script src="/vendor/tether/dist/js/tether.min.js"></script>
-		<script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src='/vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js'></script>
-		<script src="/vendor/chart.js/dist/Chart.min.js"></script>
+	<!-- Chargement de la stylesheet -->
+	<link rel='stylesheet' href="/stylesheets/style.css" />
 
-	</head>
-	<body>
+	<!-- Chargement du javascript frameworks -->
+	<script src="/vendor/jquery/dist/jquery.min.js"></script>
+	<script src="/vendor/tether/dist/js/tether.min.js"></script>
+	<script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src='/vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js'></script>
+	<script src="/vendor/chart.js/dist/Chart.min.js"></script>
+
+</head>
+
+<body>
 
 
-		<!-- Barre de navigation -->
-		<div class="contaier-fluid navbar-container">
-			<div class="row no-gutters row-container">
-				<div class="col-12 navbar-main">
-					<a href="/" class="brand">dBooks</a>
-					<a href="javascript:void(0)" onclick="MenuToggle()" class="fa fa-bars toggle" id="toggle" aria-hidden="true"></a>
-					<div id="normal-links" class="normal-links">
-						<ul class="list-unstyled">
-							<li>
-								<a href="/bibliotheque">Bibliothèque</a>
-							</li>
-							<li>
-								<a href="/collections">Collections</a>
-							</li>
-							<li>
-								<a href="/emprunts">Emprunts</a>
-							</li>
-							<li>
-								<a href="/statistiques">Statistiques</a>
-							</li>
-							<li>
-								<a href="/connection">Connection</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 dropdown-links" id="dropdown-links">
+	<!-- Barre de navigation -->
+	<div class="contaier-fluid navbar-container">
+		<div class="row no-gutters row-container">
+			<div class="col-12 navbar-main">
+				<a href="/" class="brand">dBooks</a>
+				<a href="javascript:void(0)" onclick="MenuToggle()" class="fa fa-bars toggle" id="toggle" aria-hidden="true"></a>
+				<div id="normal-links" class="normal-links">
 					<ul class="list-unstyled">
 						<li>
 							<a href="/bibliotheque">Bibliothèque</a>
 						</li>
-            <li>
-								<a href="/collections">Collections</a>
+						<li>
+							<a href="/collections">Collections</a>
+						</li>
+						<li>
+							<a href="/emprunts">Emprunts</a>
 						</li>
 						<li>
 							<a href="/statistiques">Statistiques</a>
@@ -80,35 +64,56 @@
 					</ul>
 				</div>
 			</div>
+			<div class="col-12 dropdown-links" id="dropdown-links">
+				<ul class="list-unstyled">
+					<li>
+						<a href="/bibliotheque">Bibliothèque</a>
+					</li>
+					<li>
+						<a href="/collections">Collections</a>
+					</li>
+					<li>
+						<a href="/statistiques">Statistiques</a>
+					</li>
+					<li>
+						<a href="/connection">Connection</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<!-- Fin barre de navigation -->
+	</div>
+	<!-- Fin barre de navigation -->
 
 
-      	{{{body}}}
+	{{{body}}}
 
 
-		<!-- Footer -->
-		<footer class="footer" style="display: none;">
-			<p><span class="dBooks"> dBooks&copy</span> fait avec  <span class="fa fa-heart"></span>  par  <span class="handle"><a href="https://twitter.com/entrybot" target="_blank"> Entrybot </a></span>  et  <span class="handle"><a href="https://twitter.com/quietly_burning" target="_blank"> Quietlyburning</a></span></p>
-		</footer>
-		<!-- Fin footer -->
+	<!-- Footer -->
+	<footer class="footer" style="display: none;">
+		<p><span class="dBooks"> dBooks&copy</span> fait avec <span class="fa fa-heart"></span> par <span class="handle"><a href="https://twitter.com/entrybot" target="_blank"> Entrybot </a></span>			et <span class="handle"><a href="https://twitter.com/quietly_burning" target="_blank"> Quietlyburning</a></span></p>
+	</footer>
+	<!-- Fin footer -->
 
-		<!-- Chargement du javascript principal -->
-		<script src="/javascripts/main.min.js"></script>
+	<!-- Chargement du javascript principal -->
+	<script src="/javascripts/main.min.js"></script>
 
-		<!-- Livereload (DEV ONLY!) -->
-		<script src="//localhost:35729/livereload.js"></script>
+	<!-- Livereload (DEV ONLY!) -->
+	<script src="//localhost:35729/livereload.js"></script>
 
-	</body>
+</body>
+
 </html>
 
 <!-- Google analytics, chargé à la fin pour eviter le bloquage du chargement du DOM -->
 <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	(function (i, s, o, g, r, a, m) {
+	i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+		(i[r].q = i[r].q || []).push(arguments)	
+}, i[r].l = 1 * new Date(); a = s.createElement(o),
+		m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
 	ga('create', 'UA-97894711-1', 'auto');
 	ga('send', 'pageview');
+
 </script>

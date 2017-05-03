@@ -2,12 +2,12 @@ var express = require('express');
 var router = express.Router();
 
 router
-    .get('/connection', function(req, res, next) {
+    .get('/connection', function (req, res, next) {
 
         res.render('connection');
     })
 
-    .post('/connection', function(req, res, next) {
+    .post('/connection', function (req, res, next) {
 
         res.end();
     });
