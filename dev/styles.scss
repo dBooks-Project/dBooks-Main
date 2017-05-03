@@ -481,27 +481,26 @@ button {
             padding-bottom: 20px;
         }
         .emprunts-text {
-                border-bottom: 1px solid #EEEEEE;
-                h1 {
-                    font-size: 20px;
-                    font-family: $playfair;
-                    color: $nav-color;
-                    float: left;
-                }
-                
+            border-bottom: 1px solid #EEEEEE;
+            h1 {
+                font-size: 20px;
+                font-family: $playfair;
+                color: $nav-color;
+                float: left;
             }
-            .text {
-                h3 {
-                    font-size: 18px;
-                    font-family: $playfair;
-                    color: $nav-color;
-                    font-weight: bold;
-                }
-                p {
-                    font-size: 18px;
-                    font-family: $lora;
-                }
+        }
+        .text {
+            h3 {
+                font-size: 18px;
+                font-family: $playfair;
+                color: $nav-color;
+                font-weight: bold;
             }
+            p {
+                font-size: 18px;
+                font-family: $lora;
+            }
+        }
     }
 }
 
@@ -543,9 +542,9 @@ button {
             .livre-meta {
                 padding: 20px;
                 border-bottom: 1px solid $border-color;
-                .livre-image{
+                .livre-image {
                     align-content: center;
-                    img{
+                    img {
                         max-width: 200px;
                     }
                 }
@@ -565,7 +564,7 @@ button {
                 display: flex;
                 align-items: center;
                 .votr-up,
-                .vote-down{
+                .vote-down {
                     text-decoration: none;
                 }
             }
