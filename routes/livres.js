@@ -6,7 +6,6 @@ var queryLivres = "SELECT Livres.ID,Titre,AnneeParution,NomLangue,NomGenre FROM 
 
 router.get('/livres', function (req, res, next) {
     query(queryLivres, (result) => {
-        console.log(result);
         res.render('livres', {
             info: result
         });
