@@ -5,7 +5,7 @@ var connection = require('../middleware/connect.js');
 var queryLivres = "SELECT Livres.ID,Titre,AnneeParution,NomLangue,NomGenre FROM Livres INNER JOIN Langues ON Langues.ID = LangueID INNER JOIN GenresLitteraires ON GenresLitteraires.ID = GenreID";
 
 router
-    .get('/livres', function(req, res, next) {
+    .get('/livres', function (req, res, next) {
         connection.query(queryLivres, (err, results, values) => {
             res.render('livres', {
                 info: results

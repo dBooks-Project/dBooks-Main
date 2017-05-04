@@ -11,13 +11,16 @@ var queryDateRetour = "SELECT DATE_FORMAT(DateRetour,'%d-%m-%Y') AS DateRetour F
 var queryDuree = "SELECT DateRetour - DateEmprunt AS Duree FROM Emprunts WHERE ID=1;";
 
 /* GET home page. */
-router.get('/emprunts', function(req, res, next) {
-    connection.query(queryLivre + queryNombre + queryDateEmprunt + queryDateRetourPrevue + queryDateRetour + queryDuree,(err, results, fields) => {
-        if(err) {
+router.get('/emprunts', function (req, res, next) {
+    connection.query(queryLivre + queryNombre + queryDateEmprunt + queryDateRetourPrevue + queryDateRetour + queryDuree, (err, results, fields) => {
+        if (err) {
             console.log(err);
-            
+
             res.status(err.status || 500);
-            res.render('error', { message: err.message, error: err });
+            res.render('error', {
+                message: err.message,
+                error: err
+            });
         }
         res.render('emprunts', {
             results: {
@@ -28,7 +31,7 @@ router.get('/emprunts', function(req, res, next) {
                 dateRetour: results[4][0],
                 duree: results[5][0]
             }
-            
+
         });
     });
 });
