@@ -10,29 +10,27 @@
                     <a href="/ajouter" class="fa fa-plus"></a>
                 </div>
                 <div class="action-form">
-                    <a href="#" class="fa fa-trash-o" ></a>
+                    <a href="#" class="fa fa-trash-o"></a>
                 </div>
                 <div class="action-form">
                     <a href="#" class="fa fa-pencil"></a>
                 </div>
             </div>
             <section class="row container-fluid livres">
-                {{#with livre as |livre|}}
-                    {{#each livre}}
-                        <div class="col-6 col-sm-3 col-lg-2 col-xl-1 livre">
-                            <div class="livre-info">
-                                <h4>{{Titre}}</h4>
-                                <p>{{Auteur}}</p>
-                                <a >plus</a>
-                            </div>
-                            <img src="/images/{{id}}.jpg" class="img-fluid" alt="No Cover">
-                        </div>
-                    {{/each}}
-                {{else}}
-                    <p>Votre bibliothèque est vide.</p>
+                {{#with livre as |livre|}} {{#each livre}}
+                <div class="col-6 col-sm-3 col-lg-2 col-xl-1 livre">
+                    <div class="livre-info">
+                        <h4>{{Titre}}</h4>
+                        <p>{{Auteur}}</p>
+                        <a>plus</a>
+                    </div>
+                    <img src="/images/{{id}}.jpg" class="img-fluid" alt="No Cover">
+                </div>
+                {{/each}} {{else}}
+                <p>Votre bibliothèque est vide.</p>
                 {{/with}}
             </section>
-            
+
         </main>
     </div>
 </div>

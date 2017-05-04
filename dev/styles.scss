@@ -283,7 +283,6 @@ button {
 }
 
 .container-dashboard {
-    padding-bottom: 80px;
     .dash-container {
         main {
             padding-top: 20px;
@@ -451,7 +450,6 @@ button {
                     flex-wrap: wrap;
                     justify-content: center;
                     flex-direction: row;
-                    padding-bottom: 80px;
                 }
             }
         }
@@ -483,30 +481,26 @@ button {
             padding-bottom: 20px;
         }
         .emprunts-text {
-                border-bottom: 1px solid #EEEEEE;
-                h1 {
-                    font-size: 20px;
-                    font-family: $playfair;
-                    color: $nav-color;
-                    float: left;
-                }
-                
+            border-bottom: 1px solid #EEEEEE;
+            h1 {
+                font-size: 20px;
+                font-family: $playfair;
+                color: $nav-color;
+                float: left;
             }
-            .text {
-                h3 {
-                    font-size: 18px;
-                    font-family: $playfair;
-                    color: $nav-color;
-                    font-weight: bold;
-                }
-                p {
-                    font-size: 18px;
-                    font-family: $lora;
-                }
+        }
+        .text {
+            h3 {
+                font-size: 18px;
+                font-family: $playfair;
+                color: $nav-color;
+                font-weight: bold;
             }
-            .contour {
-                background-color:#EDEDED;
+            p {
+                font-size: 18px;
+                font-family: $lora;
             }
+        }
     }
 }
 
@@ -548,9 +542,9 @@ button {
             .livre-meta {
                 padding: 20px;
                 border-bottom: 1px solid $border-color;
-                .livre-image{
+                .livre-image {
                     align-content: center;
-                    img{
+                    img {
                         max-width: 200px;
                     }
                 }
@@ -570,7 +564,7 @@ button {
                 display: flex;
                 align-items: center;
                 .votr-up,
-                .vote-down{
+                .vote-down {
                     text-decoration: none;
                 }
             }
@@ -613,15 +607,18 @@ button {
 }
 
 .footer {
-    padding: 0 20px;
     font-size: 16px;
     text-align: center;
+    position: fixed;
+    margin-top: 40px;
+    bottom: 0;
     width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
     display: block;
     font-family: $playfair;
-    text-decoration: none;
     color: $nav-color;
-    border-top: 1px solid $border-color;
+    text-decoration: none;
     .fa-heart {
         color: #E74C3C;
         margin: 5px;

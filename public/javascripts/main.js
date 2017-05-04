@@ -65,27 +65,27 @@ function LoginToggle() {
     }
 }
 
-if (window.onload || window.onscroll) {
-    (function () {
-        var totalHeight, currentScroll, visibleHeight;
+var footerHeight;
 
-        if (document.documentElement.scrollTop) {
-            currentScroll = document.documentElement.scrollTop;
-        } else {
-            currentScroll = document.body.scrollTop;
-        }
+setInterval(function () {
+    var totalHeight, currentScroll, visibleHeight;
 
-        totalHeight = document.body.offsetHeight;
-        visibleHeight = document.documentElement.clientHeight;
+    if (document.documentElement.scrollTop) {
+        currentScroll = document.documentElement.scrollTop;
+    } else {
+        currentScroll = document.body.scrollTop;
+    }
 
-        if (totalHeight <= currentScroll + visibleHeight) {
-            $(".footer").slideDown(150);
-            $("body").css({
-                "padding-bottom": $(".footer").totalHeight
-            });
-        } else {
-            $(".footer").slideUp(150);
-        }
-    });
-}
+    totalHeight = document.body.offsetHeight;
+    visibleHeight = document.documentElement.clientHeight;
+
+    if (totalHeight <= currentScroll + visibleHeight) {
+        $(".footer").slideDown(150);
+        footerHeight = $('footer').height();
+        $("body").css({ "margin-bottom": footerHeight });
+    } else {
+        $(".footer").slideUp(150);
+        $("body").css({ "margin-bottom": 0 });
+    }
+}, 100);
 //# sourceMappingURL=main.js.map
