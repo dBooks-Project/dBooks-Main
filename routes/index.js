@@ -7,7 +7,6 @@ var randomBook = "SELECT Titre FROM ( SELECT FLOOR(mm.min_id + (mm.max_id - mm.m
 
 router.get('/', function (req, res, next) {
     query.simple(randomBook, (result) => {
-        console.log(result);
         res.render('index', {
             placeholder: result[0],
             quote: {

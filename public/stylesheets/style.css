@@ -78,36 +78,6 @@ button:focus {
 .navbar-container .row-container .navbar-main .brand:hover {
   color: #96291e;
 }
-.navbar-container .row-container .navbar-main form {
-  width: 100%;
-  display: flex;
-  margin: 0 20px;
-  align-items: center;
-  flex-flow: row;
-}
-.navbar-container .row-container .navbar-main form input {
-  width: 100%;
-  float: left;
-  font-size: 20px;
-  font-family: "Playfair Display";
-  border: 1px solid #dfdfdf;
-  color: #46484A;
-}
-.navbar-container .row-container .navbar-main form input:focus {
-  box-shadow: 0 0 7px 0 rgba(0, 160, 255, 0.8);
-}
-.navbar-container .row-container .navbar-main form button {
-  float: right;
-  background-color: #E74C3C;
-  font-size: 20px;
-  border: none;
-  color: #fff;
-}
-.navbar-container .row-container .navbar-main form button:hover {
-  background-color: #96291e;
-  cursor: pointer;
-  transition: .15s;
-}
 .navbar-container .row-container .navbar-main .toggle {
   color: #46484A;
   padding: 0 20px 0 0;
@@ -142,6 +112,36 @@ button:focus {
   align-items: center;
   text-align: center;
 }
+.navbar-container .row-container .navbar-main .normal-links ul li form {
+  width: 100%;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  flex-flow: row;
+}
+.navbar-container .row-container .navbar-main .normal-links ul li form input {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  border: 1px solid #dfdfdf;
+  color: #46484A;
+}
+.navbar-container .row-container .navbar-main .normal-links ul li form input:focus {
+  box-shadow: 0 0 7px 0 rgba(0, 160, 255, 0.8);
+}
+.navbar-container .row-container .navbar-main .normal-links ul li form button {
+  float: right;
+  background-color: #E74C3C;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+}
+.navbar-container .row-container .navbar-main .normal-links ul li form button:hover {
+  background-color: #96291e;
+  cursor: pointer;
+  transition: .15s;
+}
 .navbar-container .row-container .navbar-main .normal-links ul li a {
   text-align: center;
   color: #46484A;
@@ -165,6 +165,36 @@ button:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.navbar-container .row-container .dropdown-links ul li form {
+  width: 100%;
+  display: flex;
+  margin: 5px 20px;
+  align-items: center;
+  flex-flow: row;
+}
+.navbar-container .row-container .dropdown-links ul li form input {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  border: 1px solid #dfdfdf;
+  color: #46484A;
+}
+.navbar-container .row-container .dropdown-links ul li form input:focus {
+  box-shadow: 0 0 7px 0 rgba(0, 160, 255, 0.8);
+}
+.navbar-container .row-container .dropdown-links ul li form button {
+  float: right;
+  background-color: #E74C3C;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+}
+.navbar-container .row-container .dropdown-links ul li form button:hover {
+  background-color: #96291e;
+  cursor: pointer;
+  transition: .15s;
 }
 .navbar-container .row-container .dropdown-links ul li a {
   color: #46484A;
