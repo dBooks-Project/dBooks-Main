@@ -1,3 +1,4 @@
+//Client-size Global JS
 var menuToggeled = false;
 var sidenavToggle = false;
 var connectToggle = false;
@@ -62,31 +63,3 @@ function LoginToggle() {
         connectToggle = false;
     }
 }
-
-var footerHeight;
-
-setInterval(() => {
-    var totalHeight, currentScroll, visibleHeight;
-
-    if (document.documentElement.scrollTop) {
-        currentScroll = document.documentElement.scrollTop;
-    } else {
-        currentScroll = document.body.scrollTop;
-    }
-
-    totalHeight = document.body.offsetHeight;
-    visibleHeight = document.documentElement.clientHeight;
-
-    if (totalHeight <= currentScroll + visibleHeight) {
-        $(".footer").slideDown(150);
-        footerHeight = $('footer').height();
-        $("body").css({
-            "margin-bottom": footerHeight
-        });
-    } else {
-        $(".footer").slideUp(150);
-        $("body").css({
-            "margin-bottom": 0
-        });
-    }
-}, 100);
