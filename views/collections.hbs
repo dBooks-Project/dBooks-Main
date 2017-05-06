@@ -1,21 +1,33 @@
 <div class="container-fluid collections">
-    <div class="row collections-container">
-        <main class="col-12">
-            <div class="collections-text clearfix">
-                <h1>Collections</h1>
-            </div>
-        </main>
-        <div class="col-3">
-            {{#with collection as |collection|}} {{#each collection}}
-            <div class="col-6">
-                <div>
-                    <p>{{nomVille}}</p>
-                    <p>{{nomCollection}}</p>
+    <div class="collections-container">
+        <div class="row no-gutters">
+            <main class="col-12">
+                <div class="collections-text clearfix">
+                    <h1>Collections</h1>
                 </div>
+            </main>
+        </div>
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table table-bordered text">
+                    <thead>
+                        <tr>
+                            <th>Nom collection</th>
+                            <th>Ville</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#with collections as |collections|}} {{#each collections}}
+                        <tr>
+                            <th scope="row">{{NomCollection}}</th>
+                            <td>{{NomVille}}</td>
+                        </tr>
+                        {{/each}} {{else}}
+                        <p>Il n'y a aucune collection.</p>
+                        {{/with}}
+                    </tbody>
+                </table>
             </div>
-            {{/each}} {{else}}
-            <p>Il n'y a aucune collection.</p>
-            {{/with}}
         </div>
     </div>
 </div>
