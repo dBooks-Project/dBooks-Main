@@ -63,7 +63,7 @@ app.use('/', livre);
 app.use('/', connection);
 app.use('/', statistiques);
 app.use('/', collections);
-app.use('/', livre);
+app.use('/', livres);
 app.use('/', emprunts);
 
 // catch 404 and forward to error handler
