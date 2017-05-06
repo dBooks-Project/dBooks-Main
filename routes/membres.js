@@ -39,7 +39,8 @@ router.get('/membres', function (req, res, next) {
     query.simple(queryMembres, (results) => {
         var results = JoursDepuis(results);
         res.render('membres', {
-            results: results
+            results: results,
+             nav: true
         });
     });
 });

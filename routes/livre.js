@@ -18,7 +18,8 @@ router.get('/livre/:id', function (req, res, next) {
 
         res.render('livre', {
             title: "dBooks",
-            row: row[0]
+            row: row[0],
+            nav: true
         });
     });
 });

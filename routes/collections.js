@@ -16,7 +16,8 @@ router.get('/collections', function (req, res, next) {
             });
         }
         res.render('collections', {
-            collections: results
+            collections: results,
+             nav: true
         });
     });
 });
