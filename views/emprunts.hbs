@@ -1,6 +1,6 @@
 <div class="container-fluid emprunts">
     <div class="emprunts-container">
-        <div class="row">
+        <div class="row no-gutters">
             <main class="col-12">
                 <div class="emprunts-text clearfix">
                     <h1>Emprunts</h1>
@@ -10,7 +10,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="text">
-                    <p>Nombre d'emprunts: {{results.emprunts.Emprunts}}</p>
+                    <p>Nombre d'emprunts Daphné: {{results.nombre1.Nombre1}}</p>   
+                    <p>Nombre d'emprunts Julien: {{results.nombre2.Nombre2}}</p>   
                 </div>
             </div>
         </div>
@@ -19,46 +20,28 @@
                 <table class="table table-bordered text">
                     <thead>
                         <tr>
-                            <th>
-                                <h3>Livre: </h3>
-                            </th>
-                            <th>
-                                <h3>Date d'emprunt: </h3>
-                            </th>
-                            <th>
-                                <h3>Date de retour prévue: </h3>
-                            </th>
-                            <th>
-                                <h3>Date de retour: </h3>
-                            </th>
-                            <th>
-                                <h3>Durée: </h3>
-                            </th>
+                            <th>Titre</th>
+                            <th>Date d'emprunt</th>
+                            <th>Date de retour prévue</th>
+                            <th>Date de retour</th>
+                            <th>Durée</th>
+                            <th>Nom utilisateur</th>
                         </tr>
                     </thead>
                     <tbody>
+                        {{#each results.emprunts}}
                         <tr>
-                            <td>
-                                <p>{{results.livre.Titre}}</p>
-                            </td>
-                            <td>
-                                <p>{{results.dateEmprunt.DateEmprunt}}</p>
-                            </td>
-                            <td>
-                                <p>{{results.dateRetourPrevue.DateRetourPrevue}}</p>
-                            </td>
-                            <td>
-                                <p>{{results.dateRetour.DateRetour}}</p>
-                            </td>
-                            <td>
-                                <p>{{results.duree.Duree}} jours</p>
-                            </td>
+                            <th scope="row">{{Titre}}</th>
+                            <td>{{DateEmprunt}}</td>
+                            <td>{{DateRetourPrevue}}</td>
+                            <td>{{DateRetour}}</td>
+                            <td>{{Duree}} jours</td>
+                            <td>{{NomUtilisateur}}</td>
                         </tr>
+                        {{/each}}
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-</div>
-</div>
 </div>
