@@ -6,12 +6,11 @@ var queryBibliotheque = "SELECT * FROM Collection INNER JOIN Livres ON Livres.ID
 
 /* GET home page. */
 router.get('/bibliotheque', function (req, res, next) {
-    
-    var resBibliotheque = query(queryBibliotheque, (result) => result);
-
-    res.render('bibliotheque', {
-        livre: resBibliotheque
-    });
+    query.simple(queryBibliotheque, (result) => {{
+        res.render('bibliotheque', {
+            livre: result
+        });
+    }});
 });
 
 module.exports = router;
