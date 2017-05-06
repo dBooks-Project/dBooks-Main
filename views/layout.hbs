@@ -61,11 +61,35 @@
 						<li>
 							<a href="/connection">Connection</a>
 						</li>
+						<li>
+							{{#if nav}}
+							<form method="POST">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="">
+									<span class="input-group-btn">
+										<button class="btn btn-secondary fa fa-search" type="button"></button>
+									</span>
+								</div>
+							</form>
+							{{/if}}
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-12 dropdown-links" id="dropdown-links">
 				<ul class="list-unstyled">
+					<li>
+						{{#if nav}}
+						<form method="POST">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="">
+								<span class="input-group-btn">
+									<button class="btn btn-secondary fa fa-search" type="button"></button>
+								</span>
+							</div>
+						</form>
+						{{/if}}
+					</li>
 					<li>
 						<a href="/bibliotheque">Bibliothèque</a>
 					</li>
@@ -92,7 +116,7 @@
 
 
 	<!-- Footer -->
-	<footer class="footer" style="display: none;">
+	<footer class="footer" style="">
 		<p><span class="dBooks"> dBooks&copy</span> fait avec <span class="fa fa-heart"></span> par <span class="handle"><a href="https://twitter.com/entrybot" target="_blank"> Entrybot </a></span>			et <span class="handle"><a href="https://twitter.com/quietly_burning" target="_blank"> Quietlyburning</a></span></p>
 	</footer>
 	<!-- Fin footer -->

@@ -1,3 +1,4 @@
+//Middleware
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -6,9 +7,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 var compression = require('compression');
-var mysql = require('mysql');
 var minifyHTML = require("express-minify-html");
 
+//Import des pages
 var index = require('./routes/index');
 var bibliotheque = require("./routes/bibliotheque");
 var ajouter = require('./routes/ajouter');
@@ -23,8 +24,10 @@ var membres = require("./routes/membres");
 
 var app = express();
 
+//compression
 app.use(compression());
 
+//minification du html
 app.use(minifyHTML({
   override: true,
   exception_url: false,
@@ -38,6 +41,7 @@ app.use(minifyHTML({
   }
 }));
 
+//handlebars
 var hbs = exphbs.create({});
 
 // view engine setup
@@ -46,18 +50,22 @@ app.set('partials', path.join(__dirname, 'partials'));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'hbs');
 
-// uncomment after placing your favicon in /public
+//favicon
 app.use(favicon(path.join(__dirname, '/public', 'favicon.png')));
-app.use(logger('dev', {
-  skip: function (req, res) { return res.statusCode < 400 }
+//logging
+app.use(logger('combined', {
+  skip: function (req, res) { return res.statusCode < 400; }
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: false
 }));
+//cookies
 app.use(cookieParser());
+//static content
 app.use(express.static(__dirname + '/public'));
 
+//import de pages
 app.use('/', index);
 app.use('/', bibliotheque);
 app.use('/', ajouter);
@@ -67,6 +75,7 @@ app.use('/', statistiques);
 app.use('/', collections);
 app.use('/', livres);
 app.use('/', emprunts);
+app.use('/', membres);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
