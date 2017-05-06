@@ -8,7 +8,8 @@ router
     .get('/livres', function (req, res, next) {
         query.simple(queryLivres, (result) => {
             res.render('livres', {
-                info: result
+                info: result,
+                nav: true
             });
         });
     })
