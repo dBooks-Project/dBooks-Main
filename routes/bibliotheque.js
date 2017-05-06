@@ -8,7 +8,8 @@ var queryBibliotheque = "SELECT * FROM Collection INNER JOIN Livres ON Livres.ID
 router.get('/bibliotheque', function (req, res, next) {
     query.simple(queryBibliotheque, (result) => {{
         res.render('bibliotheque', {
-            livre: result
+            livre: result,
+            nav: true
         });
     }});
 });

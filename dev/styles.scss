@@ -124,6 +124,36 @@ button {
                     color: $accent-color-hover;
                 }
             }
+            form {
+                width: 100%;
+                display: flex;
+                margin: 0 20px;
+                align-items: center;
+                flex-flow: row;
+                input {
+                    width: 100%;
+                    float: left;
+                    font-size: 20px;
+                    font-family: $playfair;
+                    border: 1px solid $border-color;
+                    color: $nav-color;
+                    &:focus {
+                        box-shadow: 0 0 7px 0 $form-border-focus;
+                    }
+                }
+                button {
+                    float: right;
+                    background-color: $accent-color;
+                    font-size: 20px;
+                    border: none;
+                    color: $white;
+                    &:hover {
+                        background-color: $accent-color-hover;
+                        cursor: pointer;
+                        transition: .15s;
+                    }
+                }
+            }
             .toggle {
                 color: $nav-color;
                 padding: 0 20px 0 0;
@@ -575,7 +605,6 @@ button {
 .ajouter-form {
     .ajouter-container {
         .ajouter-row {
-            .ajouter-options {}
             .ajouter-main {
                 border-left: 1px solid $border-color;
                 border-right: 1px solid $border-color;
@@ -583,7 +612,6 @@ button {
                     font-size: 20px;
                 }
             }
-            .ajouter-autre {}
         }
     }
 }

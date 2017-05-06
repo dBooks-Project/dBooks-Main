@@ -43,6 +43,16 @@
 		<div class="row no-gutters row-container">
 			<div class="col-12 navbar-main">
 				<a href="/" class="brand">dBooks</a>
+				{{#if nav}}
+				<form method="POST">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Chercher">
+						<span class="input-group-btn">
+							<button class="btn btn-secondary fa fa-search" type="button"></button>
+						</span>
+					</div>
+				</form>
+				{{/if}}
 				<a href="javascript:void(0)" onclick="MenuToggle()" class="fa fa-bars toggle" id="toggle" aria-hidden="true"></a>
 				<div id="normal-links" class="normal-links">
 					<ul class="list-unstyled">
