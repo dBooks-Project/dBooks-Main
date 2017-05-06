@@ -112,6 +112,39 @@ button:focus {
   align-items: center;
   text-align: center;
 }
+.navbar-container .row-container .navbar-main .normal-links ul li:first-child {
+  padding-left: 20px;
+}
+.navbar-container .row-container .navbar-main .normal-links ul li form {
+  width: 100%;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  flex-flow: row;
+}
+.navbar-container .row-container .navbar-main .normal-links ul li form input {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  border: 1px solid #dfdfdf;
+  color: #46484A;
+}
+.navbar-container .row-container .navbar-main .normal-links ul li form input:focus {
+  box-shadow: 0 0 7px 0 rgba(0, 160, 255, 0.8);
+}
+.navbar-container .row-container .navbar-main .normal-links ul li form button {
+  float: right;
+  background-color: #E74C3C;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+}
+.navbar-container .row-container .navbar-main .normal-links ul li form button:hover {
+  background-color: #96291e;
+  cursor: pointer;
+  transition: .15s;
+}
 .navbar-container .row-container .navbar-main .normal-links ul li a {
   text-align: center;
   color: #46484A;
@@ -135,6 +168,37 @@ button:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.navbar-container .row-container .dropdown-links ul li form {
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #dfdfdf;
+  align-items: center;
+  flex-flow: row;
+}
+.navbar-container .row-container .dropdown-links ul li form input {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  font-family: "Playfair Display";
+  border: 1px solid #dfdfdf;
+  color: #46484A;
+}
+.navbar-container .row-container .dropdown-links ul li form input:focus {
+  box-shadow: 0 0 7px 0 rgba(0, 160, 255, 0.8);
+}
+.navbar-container .row-container .dropdown-links ul li form button {
+  float: right;
+  background-color: #E74C3C;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+}
+.navbar-container .row-container .dropdown-links ul li form button:hover {
+  background-color: #96291e;
+  cursor: pointer;
+  transition: .15s;
 }
 .navbar-container .row-container .dropdown-links ul li a {
   color: #46484A;
@@ -529,12 +593,9 @@ button:focus {
 .footer {
   font-size: 16px;
   text-align: center;
-  position: fixed;
+  position: block;
   margin-top: 40px;
-  bottom: 0;
   width: 100%;
-  left: 50%;
-  transform: translate(-50%, 0);
   display: block;
   font-family: "Playfair Display";
   color: #46484A;
