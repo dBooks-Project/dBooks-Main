@@ -559,12 +559,9 @@ button:focus {
 .footer {
   font-size: 16px;
   text-align: center;
-  position: fixed;
+  position: block;
   margin-top: 40px;
-  bottom: 0;
   width: 100%;
-  left: 50%;
-  transform: translate(-50%, 0);
   display: block;
   font-family: "Playfair Display";
   color: #46484A;
