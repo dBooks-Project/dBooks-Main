@@ -112,6 +112,9 @@ button:focus {
   align-items: center;
   text-align: center;
 }
+.navbar-container .row-container .navbar-main .normal-links ul li:first-child {
+  padding-left: 20px;
+}
 .navbar-container .row-container .navbar-main .normal-links ul li form {
   width: 100%;
   display: flex;
@@ -169,7 +172,8 @@ button:focus {
 .navbar-container .row-container .dropdown-links ul li form {
   width: 100%;
   display: flex;
-  margin: 5px 20px;
+  padding: 5px;
+  border-bottom: 1px solid #dfdfdf;
   align-items: center;
   flex-flow: row;
 }
