@@ -1,24 +1,15 @@
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
-var connection = require('../middleware/connect');
+var query = require('../middleware/query');
 
-function random(low, high) {
-    var res = Math.floor(Math.random() * (high - low) + low);
-    console.log(res);
-    return res;
-}
+var randomBook = "SELECT Titre FROM ( SELECT FLOOR(mm.min_id + (mm.max_id - mm.min_id + 1) * RAND()) AS ID FROM ( SELECT MIN(ID) AS min_id, MAX(ID) AS max_id FROM Livres ) AS mm JOIN ( SELECT ID dummy FROM Livres LIMIT 11 ) z ) AS init JOIN Livres AS r ON r.ID = init.ID LIMIT 1";
 
-/* GET home page. */
 router.get('/', function (req, res, next) {
-    connection.query('SELECT Titre FROM Livres', (err, row, fields) => {
-        if (err) {
-            console.log(err);
-            res.render('index');
-        }
-
+    query.simple(randomBook, (result) => {
+        console.log(result);
         res.render('index', {
-            placeholder: row[random(0, row.length)],
+            placeholder: result[0],
             quote: {
                 auteur: "Frank Zappa",
                 texte: "So many books, so little time."
