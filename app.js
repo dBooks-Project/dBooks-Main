@@ -75,6 +75,7 @@ app.use('/', statistiques);
 app.use('/', collections);
 app.use('/', livres);
 app.use('/', emprunts);
+app.use('/', membres);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
