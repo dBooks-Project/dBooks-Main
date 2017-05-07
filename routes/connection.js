@@ -4,7 +4,10 @@ var router = express.Router();
 router
     .get('/connection', function (req, res, next) {
 
-        res.render('connection');
+        res.render('connection', {
+            nav: true
+        });
+        
     })
 
     .post('/connection', function (req, res, next) {

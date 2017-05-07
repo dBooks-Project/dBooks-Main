@@ -1,6 +1,6 @@
 {
 	"name": "dbooks",
-	"version": "1.15.2",
+	"version": "1.16.0",
 	"private": true,
 	"license": "SEE LICENSE IN LISENCE.dPCA-1.0",
 	"scripts": {
@@ -46,17 +46,14 @@
 		"nodemon": "^1.11.0"
 	},
 	"description": "oh yeah baby!",
-	"main": "./bin/www",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/dBooks-Project/dBooks-Main.git"
-	},
+	"main": "./bin/dBooks-server",
+	"repository": "git+https://github.com/dBooks-Project/dBooks-Main.git",
 	"authors": {
-		"dlafm":"Daphné Laflamme-Morin",
-		"entrybot":"Julien Ferluc"
+		"dlafm": "Daphné Laflamme-Morin",
+		"entrybot": "Julien Ferluc"
 	},
 	"bugs": {
 		"url": "https://github.com/dBooks-Project/dBooks-Main/issues"
 	},
-		"homepage": "https://github.com/dBooks-Project/dBooks-Main#readme"
+	"homepage": "https://github.com/dBooks-Project/dBooks-Main#readme"
 }

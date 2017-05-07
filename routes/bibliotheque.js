@@ -1,17 +1,17 @@
 var express = require('express');
 var router = express.Router();
-var connection = require('../middleware/connect');
+var query = require('../middleware/query');
 
-var queryLivres = "SELECT * FROM Collection INNER JOIN Livres ON Livres.ID = LivreID";
+var queryBibliotheque = "SELECT * FROM Collection INNER JOIN Livres ON Livres.ID = LivreID";
 
 /* GET home page. */
 router.get('/bibliotheque', function (req, res, next) {
-    connection.query(queryLivres, (err, result, fields) => {
-        console.log(result);
+    query.simple(queryBibliotheque, (result) => {{
         res.render('bibliotheque', {
-            livre: result
+            livre: result,
+            nav: true
         });
-    });
+    }});
 });
 
 module.exports = router;

@@ -155,6 +155,39 @@ button {
                         justify-content: center;
                         align-items: center;
                         text-align: center;
+                        &:first-child{
+                            padding-left: 20px;
+                        }
+                        form {
+                            width: 100%;
+                            display: flex;
+                            margin-right: 20px;
+                            align-items: center;
+                            flex-flow: row;
+                            input {
+                                width: 100%;
+                                float: left;
+                                font-size: 20px;
+                                font-family: $playfair;
+                                border: 1px solid $border-color;
+                                color: $nav-color;
+                                &:focus {
+                                    box-shadow: 0 0 7px 0 $form-border-focus;
+                                }
+                            }
+                            button {
+                                float: right;
+                                background-color: $accent-color;
+                                font-size: 20px;
+                                border: none;
+                                color: $white;
+                                &:hover {
+                                    background-color: $accent-color-hover;
+                                    cursor: pointer;
+                                    transition: .15s;
+                                }
+                            }
+                        }
                         a {
                             text-align: center;
                             color: $nav-color;
@@ -182,6 +215,37 @@ button {
                     align-items: center;
                     justify-content: center;
                     text-align: center;
+                    form {
+                        width: 100%;
+                        display: flex;
+                        padding: 5px;
+                        border-bottom: 1px solid $border-color;
+                        align-items: center;
+                        flex-flow: row;
+                        input {
+                            width: 100%;
+                            float: left;
+                            font-size: 20px;
+                            font-family: $playfair;
+                            border: 1px solid $border-color;
+                            color: $nav-color;
+                            &:focus {
+                                box-shadow: 0 0 7px 0 $form-border-focus;
+                            }
+                        }
+                        button {
+                            float: right;
+                            background-color: $accent-color;
+                            font-size: 20px;
+                            border: none;
+                            color: $white;
+                            &:hover {
+                                background-color: $accent-color-hover;
+                                cursor: pointer;
+                                transition: .15s;
+                            }
+                        }
+                    }
                     a {
                         color: $nav-color;
                         font-family: $raleway;
@@ -575,7 +639,6 @@ button {
 .ajouter-form {
     .ajouter-container {
         .ajouter-row {
-            .ajouter-options {}
             .ajouter-main {
                 border-left: 1px solid $border-color;
                 border-right: 1px solid $border-color;
@@ -583,7 +646,6 @@ button {
                     font-size: 20px;
                 }
             }
-            .ajouter-autre {}
         }
     }
 }
@@ -609,12 +671,9 @@ button {
 .footer {
     font-size: 16px;
     text-align: center;
-    position: fixed;
+    position: block;
     margin-top: 40px;
-    bottom: 0;
     width: 100%;
-    left: 50%;
-    transform: translate(-50%, 0);
     display: block;
     font-family: $playfair;
     color: $nav-color;

@@ -24,8 +24,8 @@ router.get('/emprunts', function (req, res, next) {
                 emprunts: results[0],
                 nombre1: results[1][0],
                 nombre2: results[2][0]
-            }
-          
+            }, 
+             nav: true     
         });
     });
 });
