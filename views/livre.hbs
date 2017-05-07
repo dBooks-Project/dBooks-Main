@@ -1,9 +1,9 @@
-{{./assets/test}} {{#with row}}
+{{#if row}}
 <div class="container-fluid container-livre">
     <div class="row no-gutters livre-container">
         <div class="col-12 col-lg-8 col-xl-9 livre-main">
             <div class="livre-titre clearfix">
-                <h1>{{Titre}}</h1>
+                <h1>{{row.Titre}}</h1>
             </div>
             <div class="livre-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et luctus tortor, ac efficitur lacus. Aenean
@@ -20,10 +20,12 @@
         <div class="col-12 col-lg-4 col-xl-3 livre-side">
             <div class="livre-meta">
                 <div class="livre-image">
-                    <img class="rounded mx-auto d-block" src="/images/1.jpg" alt="{{Titre}}">
+                    <img class="rounded mx-auto d-block" src="/images/1.jpg" alt="{{row.Titre}}">
                 </div>
-                <p>{{AnneeParution}}</p>
+                <p>{{row.AnneeParution}}</p>
+                {{#each auteur}}
                 <p>{{Prenom}} {{Nom}}</p>
+                {{/each}}
             </div>
             <div class="livre-auteur">
                 <a href="#" class="fa fa-thumbs-up vote-up"></a>
@@ -34,4 +36,4 @@
 </div>
 {{else}}
 <p>Ce livre n'existe pas dans la base de données..</p>
-{{/with}}
+{{/if}}
