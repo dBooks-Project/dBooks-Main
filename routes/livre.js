@@ -28,7 +28,7 @@ router.get('/livre/:id', function (req, res, next) {
         res.render('livre', {
             title: "dBooks",
             row: row[0],
-            auteur: unifierAuteurs(row)
+            auteur: unifierAuteurs(row),
             nav: true
         });
     });
