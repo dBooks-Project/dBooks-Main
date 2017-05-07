@@ -29,6 +29,7 @@ router.get('/livre/:id', function (req, res, next) {
             title: "dBooks",
             row: row[0],
             auteur: unifierAuteurs(row)
+            nav: true
         });
     });
 });

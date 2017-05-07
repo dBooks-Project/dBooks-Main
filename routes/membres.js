@@ -3,7 +3,7 @@ var router = express.Router();
 var mysql = require('mysql');
 var query = require('../middleware/query');
 
-var queryMembres = "SELECT *,DATE_FORMAT(DateCreation,'%d-%m-%Y:%H:%M:%S') AS DateCreation,DATE_FORMAT(DateCreation,'%m/%d/%Y') AS DateCreationFormatted FROM Membres LIMIT 10";
+var queryMembres = "SELECT *, DATE_FORMAT(DateCreation,'%d-%m-%Y %H:%i:%S') AS DateCreation, DATE_FORMAT(DateCreation,'%m/%d/%Y') AS DateCreationFormatted FROM Membres LIMIT 10";
 
 function now() {
 var today = new Date();
@@ -39,7 +39,8 @@ router.get('/membres', function (req, res, next) {
     query.simple(queryMembres, (results) => {
         var results = JoursDepuis(results);
         res.render('membres', {
-            results: results
+            results: results,
+             nav: true
         });
     });
 });

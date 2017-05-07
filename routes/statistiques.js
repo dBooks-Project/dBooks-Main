@@ -32,7 +32,8 @@ router.get('/statistiques', function (req, res, next) {
                 langueJaponaise: results[4][0],
                 langueBresilienne: results[5][0],
                 langueItalienne: results[6][0]
-            }
+            },
+             nav: true
         });
     });
 });
