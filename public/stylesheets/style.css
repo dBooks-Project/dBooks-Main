@@ -118,14 +118,14 @@ button:focus {
 .navbar-container .row-container .navbar-main .normal-links ul li form {
   width: 100%;
   display: flex;
-  margin-right: 20px;
+  margin-right: 5px;
   align-items: center;
   flex-flow: row;
 }
 .navbar-container .row-container .navbar-main .normal-links ul li form input {
   width: 100%;
   float: left;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Playfair Display";
   border: 1px solid #dfdfdf;
   color: #46484A;
@@ -180,7 +180,7 @@ button:focus {
 .navbar-container .row-container .dropdown-links ul li form input {
   width: 100%;
   float: left;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Playfair Display";
   border: 1px solid #dfdfdf;
   color: #46484A;

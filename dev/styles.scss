@@ -161,13 +161,13 @@ button {
                         form {
                             width: 100%;
                             display: flex;
-                            margin-right: 20px;
+                            margin-right: 5px;
                             align-items: center;
                             flex-flow: row;
                             input {
                                 width: 100%;
                                 float: left;
-                                font-size: 20px;
+                                font-size:18px;
                                 font-family: $playfair;
                                 border: 1px solid $border-color;
                                 color: $nav-color;
@@ -225,7 +225,7 @@ button {
                         input {
                             width: 100%;
                             float: left;
-                            font-size: 20px;
+                            font-size: 18px;
                             font-family: $playfair;
                             border: 1px solid $border-color;
                             color: $nav-color;
