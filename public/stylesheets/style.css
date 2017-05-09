@@ -437,7 +437,7 @@ button:focus {
   padding-top: 20px;
 }
 .register .row .creation .register-text {
-  font-size: 64px;
+  font-size: 50px;
 }
 .register .row .creation form {
   color: #46484A;
@@ -453,13 +453,29 @@ button:focus {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin: 0 5px;
 }
 .register .row .creation form .remember-flex {
   display: flex;
   align-items: center;
+  align-content: center;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
+}
+.register .row .creation form .remember-flex .envoyer-bouton {
+  border: 1px solid #E74C3C;
+  color: #E74C3C;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-family: "Raleway";
+  transition: .2s linear;
+  border-radius: 5px;
+}
+.register .row .creation form .remember-flex .envoyer-bouton:hover {
+  color: #fff;
+  background-color: #E74C3C;
+  border-color: #E74C3C;
 }
 
 .statistiques .statistiques-container main {
@@ -588,6 +604,14 @@ button:focus {
   font-family: "Playfair Display";
   color: #46484A;
   float: left;
+}
+
+.custom-control-input:checked ~ .custom-control-indicator {
+  background-color: #E74C3C;
+}
+
+.custom-control-input:active ~ .custom-control-indicator {
+  background-color: #f26d79;
 }
 
 .footer {

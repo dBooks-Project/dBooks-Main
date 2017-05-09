@@ -11,8 +11,9 @@ router
     })
 
     .post('/connection', function (req, res, next) {
-
-        res.end();
+        if(req.body.value){
+            
+        }
     });
 
 module.exports = router;

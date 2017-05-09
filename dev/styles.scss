@@ -492,7 +492,7 @@ button {
     .row {
         .creation {
             .register-text {
-                font-size: 64px;
+                font-size: 50px;
             }
             form {
                 color: $nav-color;
@@ -507,13 +507,31 @@ button {
                     display: flex;
                     justify-content: center;
                     flex-direction: row;
+                    margin: 0 5px;
                 }
                 .remember-flex {
                     display: flex;
                     align-items: center;
+                    align-content: center;
                     flex-wrap: wrap;
                     justify-content: center;
                     flex-direction: row;
+
+                    .envoyer-bouton{
+                        border: 1px solid $accent-color;
+                        color: $accent-color;
+                        background-color: transparent;
+                        padding: 5px 10px;
+                        font-family: $raleway;
+                        transition: .2s linear;
+                        border-radius: 5px;
+
+                        &:hover{
+                            color: $white;
+                            background-color: $accent-color;
+                            border-color: $accent-color;
+                        }
+                    }
                 }
             }
         }
@@ -666,6 +684,14 @@ button {
             }
         }
     }
+}
+
+.custom-control-input:checked~.custom-control-indicator{
+    background-color: $accent-color;
+}
+
+.custom-control-input:active~.custom-control-indicator{
+    background-color: #f26d79;
 }
 
 .footer {
