@@ -5,7 +5,7 @@ var connection = require('../middleware/connect')
 /* GET home page. */
 router.get('/ajouter', function (req, res, next) {
     res.render('ajouter', {
-
+        
     });
 });
 
