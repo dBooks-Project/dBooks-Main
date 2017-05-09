@@ -492,18 +492,49 @@ button:focus {
   float: left;
 }
 
-.ajout .ajout-container main {
+.ajout {
   padding-top: 20px;
-  padding-bottom: 20px;
 }
-.ajout .ajout-container .ajout-text {
-  border-bottom: 1px solid #EEEEEE;
+.ajout .row .creation .ajout-text {
+  font-size: 50px;
 }
-.ajout .ajout-container .ajout-text h1 {
-  font-size: 20px;
-  font-family: "Playfair Display";
+.ajout .row .creation form {
   color: #46484A;
-  float: left;
+  font-size: 16px;
+}
+.ajout .row .creation form input, .ajout .row .creation form select {
+  margin-bottom: 20px;
+}
+.ajout .row .creation form label {
+  font-family: "Playfair Display";
+}
+.ajout .row .creation form .check-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 5px;
+}
+.ajout .row .creation form .remember-flex {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+.ajout .row .creation form .remember-flex .envoyer-bouton {
+  border: 1px solid #E74C3C;
+  color: #E74C3C;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-family: "Raleway";
+  transition: .2s linear;
+  border-radius: 5px;
+}
+.ajout .row .creation form .remember-flex .envoyer-bouton:hover {
+  color: #fff;
+  background-color: #E74C3C;
+  border-color: #E74C3C;
 }
 
 .emprunts .emprunts-container main {
