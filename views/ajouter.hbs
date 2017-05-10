@@ -1,15 +1,9 @@
-<div class="container-fluid ajout">
-    <div class="ajout-container">
-        <div class="row no-gutters">
-            <main class="col-12">
-                <div class="ajout-text clearfix">
-                    <h1>Ajouter un livre</h1>
-                </div>
-            </main>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
+<div class="container-fluid ajout" id="ajout">
+    <div class="row justify-content-center">
+        <div class="col-10 com-sm-10 col-md-8 col-lg-5 col-xl-5">
+            <div class="creation">
+                <h1 class="ajout-text display-1">Ajouter un livre</h1>
+                <hr>
                 <form method="GET">
                     <div class="form-group row">
                         <label for="titre" class="col-12 col-form-label">Titre <span class="fa fa-book"></span></label>
@@ -30,7 +24,7 @@
                             <input class="form-control" type="text" placeholder="Prénom" id="prenom">
                         </div>
                     </div>
-                    <br>
+                    
                     <div class="row">
                         <div class="col-12">
                             <input class="form-control" type="text" placeholder="Nom" id="nom">
@@ -84,6 +78,10 @@
                         <div class="col-12">
                             <input class="form-control" type="text" data-role="tagsinput" value="" placeholder="Tags" id="tags">
                         </div>
+                    </div>
+
+                    <div class="row text-center remember-flex">
+                        <button type="submit" class="envoyer-bouton">Ajouter</button>
                     </div>
                 </form>
             </div>
