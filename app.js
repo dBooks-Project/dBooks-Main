@@ -19,6 +19,7 @@ var statistiques = require("./routes/statistiques");
 var collections = require("./routes/collections");
 var emprunts = require("./routes/emprunts");
 var modifier = require("./routes/modifier");
+var supprimer = require("./routes/supprimer");
 //temporaire
 var livres = require("./routes/livres");
 var membres = require("./routes/membres");
@@ -78,6 +79,7 @@ app.use('/', livres);
 app.use('/', emprunts);
 app.use('/', membres);
 app.use('/', modifier);
+app.use('/', supprimer);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
