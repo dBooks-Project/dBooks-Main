@@ -359,7 +359,8 @@ button {
                     color: $nav-color;
                     float: left;
                 }
-                i {
+                a {
+                    text-decoration: none;
                     float: right;
                     font-size: 20px;
                     color: $nav-color;
@@ -482,6 +483,25 @@ button {
                         transition: .15s;
                     }
                 }
+                .modifier, .supprimer{
+                position: absolute;
+                top: 0;
+                background-color: initial;
+                font-size: 28px;
+                margin: 10px;
+                text-decoration: none;
+                transition: none;
+                    &:hover{
+                        background-color: initial;
+                        color: $nav-color-hover;
+                    }
+                }
+                .modifier{
+                    right: 0;
+                }
+                .supprimer{
+                    left: 0;
+                }
             }
         }
     }
@@ -562,17 +582,33 @@ button {
             padding-top: 20px;
             padding-bottom: 20px;
         }
-            .ajout-text {
-                 border-bottom: 1px solid #EEEEEE;
-                 h1 {
-                     font-size: 20px;
-                    font-family: $playfair;
-                    color: $nav-color;
-                    float: left;
-                 }
-            }
+        .ajout-text {
+                border-bottom: 1px solid #EEEEEE;
+                h1 {
+                    font-size: 20px;
+                font-family: $playfair;
+                color: $nav-color;
+                float: left;
+                }
         }
     }
+    .envoyer-bouton{
+        margin: auto;
+        border: 1px solid $accent-color;
+        color: $accent-color;
+        background-color: transparent;
+        padding: 5px 10px;
+        font-family: $raleway;
+        transition: .2s linear;
+        border-radius: 5px;
+
+        &:hover{
+            color: $white;
+            background-color: $accent-color;
+            border-color: $accent-color;
+        }
+    }
+}
 
 
 .emprunts {

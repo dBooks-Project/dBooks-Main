@@ -1,9 +1,9 @@
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-        host: "localhost",
-        user: "readonly",
-        password: "uQgbI7IKaP1gn91n",
+        host: "acidjump.com",
+        user: "all",
+        password: "0FIFoWcGP1KkwORN",
         database: "dBooks",
         multipleStatements: true
 });

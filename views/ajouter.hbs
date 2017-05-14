@@ -10,50 +10,35 @@
 
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <form method="GET">
+                <form method="POST">
                     <div class="form-group row">
                         <label for="titre" class="col-12 col-form-label">Titre <span class="fa fa-book"></span></label>
-                    </div>
-
-                    <div class="row">
                         <div class="col-12">
-                            <input class="form-control" type="text" placeholder="Titre" id="titre">
+                            <input class="form-control" type="text" name="titre" placeholder="Titre" id="titre">
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <label for="auteur" class="col-12 col-form-label">Auteur <span class="fa fa-id-card"></span></label>
-                    </div>
-
-                    <div class="row">
                         <div class="col-12">
-                            <input class="form-control" type="text" placeholder="Prénom" id="prenom">
+                            <input class="form-control mb-2" type="text" name="prenom" placeholder="Prénom" id="prenom">
                         </div>
-                    </div>
-                    <br>
-                    <div class="row">
                         <div class="col-12">
-                            <input class="form-control" type="text" placeholder="Nom" id="nom">
+                            <input class="form-control" type="text" name="npm" placeholder="Nom" id="nom">
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="anneeParution" class="col-12 col-form-label">Année de parution <span class="fa fa-calendar"></span></label>
-                    </div>
-
-                    <div class="row">
+                        <label for="anneeParution" class="col-12 col-form-label">Année de parution <span class="fa fa-calendar"></span>  (ex: 1998)</label>
                         <div class="col-12">
-                            <input class="form-control" type="text" placeholder="Année de parution" id="anneeParution">
+                            <input class="form-control" type="text" name="annee" placeholder="Année de parution" id="anneeParution">
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <label for="langue" class="col-12 col-form-label">Langue <span class="fa fa-language"></span></label>
-                    </div>
-
-                    <div class="row">
                         <div class="col-12">
-                            <select class="form-control" id="langue">
+                            <select class="form-control" name="langue" id="langue">
                             <option>Français</option>
                             <option>Anglais</option>
                             <option>Espagnol</option>
@@ -64,11 +49,8 @@
 
                     <div class="form-group row">
                         <label for="genreLitteraire" class="col-12 col-form-label">Genre littéraire <span class="fa fa-pencil"></span></label>
-                    </div>
-
-                    <div class="row">
                         <div class="col-12">
-                            <select class="form-control" id="genreLitteraire">
+                            <select class="form-control" name="genre" id="genreLitteraire">
                             <option>Roman</option>
                             <option>Poésie</option>
                             <option>Théâtre</option>
@@ -78,12 +60,13 @@
 
                     <div class="form-group row">
                         <label for="theme" class="col-12 col-form-label">Thème <span class="fa fa-th-large"></span></label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" name="theme" data-role="tagsinput" value="" placeholder="Tags" id="tags">
+                        </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <input class="form-control" type="text" data-role="tagsinput" value="" placeholder="Tags" id="tags">
-                        </div>
+                    <div class="row text-center remember-flex">
+                        <button type="submit" class="envoyer-bouton">Envoyer</button>
                     </div>
                 </form>
             </div>
