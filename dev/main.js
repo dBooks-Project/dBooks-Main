@@ -63,3 +63,13 @@ function LoginToggle() {
         connectToggle = false;
     }
 }
+
+function Confirmation(id) {
+    var confirmation = confirm("Voulez-vous vraiment supprimer ce livre?");
+    if (confirmation == true) {
+        window.location.replace("/supprimer/" + id);
+    }
+    else {
+        
+    }
+}

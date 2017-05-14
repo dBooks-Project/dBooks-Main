@@ -10,7 +10,7 @@
                 <div class="col-6 col-sm-4 col-lg-3 col-xl-2 livre">
                     <div class="livre-info">
                         <a href="/modifier/{{ID}}" class="fa fa-edit modifier"></a>
-                        <a href="javascript:void(0)" class="fa fa-trash supprimer"></a>
+                        <a href="javascript:void(0)" onclick="Confirmation({{ID}})" class="fa fa-trash supprimer"></a>
                         <h4>{{Titre}}</h4>
                         <p>{{Prenom}} {{Nom}}</p>
                         <a>plus</a>
@@ -21,7 +21,6 @@
                 <p>Votre bibliothèque est vide.</p>
                 {{/with}}
             </section>
-
         </main>
     </div>
 </div>
