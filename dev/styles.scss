@@ -584,13 +584,12 @@ button {
             padding-bottom: 20px;
         }
         .ajout-text {
-                border-bottom: 1px solid #EEEEEE;
-                h1 {
-                    font-size: 20px;
+            border-bottom: 1px solid #EEEEEE;
+            h1 {
+                font-size: 20px;
                 font-family: $playfair;
                 color: $nav-color;
                 float: left;
-                font-size: 50px;
             }
             form {
                 color: $nav-color;
@@ -619,30 +618,6 @@ button {
                     justify-content: center;
                     flex-direction: row;
                     margin: 0 5px;
-                }
-                .remember-flex {
-                    display: flex;
-                    align-items: center;
-                    align-content: center;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    flex-direction: row;
-
-                    .envoyer-bouton{
-                        border: 1px solid $accent-color;
-                        color: $accent-color;
-                        background-color: transparent;
-                        padding: 5px 10px;
-                        font-family: $raleway;
-                        transition: .2s linear;
-                        border-radius: 5px;
-
-                        &:hover{
-                            color: $white;
-                            background-color: $accent-color;
-                            border-color: $accent-color;
-                        }
-                    }
                 }
             }
         }
@@ -818,5 +793,21 @@ button {
                 color: $accent-color-hover;
             }
         }
+    }
+}
+
+.envoyer-bouton{
+    border: 1px solid $accent-color;
+    color: $accent-color;
+    background-color: transparent;
+    padding: 5px 10px;
+    font-family: $raleway;
+    transition: .2s linear;
+    border-radius: 5px;
+
+    &:hover{
+        color: $white;
+        background-color: $accent-color;
+        border-color: $accent-color;
     }
 }

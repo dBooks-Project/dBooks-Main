@@ -524,7 +524,6 @@ button:focus {
   font-family: "Playfair Display";
   color: #46484A;
   float: left;
-  font-size: 50px;
 }
 .ajout .ajout-container .ajout-text form {
   color: #46484A;
@@ -554,28 +553,6 @@ button:focus {
   justify-content: center;
   flex-direction: row;
   margin: 0 5px;
-}
-.ajout .ajout-container .ajout-text form .remember-flex {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-}
-.ajout .ajout-container .ajout-text form .remember-flex .envoyer-bouton {
-  border: 1px solid #E74C3C;
-  color: #E74C3C;
-  background-color: transparent;
-  padding: 5px 10px;
-  font-family: "Raleway";
-  transition: .2s linear;
-  border-radius: 5px;
-}
-.ajout .ajout-container .ajout-text form .remember-flex .envoyer-bouton:hover {
-  color: #fff;
-  background-color: #E74C3C;
-  border-color: #E74C3C;
 }
 
 .emprunts .emprunts-container main {
@@ -729,6 +706,21 @@ button:focus {
 }
 .footer .handle a:hover {
   color: #96291e;
+}
+
+.envoyer-bouton {
+  border: 1px solid #E74C3C;
+  color: #E74C3C;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-family: "Raleway";
+  transition: .2s linear;
+  border-radius: 5px;
+}
+.envoyer-bouton:hover {
+  color: #fff;
+  background-color: #E74C3C;
+  border-color: #E74C3C;
 }
 
 /*# sourceMappingURL=style.css.map */
