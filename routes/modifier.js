@@ -2,9 +2,11 @@ var express = require('express');
 var router = express.Router();
 var connection = require('../middleware/connect')
 
-/* GET home page. */
-router.get('/modifier', function (req, res, next) {
+var queryRead = "SELECT * FROM "
+
+router.get('/modifier/:id', function (req, res, next) {
     res.render('modifier', {
+        results: rows,
         nav: true
     });
 });
