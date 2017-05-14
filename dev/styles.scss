@@ -576,6 +576,7 @@ button {
     }
 }
 
+
 .ajout {
     .ajout-container {
         main {
@@ -589,23 +590,61 @@ button {
                 font-family: $playfair;
                 color: $nav-color;
                 float: left;
+                font-size: 50px;
+            }
+            form {
+                color: $nav-color;
+                font-size: 16px;
+                input, select {
+                    margin-bottom: 20px;
                 }
-        }
-    }
-    .envoyer-bouton{
-        margin: auto;
-        border: 1px solid $accent-color;
-        color: $accent-color;
-        background-color: transparent;
-        padding: 5px 10px;
-        font-family: $raleway;
-        transition: .2s linear;
-        border-radius: 5px;
+                label {
+                    font-family: $playfair;
+                }
+                .bootstrap-tagsinput {
+                    width: 100%;
+                     input {
+                        margin:0;
+                    }
+                    .tag {
+                        margin-right: 5px;
+                    }
+                }
+                .label {
+                    line-height: 2 !important;
+                    background-color: $accent-color;
+                }
+                .check-flex {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    margin: 0 5px;
+                }
+                .remember-flex {
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    flex-direction: row;
 
-        &:hover{
-            color: $white;
-            background-color: $accent-color;
-            border-color: $accent-color;
+                    .envoyer-bouton{
+                        border: 1px solid $accent-color;
+                        color: $accent-color;
+                        background-color: transparent;
+                        padding: 5px 10px;
+                        font-family: $raleway;
+                        transition: .2s linear;
+                        border-radius: 5px;
+
+                        &:hover{
+                            color: $white;
+                            background-color: $accent-color;
+                            border-color: $accent-color;
+                        }
+                    }
+                }
+            }
         }
     }
 }

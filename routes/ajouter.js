@@ -9,7 +9,9 @@ router.get('/ajouter', function (req, res, next) {
 
 router.post('/ajouter', (req, res, next) => {
     query.complex("SELECT ID FROM Langues WHERE NomLangue = ?", [req.body.langue], (rows) => {console.log(rows[0].ID)});
-    res.render('ajouter');
+    res.render('ajouter', {
+        nav: true
+    });
 });
 
 module.exports = router;

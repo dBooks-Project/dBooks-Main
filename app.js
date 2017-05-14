@@ -18,6 +18,7 @@ var connection = require("./routes/connection");
 var statistiques = require("./routes/statistiques");
 var collections = require("./routes/collections");
 var emprunts = require("./routes/emprunts");
+var modifier = require("./routes/modifier");
 //temporaire
 var livres = require("./routes/livres");
 var membres = require("./routes/membres");
@@ -76,6 +77,7 @@ app.use('/', collections);
 app.use('/', livres);
 app.use('/', emprunts);
 app.use('/', membres);
+app.use('/', modifier);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -1,3 +1,4 @@
+
 <div class="container-fluid ajout">
     <div class="ajout-container">
         <div class="row no-gutters">
@@ -66,8 +67,31 @@
                     </div>
 
                     <div class="row text-center remember-flex">
-                        <button type="submit" class="envoyer-bouton">Envoyer</button>
+                        <button type="submit" class="envoyer-bouton">Ajouter</button>
                     </div>
+                    <script>
+                        $(document).ready(function () {
+                            $('#form')
+                                .find('[name="themes"]')
+                                // Revalidate the cities field when it is changed
+                                .change(function (e) {
+                                    $('#form').formValidation('revalidateField', 'themes');
+                                })
+                                .end()
+                                .formValidation({
+                                    fields: {
+                                        themes: {
+                                            validators: {
+                                                notEmpty: {
+                                                    message: 'Veuillez ajouter au moins un tag.'
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                });
+                            });
+                    </script>
                 </form>
             </div>
         </div>
