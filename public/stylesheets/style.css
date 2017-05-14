@@ -512,42 +512,50 @@ button:focus {
   float: left;
 }
 
-.ajout {
+.ajout .ajout-container main {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
-.ajout .row .creation .ajout-text {
+.ajout .ajout-container .ajout-text {
+  border-bottom: 1px solid #EEEEEE;
+}
+.ajout .ajout-container .ajout-text h1 {
+  font-size: 20px;
+  font-family: "Playfair Display";
+  color: #46484A;
+  float: left;
   font-size: 50px;
 }
-.ajout .row .creation form {
+.ajout .ajout-container .ajout-text form {
   color: #46484A;
   font-size: 16px;
 }
-.ajout .row .creation form input, .ajout .row .creation form select {
+.ajout .ajout-container .ajout-text form input, .ajout .ajout-container .ajout-text form select {
   margin-bottom: 20px;
 }
-.ajout .row .creation form label {
+.ajout .ajout-container .ajout-text form label {
   font-family: "Playfair Display";
 }
-.ajout .row .creation form .bootstrap-tagsinput {
+.ajout .ajout-container .ajout-text form .bootstrap-tagsinput {
   width: 100%;
 }
-.ajout .row .creation form .bootstrap-tagsinput input {
+.ajout .ajout-container .ajout-text form .bootstrap-tagsinput input {
   margin: 0;
 }
-.ajout .row .creation form .bootstrap-tagsinput .tag {
+.ajout .ajout-container .ajout-text form .bootstrap-tagsinput .tag {
   margin-right: 5px;
 }
-.ajout .row .creation form .label {
+.ajout .ajout-container .ajout-text form .label {
   line-height: 2 !important;
   background-color: #E74C3C;
 }
-.ajout .row .creation form .check-flex {
+.ajout .ajout-container .ajout-text form .check-flex {
   display: flex;
   justify-content: center;
   flex-direction: row;
   margin: 0 5px;
 }
-.ajout .row .creation form .remember-flex {
+.ajout .ajout-container .ajout-text form .remember-flex {
   display: flex;
   align-items: center;
   align-content: center;
@@ -555,7 +563,7 @@ button:focus {
   justify-content: center;
   flex-direction: row;
 }
-.ajout .row .creation form .remember-flex .envoyer-bouton {
+.ajout .ajout-container .ajout-text form .remember-flex .envoyer-bouton {
   border: 1px solid #E74C3C;
   color: #E74C3C;
   background-color: transparent;
@@ -564,22 +572,7 @@ button:focus {
   transition: .2s linear;
   border-radius: 5px;
 }
-.ajout .row .creation form .remember-flex .envoyer-bouton:hover {
-  color: #fff;
-  background-color: #E74C3C;
-  border-color: #E74C3C;
-}
-.ajout .envoyer-bouton {
-  margin: auto;
-  border: 1px solid #E74C3C;
-  color: #E74C3C;
-  background-color: transparent;
-  padding: 5px 10px;
-  font-family: "Raleway";
-  transition: .2s linear;
-  border-radius: 5px;
-}
-.ajout .envoyer-bouton:hover {
+.ajout .ajout-container .ajout-text form .remember-flex .envoyer-bouton:hover {
   color: #fff;
   background-color: #E74C3C;
   border-color: #E74C3C;
