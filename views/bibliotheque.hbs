@@ -3,28 +3,19 @@
         <main class="col-12">
             <div class="dash-text clearfix">
                 <h1>Bibliothèque</h1>
-                <i class="fa fa-cog" onclick="ActionsToggle()"></i>
-            </div>
-            <div id="dash-controls" class="dash-controls text-center" style="display: none;">
-                <div class="action-form">
-                    <a href="/ajouter" class="fa fa-plus"></a>
-                </div>
-                <div class="action-form">
-                    <a href="#" class="fa fa-trash-o"></a>
-                </div>
-                <div class="action-form">
-                    <a href="/modifier" class="fa fa-pencil"></a>
-                </div>
+                <a href="/ajouter" class="fa fa-plus"></a>
             </div>
             <section class="row container-fluid livres">
                 {{#with livre as |livre|}} {{#each livre}}
-                <div class="col-6 col-sm-3 col-lg-2 col-xl-1 livre">
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2 livre">
                     <div class="livre-info">
+                        <a href="javascript:void(0)" class="fa fa-edit modifier"></a>
+                        <a href="javascript:void(0)" class="fa fa-trash supprimer"></a>
                         <h4>{{Titre}}</h4>
-                        <p>{{Auteur}}</p>
+                        <p>{{Prenom}} {{Nom}}</p>
                         <a>plus</a>
                     </div>
-                    <img src="/images/{{id}}.jpg" class="img-fluid" alt="No Cover">
+                    <img src="/images/book_cover.jpg" class="img-fluid" alt="No Cover">
                 </div>
                 {{/each}} {{else}}
                 <p>Votre bibliothèque est vide.</p>

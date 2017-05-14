@@ -359,7 +359,8 @@ button {
                     color: $nav-color;
                     float: left;
                 }
-                i {
+                a {
+                    text-decoration: none;
                     float: right;
                     font-size: 20px;
                     color: $nav-color;
@@ -482,6 +483,25 @@ button {
                         transition: .15s;
                     }
                 }
+                .modifier, .supprimer{
+                position: absolute;
+                top: 0;
+                background-color: initial;
+                font-size: 28px;
+                margin: 10px;
+                text-decoration: none;
+                transition: none;
+                    &:hover{
+                        background-color: initial;
+                        color: $nav-color-hover;
+                    }
+                }
+                .modifier{
+                    right: 0;
+                }
+                .supprimer{
+                    left: 0;
+                }
             }
         }
     }
@@ -558,10 +578,18 @@ button {
 
 
 .ajout {
-    padding-top: 20px;
-    .row {
-        .creation {
-            .ajout-text {
+    .ajout-container {
+        main {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .ajout-text {
+                border-bottom: 1px solid #EEEEEE;
+                h1 {
+                    font-size: 20px;
+                font-family: $playfair;
+                color: $nav-color;
+                float: left;
                 font-size: 50px;
             }
             form {

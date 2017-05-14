@@ -308,12 +308,13 @@ button:focus {
   color: #46484A;
   float: left;
 }
-.container-dashboard .dash-container main .dash-text i {
+.container-dashboard .dash-container main .dash-text a {
+  text-decoration: none;
   float: right;
   font-size: 20px;
   color: #46484A;
 }
-.container-dashboard .dash-container main .dash-text i:hover {
+.container-dashboard .dash-container main .dash-text a:hover {
   color: #BABABB;
   cursor: pointer;
   transition: .3s;
@@ -432,6 +433,25 @@ button:focus {
   cursor: pointer;
   transition: .15s;
 }
+.container-dashboard .livre .livre-info:hover .modifier, .container-dashboard .livre .livre-info:hover .supprimer, .container-dashboard .livre .livre-info:visited .modifier, .container-dashboard .livre .livre-info:visited .supprimer {
+  position: absolute;
+  top: 0;
+  background-color: initial;
+  font-size: 28px;
+  margin: 10px;
+  text-decoration: none;
+  transition: none;
+}
+.container-dashboard .livre .livre-info:hover .modifier:hover, .container-dashboard .livre .livre-info:hover .supprimer:hover, .container-dashboard .livre .livre-info:visited .modifier:hover, .container-dashboard .livre .livre-info:visited .supprimer:hover {
+  background-color: initial;
+  color: #BABABB;
+}
+.container-dashboard .livre .livre-info:hover .modifier, .container-dashboard .livre .livre-info:visited .modifier {
+  right: 0;
+}
+.container-dashboard .livre .livre-info:hover .supprimer, .container-dashboard .livre .livre-info:visited .supprimer {
+  left: 0;
+}
 
 .register {
   padding-top: 20px;
@@ -545,6 +565,21 @@ button:focus {
   border-radius: 5px;
 }
 .ajout .row .creation form .remember-flex .envoyer-bouton:hover {
+  color: #fff;
+  background-color: #E74C3C;
+  border-color: #E74C3C;
+}
+.ajout .envoyer-bouton {
+  margin: auto;
+  border: 1px solid #E74C3C;
+  color: #E74C3C;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-family: "Raleway";
+  transition: .2s linear;
+  border-radius: 5px;
+}
+.ajout .envoyer-bouton:hover {
   color: #fff;
   background-color: #E74C3C;
   border-color: #E74C3C;
