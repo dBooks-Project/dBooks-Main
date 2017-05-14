@@ -573,6 +573,19 @@ button {
                 label {
                     font-family: $playfair;
                 }
+                .bootstrap-tagsinput {
+                    width: 100%;
+                     input {
+                        margin:0;
+                    }
+                    .tag {
+                        margin-right: 5px;
+                    }
+                }
+                .label {
+                    line-height: 2 !important;
+                    background-color: $accent-color;
+                }
                 .check-flex {
                     display: flex;
                     justify-content: center;

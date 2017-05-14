@@ -508,6 +508,19 @@ button:focus {
 .ajout .row .creation form label {
   font-family: "Playfair Display";
 }
+.ajout .row .creation form .bootstrap-tagsinput {
+  width: 100%;
+}
+.ajout .row .creation form .bootstrap-tagsinput input {
+  margin: 0;
+}
+.ajout .row .creation form .bootstrap-tagsinput .tag {
+  margin-right: 5px;
+}
+.ajout .row .creation form .label {
+  line-height: 2 !important;
+  background-color: #E74C3C;
+}
 .ajout .row .creation form .check-flex {
   display: flex;
   justify-content: center;
