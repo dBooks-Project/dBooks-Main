@@ -408,7 +408,6 @@ button:focus {
 .container-dashboard .livre .livre-info:hover a, .container-dashboard .livre .livre-info:visited h4,
 .container-dashboard .livre .livre-info:visited p,
 .container-dashboard .livre .livre-info:visited a {
-  font-family: "Lora";
   word-wrap: break-word;
 }
 .container-dashboard .livre .livre-info:hover h4, .container-dashboard .livre .livre-info:visited h4 {
@@ -424,7 +423,6 @@ button:focus {
   padding: 5px;
   border-radius: 10px;
   font-size: 14px;
-  font-family: "Lora";
   border: none;
   color: #fff;
 }
