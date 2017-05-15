@@ -458,7 +458,7 @@ button {
                 h4,
                 p,
                 a {
-                    font-family: $lora;
+                    //font-family: $lora;
                     word-wrap: break-word;
                 }
                 h4 {
@@ -474,7 +474,6 @@ button {
                     padding: 5px;
                     border-radius: 10px;
                     font-size: 14px;
-                    font-family: $lora;
                     border: none;
                     color: $white;
                     &:hover {
