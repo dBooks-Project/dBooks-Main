@@ -21,10 +21,8 @@ router
         query.complex("SELECT ID FROM Langues WHERE NomLangue = ?", [req.body.langue], (langueID) => {
             query.complex("SELECT ID FROM GenresLitteraires WHERE NomGenre = ?", [req.body.genre], (genreID) => {
                 query.complex("SELECT Auteurs.ID FROM AuteursLivres INNER JOIN Auteurs ON Auteurs.ID = AuteurID INNER JOIN Livres ON LivreID = Livres.ID WHERE LivreID = ?", [req.params.id], (auteurID) => {
-                connection.query(queryUpdateLivres, [req.body.titre, req.body.annee,langueID[0].ID, genreID[0].ID ,req.params.id], (err,rows,fields) => {
-                    if(err) throw err;
-                    connection.query(queryUpdateAuteurs, [req.body.nom, req.body.prenom, auteurID[0].ID], (err, rows, fields) => {
-                        if(err) throw err;
+                query.complex(queryUpdateLivres, [req.body.titre, req.body.annee,langueID[0].ID, genreID[0].ID ,req.params.id], (err,rows,fields) => {
+                    query.complex(queryUpdateAuteurs, [req.body.nom, req.body.prenom, auteurID[0].ID], (err, rows, fields) => {
                         res.redirect('/bibliotheque');
                     });
                 });
