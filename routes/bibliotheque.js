@@ -7,7 +7,6 @@ var queryBibliotheque = "SELECT Livres.ID,Titre,AnneeParution,NomLangue,Prenom,N
 /* GET home page. */
 router.get('/bibliotheque', function (req, res, next) {
     query.simple(queryBibliotheque, (result) => {{
-        console.log(result);
         res.render('bibliotheque', {
             livre: result,
             nav: true
