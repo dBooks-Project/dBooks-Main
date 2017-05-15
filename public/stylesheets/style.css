@@ -535,19 +535,6 @@ button:focus {
 .ajout .ajout-container .ajout-text form label {
   font-family: "Playfair Display";
 }
-.ajout .ajout-container .ajout-text form .bootstrap-tagsinput {
-  width: 100%;
-}
-.ajout .ajout-container .ajout-text form .bootstrap-tagsinput input {
-  margin: 0;
-}
-.ajout .ajout-container .ajout-text form .bootstrap-tagsinput .tag {
-  margin-right: 5px;
-}
-.ajout .ajout-container .ajout-text form .label {
-  line-height: 2 !important;
-  background-color: #E74C3C;
-}
 .ajout .ajout-container .ajout-text form .check-flex {
   display: flex;
   justify-content: center;
@@ -721,6 +708,21 @@ button:focus {
   color: #fff;
   background-color: #E74C3C;
   border-color: #E74C3C;
+}
+
+.bootstrap-tagsinput {
+  width: 100%;
+}
+.bootstrap-tagsinput input {
+  margin: 0;
+}
+.bootstrap-tagsinput .tag {
+  margin-right: 5px;
+}
+
+.label {
+  line-height: 2 !important;
+  background-color: #E74C3C;
 }
 
 /*# sourceMappingURL=style.css.map */

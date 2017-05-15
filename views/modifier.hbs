@@ -1,0 +1,101 @@
+<div class="container-fluid ajout">
+    <div class="ajout-container">
+        <div class="row no-gutters">
+            <main class="col-12">
+                <div class="ajout-text clearfix">
+                    <h1>Modifier un livre</h1>
+                </div>
+            </main>
+        </div>
+        {{#with results}}
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form method="POST">
+                    <div class="form-group row">
+                        <label for="titre" class="col-12 col-form-label">Titre <span class="fa fa-book"></span></label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" name="titre" value="{{Titre}}" id="titre">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="auteur" class="col-12 col-form-label">Auteur <span class="fa fa-id-card"></span></label>
+                        <div class="col-12">
+                            <input class="form-control mb-2" type="text" name="prenom" value="{{Prenom}}" id="prenom">
+                        </div>
+                        <div class="col-12">
+                            <input class="form-control" type="text" name="npm" value="{{Nom}}" id="nom">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="anneeParution" class="col-12 col-form-label">Année de parution <span class="fa fa-calendar"></span>  (ex: 1998)</label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" name="annee" value="{{AnneeParution}}" id="anneeParution">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="langue" class="col-12 col-form-label">Langue <span class="fa fa-language"></span></label>
+                        <div class="col-12">
+                            <select class="form-control" name="langue" id="langue">
+                            <option>Français</option>
+                            <option>Anglais</option>
+                            <option>Espagnol</option>
+                            <option>Japonais</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="genreLitteraire" class="col-12 col-form-label">Genre littéraire <span class="fa fa-pencil"></span></label>
+                        <div class="col-12">
+                            <select class="form-control" name="genre" id="genreLitteraire">
+                            <option>Roman</option>
+                            <option>Poésie</option>
+                            <option>Théâtre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="theme" class="col-12 col-form-label">Thème <span class="fa fa-th-large"></span></label>
+                        <div class="col-12">
+                            <input class="form-control" type="text" name="theme" data-role="tagsinput" value="{{Themes}}" placeholder="Tags" id="tags">
+                        </div>
+                    </div>
+
+                    <div class="row text-center remember-flex">
+                        <button type="submit" class="envoyer-bouton m-auto">Modifier</button>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $('#form')
+                                .find('[name="themes"]')
+                                // Revalidate the cities field when it is changed
+                                .change(function (e) {
+                                    $('#form').formValidation('revalidateField', 'themes');
+                                })
+                                .end()
+                                .formValidation({
+                                    fields: {
+                                        themes: {
+                                            validators: {
+                                                notEmpty: {
+                                                    message: 'Veuillez ajouter au moins un tag.'
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                });
+                            });
+                    </script>
+                </form>
+            </div>
+        </div>
+        {{else}}
+        <p>Vous ne pouvez pas modifier un livre inexistant!</p>
+        {{/with}}
+    </div>
+</div>
