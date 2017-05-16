@@ -263,6 +263,11 @@ button {
 
 .index-container {
     width: 100%;
+    .container {
+        img {
+            width: 100%;
+        }
+    }
     .top-section {
         background-image: url('../images/landing-bg.jpg');
         background-size: cover;
