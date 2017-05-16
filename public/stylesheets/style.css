@@ -213,6 +213,9 @@ button:focus {
 .index-container {
   width: 100%;
 }
+.index-container .container img {
+  width: 100%;
+}
 .index-container .top-section {
   background-image: url("../images/landing-bg.jpg");
   background-size: cover;
