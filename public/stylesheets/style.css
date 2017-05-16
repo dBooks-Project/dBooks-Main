@@ -726,4 +726,8 @@ button:focus {
   background-color: #E74C3C;
 }
 
+.progress-bar {
+  transition: 0.3s ease-in-out;
+}
+
 /*# sourceMappingURL=style.css.map */

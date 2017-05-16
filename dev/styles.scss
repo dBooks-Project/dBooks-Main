@@ -816,3 +816,7 @@ button {
     line-height: 2 !important;
     background-color: $accent-color;
 }
+
+.progress-bar{
+    transition: .3s ease-in-out
+}
