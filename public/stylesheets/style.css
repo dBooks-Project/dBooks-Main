@@ -212,8 +212,42 @@ button:focus {
 
 .index-container {
   width: 100%;
+  /* Extra small devices (phones, less than 768px) */
+  /* No media query since this is the default in Bootstrap */
+  /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  /* Large devices (large desktops, 1200px and up) */
 }
-.index-container .container img {
+.index-container #carouselExampleIndicators .carousel-inner .carousel-item {
+  height: 200px;
+}
+@media (min-width: 300px) {
+  .index-container #carouselExampleIndicators .carousel-inner .carousel-item {
+    height: 250px;
+  }
+}
+@media (min-width: 500px) {
+  .index-container #carouselExampleIndicators .carousel-inner .carousel-item {
+    height: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .index-container #carouselExampleIndicators .carousel-inner .carousel-item {
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .index-container #carouselExampleIndicators .carousel-inner .carousel-item {
+    height: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .index-container #carouselExampleIndicators .carousel-inner .carousel-item {
+    height: 700px;
+  }
+}
+.index-container #carouselExampleIndicators .carousel-inner .carousel-item img {
+  height: 100%;
   width: 100%;
 }
 .index-container .top-section {
@@ -596,6 +630,7 @@ button:focus {
 }
 .container-livre .livre-container .livre-main .livre-text {
   padding-top: 20px;
+  text-align: justify;
 }
 .container-livre .livre-container .livre-side {
   border-left: 1px solid #dfdfdf;

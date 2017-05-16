@@ -263,10 +263,46 @@ button {
 
 .index-container {
     width: 100%;
-    .container {
-        img {
-            width: 100%;
-        }
+        /* Extra small devices (phones, less than 768px) */
+    /* No media query since this is the default in Bootstrap */
+    #carouselExampleIndicators .carousel-inner .carousel-item {
+        height:200px;
+    }
+    @media (min-width: 300px) { 
+    #carouselExampleIndicators .carousel-inner .carousel-item {
+        height:250px;
+    } 
+    }
+    @media (min-width: 500px) { 
+    #carouselExampleIndicators .carousel-inner .carousel-item {
+        height:350px;
+    } 
+    }
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+    #carouselExampleIndicators .carousel-inner .carousel-item {
+        height:500px;
+    } 
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+    #carouselExampleIndicators .carousel-inner .carousel-item {
+        height:600px;
+    }
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+    #carouselExampleIndicators .carousel-inner .carousel-item {
+        height:700px;
+    }
+    }
+
+    #carouselExampleIndicators .carousel-inner .carousel-item img {
+    height: 100%;  
+    width: 100%; 
+
     }
     .top-section {
         background-image: url('../images/landing-bg.jpg');
@@ -674,6 +710,7 @@ button {
             }
             .livre-text {
                 padding-top: 20px;
+                text-align: justify;
             }
         }
         .livre-side {
